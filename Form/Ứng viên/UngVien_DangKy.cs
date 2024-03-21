@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Windows_04
 {
@@ -17,9 +18,9 @@ namespace Project_Windows_04
             InitializeComponent();
         }
 
-        private void btnThoatForm_Click(object sender, EventArgs e)
+        private void UngVien_DangKy_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

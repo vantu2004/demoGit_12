@@ -146,6 +146,7 @@
             this.Name = "DanhSach_CV_DaNop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanhSach_CV_DaNop";
+            this.Load += new System.EventHandler(this.DanhSach_CV_DaNop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
 

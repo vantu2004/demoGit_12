@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Windows_04
 {
@@ -15,6 +16,23 @@ namespace Project_Windows_04
         public TuyenDung_UngVien()
         {
             InitializeComponent();
+        }
+
+        private void btn_tuyenDung_Click(object sender, EventArgs e)
+        {
+            TuyenDung_DangKy TD_dangKy = new TuyenDung_DangKy();
+            TD_dangKy.ShowDialog();
+        }
+
+        private void btn_ungVien_Click(object sender, EventArgs e)
+        {
+            UngVien_DangKy UV_dangKy = new UngVien_DangKy();
+            UV_dangKy.ShowDialog();
+        }
+
+        private void TuyenDung_UngVien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

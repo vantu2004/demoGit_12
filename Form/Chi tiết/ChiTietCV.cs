@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Windows_04
 {
@@ -15,6 +16,11 @@ namespace Project_Windows_04
         public ChiTietCV()
         {
             InitializeComponent();
+        }
+
+        private void ChiTietCV_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Windows_04
 {
@@ -19,9 +20,9 @@ namespace Project_Windows_04
 
         private void TuyenDung_TrangChu_Load(object sender, EventArgs e)
         {
-            uC_BangTin1.guna2GradientButton1.Hide();
-            uC_BangTin1.guna2GradientButton4.Hide();
-            uC_BangTin1.guna2GradientButton5.Hide();
+            uC_BangTin1.btn_dangTinTuyenDung.Hide();
+            uC_BangTin1.btn_dangNhap.Hide();
+            uC_BangTin1.btn_dangKy.Hide();
         }
     }
 }

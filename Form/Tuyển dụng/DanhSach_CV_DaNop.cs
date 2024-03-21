@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Windows_04
 {
@@ -18,6 +19,11 @@ namespace Project_Windows_04
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DanhSach_CV_DaNop_Load(object sender, EventArgs e)
         {
 
         }

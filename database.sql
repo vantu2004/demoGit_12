@@ -22,7 +22,7 @@ CREATE TABLE NHATUYENDUNG(
 
   --IconCompany IMAGE		  NULL,             -- Biểu tượng Công ty
 		  Fname NVARCHAR(62)  NOT NULL,         -- Tên NTD
-		 Gender NVARCHAR(10),			        -- Giới tính
+		 Email  NVARCHAR(62)  NOT NULL,			-- Email NTD
 	   PhoneNTD NVARCHAR(12)  NOT NULL,         -- Số ĐT của NTD
 	     JobPos NVARCHAR(62)  NOT NULL,         -- Vị trí công tác
 		Company	NVARCHAR(62)  NOT NULL,         -- Công Ty
@@ -46,7 +46,6 @@ CREATE TABLE UNGVIEN(
 	      Email NVARCHAR(62)  NOT NULL, 
 	  Address_C NVARCHAR(100) NOT NULL,         -- dia diem hien tai
 	     Gender NVARCHAR(10),
-	Applied_pos NVARCHAR(20),
 
 	FOREIGN KEY (Id,UserType) REFERENCES PASSWORDS(UserID,UserType)
 );
