@@ -164,6 +164,17 @@ namespace Project_Windows_04.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisspng_chief_executive_computer_icons_businessperson_5aeaec59c56a80_3532939915253453698086 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-chief-executive-computer-icons-businessperson-5aeaec59c56a80.353293991525" +
+                        "3453698086", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_clip_art_computer_icons_portable_network_graphics_font_work_svg_png_icon_free_download_391838_o_5c65783be93e67_4416976315501537879554 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-clip-art-computer-icons-portable-network-graphics-font-work-svg-png-icon-" +
@@ -240,6 +251,16 @@ namespace Project_Windows_04.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_hierarchy_5ae173f77b01a9_2322034515247247275038 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-hierarchy-5ae173f77b01a9.2322034515247247275038", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_computer_icons_information_clip_art_5aff14d9042d81_0094381815266664570171 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-computer-icons-information-clip-art-5aff14d9042d81.0094381815266664570171" +
@@ -309,6 +330,17 @@ namespace Project_Windows_04.Properties {
         internal static System.Drawing.Bitmap kisspng_gender_symbol_female_5ada9ac3046e66_5026924515242759070182 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-gender-symbol-female-5ada9ac3046e66.5026924515242759070182", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_hierarchical_organization_business_management_hier_5b2fc32ab90b81_829071621529856810758 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-hierarchical-organization-business-management-hier-5b2fc32ab90b81.8290716" +
+                        "21529856810758", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

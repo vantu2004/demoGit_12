@@ -41,23 +41,25 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,10 +67,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -189,6 +191,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label15);
@@ -199,7 +204,6 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Controls.Add(this.pictureBox8);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.pictureBox6);
@@ -218,38 +222,115 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(67, 414);
+            this.label7.Location = new System.Drawing.Point(92, 409);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 28);
             this.label7.TabIndex = 109;
             this.label7.Text = "Giới tính";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_gender_symbol_female_5ada9ac3046e66_5026924515242759070182;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 414);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.TabIndex = 108;
-            this.pictureBox3.TabStop = false;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(67, 373);
+            this.label15.Location = new System.Drawing.Point(92, 368);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(99, 28);
             this.label15.TabIndex = 107;
             this.label15.Text = "Ngày sinh";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(92, 630);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 28);
+            this.label14.TabIndex = 103;
+            this.label14.Text = "Email";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(92, 589);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 28);
+            this.label13.TabIndex = 101;
+            this.label13.Text = "Liên hệ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(92, 723);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(147, 28);
+            this.label12.TabIndex = 99;
+            this.label12.Text = "Vị trí ứng tuyển";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(92, 450);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 28);
+            this.label5.TabIndex = 95;
+            this.label5.Text = "Địa chỉ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(92, 491);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 28);
+            this.label3.TabIndex = 94;
+            this.label3.Text = "Mạng xã hội";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(92, 327);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 28);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Họ và tên";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(12, 288);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 28);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Cá nhân";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_gender_symbol_female_5ada9ac3046e66_5026924515242759070182;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(42, 409);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.TabIndex = 108;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_birthday_cake_bakery_wedding_cake_computer_icons_birth_date_5b2ec694aff869_8062975015297921487208;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 373);
+            this.pictureBox11.Location = new System.Drawing.Point(42, 368);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(35, 35);
             this.pictureBox11.TabIndex = 106;
@@ -265,143 +346,88 @@
             this.pictureBox1.TabIndex = 104;
             this.pictureBox1.TabStop = false;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(67, 578);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 28);
-            this.label14.TabIndex = 103;
-            this.label14.Text = "Email";
-            // 
             // pictureBox10
             // 
             this.pictureBox10.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_computer_icons_stock_photography_email_clip_art_simblo_5b4faed30f1343_1676878115319487550618;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(17, 578);
+            this.pictureBox10.Location = new System.Drawing.Point(42, 630);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(35, 35);
             this.pictureBox10.TabIndex = 102;
             this.pictureBox10.TabStop = false;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(67, 537);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 28);
-            this.label13.TabIndex = 101;
-            this.label13.Text = "Liên hệ";
-            // 
             // pictureBox9
             // 
             this.pictureBox9.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngegg;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(17, 537);
+            this.pictureBox9.Location = new System.Drawing.Point(42, 589);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(35, 35);
             this.pictureBox9.TabIndex = 100;
             this.pictureBox9.TabStop = false;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(67, 619);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(147, 28);
-            this.label12.TabIndex = 99;
-            this.label12.Text = "Vị trí ứng tuyển";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngegg__21_;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 619);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.TabIndex = 73;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngwing4;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 496);
+            this.pictureBox8.Location = new System.Drawing.Point(42, 491);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(35, 35);
             this.pictureBox8.TabIndex = 76;
             this.pictureBox8.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(67, 455);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 28);
-            this.label5.TabIndex = 95;
-            this.label5.Text = "Địa chỉ";
-            // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_scalable_vector_graphics_computer_icons_portable_n_snowbears_5cb7a84816f6b3_8180413815555400400941;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(17, 455);
+            this.pictureBox6.Location = new System.Drawing.Point(42, 450);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(35, 35);
             this.pictureBox6.TabIndex = 74;
             this.pictureBox6.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(67, 496);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 28);
-            this.label3.TabIndex = 94;
-            this.label3.Text = "Mạng xã hội";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(67, 332);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 28);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "Họ và tên";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_computer_icons_download_clip_art_name_tag_5ac0f763d08452_7040853015225956838541;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = global::Project_Windows_04.Properties.Resources.kisspng_computer_icons_download_clip_art_name_tag_5ac0f763d08452_7040853015225956838541;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 332);
+            this.pictureBox2.Location = new System.Drawing.Point(42, 327);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.TabIndex = 70;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // label9
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(12, 288);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 28);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Cá nhân";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label9.Location = new System.Drawing.Point(12, 548);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 28);
+            this.label9.TabIndex = 110;
+            this.label9.Text = "Liên hệ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label11.Location = new System.Drawing.Point(12, 685);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(162, 28);
+            this.label11.TabIndex = 111;
+            this.label11.Text = "Vị trí ứng tuyển";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_computer_icons_hierarchy_5ae173f77b01a9_2322034515247247275038;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(42, 723);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox4.TabIndex = 112;
+            this.pictureBox4.TabStop = false;
             // 
             // ChiTietCV
             // 
@@ -422,10 +448,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,7 +474,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -461,5 +486,8 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

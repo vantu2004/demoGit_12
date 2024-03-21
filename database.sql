@@ -5,29 +5,29 @@ USE WIPR
 GO
 
 CREATE TABLE PASSWORDS(
-	  UserID INT,
-	UserType VARCHAR(12), 
+	     UserID INT,
+	   UserType VARCHAR(12), 
 
-		UserName VARCHAR(32) UNIQUE	 ,
-	UserPassword VARCHAR(32) NOT NULL,
+	   UserName VARCHAR(32) UNIQUE	 ,
+   UserPassword VARCHAR(32) NOT NULL,
  
-	PRIMARY KEY(UserID, UserType)
+   PRIMARY KEY(UserID, UserType)
 )
 GO
 
+-- Nhà tuyển dụng
 CREATE TABLE NHATUYENDUNG(
-	Id INT IDENTITY(1,1) PRIMARY KEY,
-	UserType VARCHAR(12) DEFAULT 'Employer', -- Mặc định
+			 Id INT IDENTITY(1,1) PRIMARY KEY,
+	   UserType VARCHAR(12) DEFAULT 'Employer', -- Mặc định
 
-	IconCompany IMAGE NULL,  --Biểu tượng Công ty
-	
-		  Fname NVARCHAR(62)  NOT NULL, -- Tên NTD
-	   PhoneNTD NVARCHAR(12)  NOT NULL, -- Số ĐT của NTD
-		Company	NVARCHAR(62)  NOT NULL, -- Công Ty
-   ContactEmail NVARCHAR(100) NOT NULL, -- Mạng xã hội
-		 JobPos NVARCHAR(62)  NOT NULL, -- Vị trí công tác
-	JobLocation NVARCHAR(100) NOT NULL, -- Dia diem lam viec  
-		 Gender NVARCHAR(10),			-- Giới tính
+  --IconCompany IMAGE		  NULL,             -- Biểu tượng Công ty
+		  Fname NVARCHAR(62)  NOT NULL,         -- Tên NTD
+		 Gender NVARCHAR(10),			        -- Giới tính
+	   PhoneNTD NVARCHAR(12)  NOT NULL,         -- Số ĐT của NTD
+	     JobPos NVARCHAR(62)  NOT NULL,         -- Vị trí công tác
+		Company	NVARCHAR(62)  NOT NULL,         -- Công Ty
+	JobLocation NVARCHAR(100) NOT NULL,         -- Địa điểm làm việc
+   ContactEmail NVARCHAR(100) NOT NULL,         -- Mạng xã hội
 
 	FOREIGN KEY (Id,UserType) REFERENCES PASSWORDS(UserID,UserType)
 );
@@ -35,18 +35,18 @@ GO
 
 -- Ứng viên
 CREATE TABLE UNGVIEN(
-	Id		  INT IDENTITY(1,1) PRIMARY KEY,
-	UserType  VARCHAR(12) DEFAULT 'Candidate',
+		     Id INT IDENTITY(1,1) PRIMARY KEY,
+	   UserType VARCHAR(12) DEFAULT 'Candidate',
 
-	Avatar	  IMAGE NULL,  --Ảnh của ungvien
-
-	Fname	  NVARCHAR(62)  NOT NULL,
-	Phone	  VARCHAR (12)  NOT NULL,
-	BirthDate DATE ,
-	Link	  VARCHAR (100) NOT NULL,	
-	Email	  NVARCHAR(62)  NOT NULL, 
-	Address_C NVARCHAR(100) NOT NULL,  -- dia diem hien tai
-	Gender    NVARCHAR(10),
+	   --Avatar IMAGE NULL,                     -- Ảnh của ungvien
+	      Fname NVARCHAR(62)  NOT NULL,
+	      Phone VARCHAR (12)  NOT NULL,
+	  BirthDate DATE ,
+	       Link VARCHAR (100) NOT NULL,	
+	      Email NVARCHAR(62)  NOT NULL, 
+	  Address_C NVARCHAR(100) NOT NULL,         -- dia diem hien tai
+	     Gender NVARCHAR(10),
+	Applied_pos NVARCHAR(20),
 
 	FOREIGN KEY (Id,UserType) REFERENCES PASSWORDS(UserID,UserType)
 );

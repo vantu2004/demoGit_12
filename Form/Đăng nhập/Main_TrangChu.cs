@@ -16,10 +16,5 @@ namespace Project_Windows_04
         {
             InitializeComponent();
         }
-
-        private void uC_BangTin1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

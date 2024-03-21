@@ -39,7 +39,6 @@
             this.uC_BangTin1.Name = "uC_BangTin1";
             this.uC_BangTin1.Size = new System.Drawing.Size(1332, 703);
             this.uC_BangTin1.TabIndex = 0;
-            this.uC_BangTin1.Load += new System.EventHandler(this.uC_BangTin1_Load);
             // 
             // Main_TrangChu
             // 
