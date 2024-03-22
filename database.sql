@@ -4,7 +4,7 @@ GO
 USE WIPR
 GO
 
-CREATE TABLE PASSWORDS(
+CREATE TABLE TAIKHOAN(
 	     UserID INT,
 	   UserType VARCHAR(12), 
 
@@ -29,7 +29,7 @@ CREATE TABLE NHATUYENDUNG(
 	JobLocation NVARCHAR(100) NOT NULL,         -- Địa điểm làm việc
    ContactEmail NVARCHAR(100) NOT NULL,         -- Mạng xã hội
 
-	FOREIGN KEY (Id,UserType) REFERENCES PASSWORDS(UserID,UserType)
+	FOREIGN KEY (Id,UserType) REFERENCES TAIKHOAN(UserID,UserType)
 );
 GO
 
@@ -47,7 +47,7 @@ CREATE TABLE UNGVIEN(
 	  Address_C NVARCHAR(100) NOT NULL,         -- dia diem hien tai
 	     Gender NVARCHAR(10),
 
-	FOREIGN KEY (Id,UserType) REFERENCES PASSWORDS(UserID,UserType)
+	FOREIGN KEY (Id,UserType) REFERENCES TAIKHOAN(UserID,UserType)
 );
 GO
 

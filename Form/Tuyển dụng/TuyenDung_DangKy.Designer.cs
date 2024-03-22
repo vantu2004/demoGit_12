@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tbx_nhapLaiMatKhau_TD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tbx_matKhau_TD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbx_tenDangNhap_TD = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn_hoanTat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbx_dongYDieuKhoan = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -61,20 +65,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,6 +93,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 703);
             this.panel1.TabIndex = 9;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Project_Windows_04.Properties.Resources.klipartz_com__3_;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(66, 397);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // tbx_nhapLaiMatKhau_TD
             // 
@@ -119,6 +129,17 @@
             this.tbx_nhapLaiMatKhau_TD.TabIndex = 15;
             this.tbx_nhapLaiMatKhau_TD.UseSystemPasswordChar = true;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Project_Windows_04.Properties.Resources.klipartz_com__3_;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Image = global::Project_Windows_04.Properties.Resources.kisspng_clip_art_computer_icons_scalable_vector_graphics_p_earth_location_map_world_navigation_pin_marker_svg_5bf236c7224d20_4334433015426003911405;
+            this.pictureBox3.Location = new System.Drawing.Point(66, 334);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
             // tbx_matKhau_TD
             // 
             this.tbx_matKhau_TD.Animated = true;
@@ -143,6 +164,16 @@
             this.tbx_matKhau_TD.Size = new System.Drawing.Size(291, 55);
             this.tbx_matKhau_TD.TabIndex = 13;
             this.tbx_matKhau_TD.UseSystemPasswordChar = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngwing_com;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(66, 244);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // tbx_tenDangNhap_TD
             // 
@@ -191,6 +222,16 @@
             this.guna2TextBox2.TabIndex = 10;
             this.guna2TextBox2.UseSystemPasswordChar = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngwing_com__2_;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(66, 244);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btn_hoanTat);
@@ -227,6 +268,7 @@
             this.btn_hoanTat.TabIndex = 7;
             this.btn_hoanTat.Text = "Hoàn tất";
             this.btn_hoanTat.UseTransparentBackground = true;
+            this.btn_hoanTat.Click += new System.EventHandler(this.btn_hoanTat_Click);
             // 
             // cbx_dongYDieuKhoan
             // 
@@ -659,47 +701,6 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "|| Thông tin nhà tuyển dụng:";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Project_Windows_04.Properties.Resources.klipartz_com__3_;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(66, 397);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Project_Windows_04.Properties.Resources.klipartz_com__3_;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = global::Project_Windows_04.Properties.Resources.kisspng_clip_art_computer_icons_scalable_vector_graphics_p_earth_location_map_world_navigation_pin_marker_svg_5bf236c7224d20_4334433015426003911405;
-            this.pictureBox3.Location = new System.Drawing.Point(66, 334);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngwing_com;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 244);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngwing_com__2_;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(66, 244);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
             // TuyenDung_DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -712,6 +713,10 @@
             this.Text = "Đăng ký";
             this.Load += new System.EventHandler(this.TuyenDung_DangKy_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -722,10 +727,6 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -171,6 +171,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\dbConnection.cs" />
     <Compile Include="Form\Chi tiết\ChiTietCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,14 +222,15 @@
     <Compile Include="Form\Ứng viên\UngVien_TrangChu.Designer.cs">
       <DependentUpon>UngVien_TrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="TaiKhoan.cs" />
-    <Compile Include="TuyenDung.cs" />
+    <Compile Include="Class\TaiKhoan.cs" />
+    <Compile Include="Class\TuyenDung.cs" />
     <Compile Include="Form\Tuyển dụng\TuyenDung_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Tuyển dụng\TuyenDung_DangKy.Designer.cs">
       <DependentUpon>TuyenDung_DangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\TuyenDung_DAO.cs" />
     <Compile Include="UC_Controls\UC_BangTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,13 +249,14 @@
     <Compile Include="UC_Controls\UC_TinDaDang.Designer.cs">
       <DependentUpon>UC_TinDaDang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UngVien.cs" />
+    <Compile Include="Class\UngVien.cs" />
     <Compile Include="Form\Ứng viên\UngVien_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Ứng viên\UngVien_DangKy.Designer.cs">
       <DependentUpon>UngVien_DangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\UngVien_DAO.cs" />
     <EmbeddedResource Include="Form\Chi tiết\ChiTietCV.resx">
       <DependentUpon>ChiTietCV.cs</DependentUpon>
     </EmbeddedResource>

@@ -8,23 +8,23 @@ namespace Project_Windows_04
 {
     internal class TaiKhoan
     {
-        private int idNguoiDung;
-        private string kieuNguoiDung;
+        private string id;
+        private string userType;
         private string tenDangNhap;
         private string matKhau;
 
         public TaiKhoan() { }
-        public TaiKhoan (int idNguoiDung, string kieuNguoiDung, string tenDangNhap, string matKhau)
-        {
-            IdNguoiDung = idNguoiDung;
-            KieuNguoiDung = kieuNguoiDung;
+        public TaiKhoan (string id, string userType, string tenDangNhap, string matKhau)
+        { 
+            Id = id;
+            UserType = userType;
             TenDangNhap = tenDangNhap;
             MatKhau = matKhau;
         }
 
-        public int IdNguoiDung { get => idNguoiDung; set => idNguoiDung = value; }
-        public string KieuNguoiDung { get => kieuNguoiDung; set => kieuNguoiDung = value; }
         public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
         public string MatKhau { get => matKhau; set => matKhau = value; }
+        public string Id { get => id; set => id = value; }
+        public string UserType { get => userType; set => userType = value; }
     }
 }

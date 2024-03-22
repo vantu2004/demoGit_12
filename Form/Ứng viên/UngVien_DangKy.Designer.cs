@@ -115,6 +115,7 @@
             this.btn_hoanTat.TabIndex = 7;
             this.btn_hoanTat.Text = "Hoàn tất";
             this.btn_hoanTat.UseTransparentBackground = true;
+            this.btn_hoanTat.Click += new System.EventHandler(this.btn_hoanTat_Click);
             // 
             // cbx_dongYDieuKhoan
             // 
