@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\dbConnection.cs" />
+    <Compile Include="Class\DangKy_DangNhap_DAO.cs" />
     <Compile Include="Form\Chi tiết\ChiTietCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +232,7 @@
       <DependentUpon>TuyenDung_DangKy.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\TuyenDung_DAO.cs" />
+    <Compile Include="Class\TuyenDung_Tin.cs" />
     <Compile Include="UC_Controls\UC_BangTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -362,6 +364,9 @@
     <None Include="Resources\kisspng-gender-symbol-female-5ada9ac3046e66.5026924515242759070182.png" />
     <None Include="Resources\kisspng-hierarchical-organization-business-management-hier-5b2fc32ab90b81.829071621529856810758.png" />
     <None Include="Resources\kisspng-computer-icons-hierarchy-5ae173f77b01a9.2322034515247247275038.png" />
+    <None Include="Resources\kisspng-stopwatch-timer-clip-art-stopwatch-cliparts-5a76b357e59d45.0215386115177285999405.png" />
+    <None Include="Resources\kisspng-stopwatch-clock-clip-art-stopwatch-cliparts-5a7600c24b7758.0680084115176828823091.png" />
+    <None Include="Resources\kisspng-computer-icons-speed-test-timer-5acae4113a3aa0.6184639815232460972385.png" />
     <Content Include="Resources\Lovepik_com-401714979-characters-of-different-professions.png" />
     <None Include="Resources\name-icon.png" />
     <Content Include="Resources\pngegg %2815%29.png" />

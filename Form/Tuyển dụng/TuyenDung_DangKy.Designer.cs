@@ -532,7 +532,7 @@
             this.cbx_viTriCongTac_HR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_viTriCongTac_HR.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbx_viTriCongTac_HR.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_viTriCongTac_HR.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbx_viTriCongTac_HR.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.cbx_viTriCongTac_HR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_viTriCongTac_HR.ItemHeight = 30;
             this.cbx_viTriCongTac_HR.Items.AddRange(new object[] {
@@ -648,6 +648,7 @@
             // 
             // tbx_ten_HR
             // 
+            this.tbx_ten_HR.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.tbx_ten_HR.BorderRadius = 10;
             this.tbx_ten_HR.BorderThickness = 2;
             this.tbx_ten_HR.Cursor = System.Windows.Forms.Cursors.IBeam;

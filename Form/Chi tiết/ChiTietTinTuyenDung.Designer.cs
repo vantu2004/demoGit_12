@@ -40,6 +40,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -70,6 +75,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -203,6 +210,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.pictureBox15);
+            this.panel4.Controls.Add(this.label21);
+            this.panel4.Controls.Add(this.label20);
+            this.panel4.Controls.Add(this.pictureBox14);
+            this.panel4.Controls.Add(this.label19);
             this.panel4.Controls.Add(this.pictureBox12);
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.pictureBox13);
@@ -236,6 +248,59 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(411, 1055);
             this.panel4.TabIndex = 29;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_computer_icons_speed_test_timer_5acae4113a3aa0_6184639815232460972385;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.Location = new System.Drawing.Point(36, 853);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox15.TabIndex = 119;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(86, 853);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(91, 28);
+            this.label21.TabIndex = 118;
+            this.label21.Text = "Hạn chót";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(86, 812);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(89, 28);
+            this.label20.TabIndex = 116;
+            this.label20.Text = "Đăng lúc";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_stopwatch_timer_clip_art_stopwatch_cliparts_5a76b357e59d45_0215386115177285999405;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox14.Location = new System.Drawing.Point(36, 812);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox14.TabIndex = 115;
+            this.pictureBox14.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label19.Location = new System.Drawing.Point(15, 773);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(102, 28);
+            this.label19.TabIndex = 114;
+            this.label19.Text = "Thời gian";
             // 
             // pictureBox12
             // 
@@ -287,9 +352,9 @@
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label16.Location = new System.Drawing.Point(15, 551);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 28);
+            this.label16.Size = new System.Drawing.Size(80, 28);
             this.label16.TabIndex = 108;
-            this.label16.Text = "Công ty";
+            this.label16.Text = "Liên hệ";
             // 
             // label15
             // 
@@ -298,9 +363,9 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(86, 377);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(141, 28);
+            this.label15.Size = new System.Drawing.Size(142, 28);
             this.label15.TabIndex = 107;
-            this.label15.Text = "Vị trí công việc";
+            this.label15.Text = "Vị trí cần tuyển";
             // 
             // pictureBox11
             // 
@@ -555,11 +620,14 @@
             this.Name = "ChiTietTinTuyenDung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ChiTietTinTuyenDung_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -618,5 +686,10 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox15;
     }
 }

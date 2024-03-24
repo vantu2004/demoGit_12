@@ -4,76 +4,81 @@ GO
 USE WIPR
 GO
 
-CREATE TABLE TAIKHOAN(
-	     UserID INT,
-	   UserType VARCHAR(12), 
+CREATE TABLE [dbo].[TAIKHOAN] (
+    [Id]           VARCHAR (50) NOT NULL,
+    [UserType]     VARCHAR (50) NOT NULL,
 
-	   UserName VARCHAR(32) UNIQUE	 ,
-   UserPassword VARCHAR(32) NOT NULL,
- 
-   PRIMARY KEY(UserID, UserType)
-)
+    [UserName]     VARCHAR (32) NOT NULL,
+    [UserPassword] VARCHAR (32) NOT NULL,
+
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    UNIQUE NONCLUSTERED ([UserName] ASC)
+);
 GO
 
 -- Nhà tuyển dụng
-CREATE TABLE NHATUYENDUNG(
-			 Id INT IDENTITY(1,1) PRIMARY KEY,
-	   UserType VARCHAR(12) DEFAULT 'Employer', -- Mặc định
+CREATE TABLE [dbo].[NHATUYENDUNG] (
+    [Id]            VARCHAR (50)   NOT NULL,
+    [UserType]      VARCHAR (50)   NOT NULL,
 
-  --IconCompany IMAGE		  NULL,             -- Biểu tượng Công ty
-		  Fname NVARCHAR(62)  NOT NULL,         -- Tên NTD
-		 Email  NVARCHAR(62)  NOT NULL,			-- Email NTD
-	   PhoneNTD NVARCHAR(12)  NOT NULL,         -- Số ĐT của NTD
-	     JobPos NVARCHAR(62)  NOT NULL,         -- Vị trí công tác
-		Company	NVARCHAR(62)  NOT NULL,         -- Công Ty
-	JobLocation NVARCHAR(100) NOT NULL,         -- Địa điểm làm việc
-   ContactEmail NVARCHAR(100) NOT NULL,         -- Mạng xã hội
+    [Fname]         NVARCHAR (62)  NOT NULL,
+    [Email]         NVARCHAR (62)  NOT NULL,
+    [PhoneNTD]      NVARCHAR (12)  NOT NULL,
+    [JobPos]        NVARCHAR (62)  NOT NULL,
+    [Company]       NVARCHAR (62)  NOT NULL,
+    [JobLocation]   NVARCHAR (100) NOT NULL,
+    [SocialNetwork] NVARCHAR (100) NOT NULL,
 
-	FOREIGN KEY (Id,UserType) REFERENCES TAIKHOAN(UserID,UserType)
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    FOREIGN KEY ([Id]) REFERENCES [dbo].[TAIKHOAN] ([Id])
 );
 GO
 
 -- Ứng viên
-CREATE TABLE UNGVIEN(
-		     Id INT IDENTITY(1,1) PRIMARY KEY,
-	   UserType VARCHAR(12) DEFAULT 'Candidate',
+CREATE TABLE [dbo].[UNGVIEN] (
+    [Id]        VARCHAR (50)   NOT NULL,
+    [UserType]  VARCHAR (50)   NOT NULL,
 
-	   --Avatar IMAGE NULL,                     -- Ảnh của ungvien
-	      Fname NVARCHAR(62)  NOT NULL,
-	      Phone VARCHAR (12)  NOT NULL,
-	  BirthDate DATE ,
-	       Link VARCHAR (100) NOT NULL,	
-	      Email NVARCHAR(62)  NOT NULL, 
-	  Address_C NVARCHAR(100) NOT NULL,         -- dia diem hien tai
-	     Gender NVARCHAR(10),
+    [Fname]     NVARCHAR (100) NOT NULL,
+    [Phone]     VARCHAR (12)   NOT NULL,
+    [BirthDate] VARCHAR (50)   NOT NULL,
+    [Link]      VARCHAR (100)  NOT NULL,
+    [Email]     NVARCHAR (62)  NOT NULL,
+    [Address_C] NVARCHAR (100) NOT NULL,
+    [Gender]    NVARCHAR (10)  NOT NULL,
 
-	FOREIGN KEY (Id,UserType) REFERENCES TAIKHOAN(UserID,UserType)
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    FOREIGN KEY ([Id]) REFERENCES [dbo].[TAIKHOAN] ([Id])
 );
 GO
 
 --Tin tuyển dụng
-CREATE TABLE JobPostings (
-	JobID INT IDENTITY PRIMARY KEY,
-	EmpID INT,    -- Mã người đăng
+CREATE TABLE [dbo].[JobPostings] (
+	[Id]		     VARCHAR (50)   NOT NULL,
+	[UserType]       VARCHAR (50)	NOT NULL,
 
-	-- IconCompany, Company, ContactEmail, PhoneNTD lấy từ NHATUYENDUNG
+    [IconCompany]    IMAGE			NOT NULL,
+	[Company]        NVARCHAR (62)  NOT NULL,
+	[SocialNetwork]  NVARCHAR (100) NOT NULL,
+	[JobLocation]    NVARCHAR (100) NOT NULL,
+	[Job]			 NVARCHAR (30)	NOT NULL,
+	[PositionNeeded] NVARCHAR (62)  NOT NULL,
+	[Salary]		 DECIMAL(10, 2) NOT NULL,
+	[Experience]	 NVARCHAR (100) NOT NULL,
+	[WorkFormat]	 NVARCHAR (100) NOT NULL,
+	[Fname]			 NVARCHAR (100)	NOT NULL,
+	[Email]          NVARCHAR (62)	NOT NULL,
+	[PhoneNTD]       NVARCHAR (12)	NOT NULL,
+	[JobPos]         NVARCHAR (62)	NOT NULL,
+	[DatePosted]	 VARCHAR (50)	NOT NULL,
+	[Deadline]		 VARCHAR (50)	NOT NULL,
 
-	 JobLocation VARCHAR(100),   -- Nơi làm việc
-		  Career NVARCHAR(100),	 -- Nghề nghiệp
-	      Salary DECIMAL(10, 2), -- Sử dụng DECIMAL cho mức lương để đảm bảo chính xác.
-	  Experience NVARCHAR(100),  -- Kinh nghiệm
-	  WorkFormat NVARCHAR(100),  -- Hình thức làm việc
+	[JobDescription] TEXT			NOT NULL,
+	[Requirements]   TEXT			NOT NULL,
+	[Benefit]		 TEXT			NOT NULL,
 
-	JobDescription TEXT, --Mô tả công việc
-	  Requirements TEXT, --Yêu cầu
-		  Benefit  TEXT, --Quyền lợi
-
---Bổ sung
-	DatePosted DATE, -- Ngày đăng
-      Deadline DATE, -- Hạn chót
-    
-	CONSTRAINT WorkFormat CHECK (WorkFormat IN ('Office', 'flexible')), 
-    FOREIGN KEY (EmpID) REFERENCES NHATUYENDUNG(Id)
+	PRIMARY KEY CLUSTERED ([Id] ASC),
+    FOREIGN KEY ([Id]) REFERENCES [dbo].[NHATUYENDUNG] ([Id])
 );
 GO
 

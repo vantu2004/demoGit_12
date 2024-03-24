@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox3.Text" xml:space="preserve">
+  <data name="rtbx_kinhNghiem.Text" xml:space="preserve">
     <value>Công ty ABC
 
 08/2020 - 08/2022
@@ -142,7 +142,7 @@ Phân tích nhu cầu, lập kế hoạch, ngân sách 100 triệu mỗi quý, c
 Thực hiện đào tạo hội nhập cho khoảng 50 CBNV mới mỗi tháng.
 </value>
   </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
+  <data name="rtbx_hocVan.Text" xml:space="preserve">
     <value>Chứng chỉ nghiệp vụ sư phạm - Đại học Sư phạm 2022
 
 Phát triển Kỹ năng thuyết trình chuyên nghiệp - SMEI Vietnam 2021
@@ -154,7 +154,7 @@ DANH HIỆU VÀ GIẢI THƯỞNG
   + Giải nhất Cuộc thi Văn Nghệ X
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="rtbx_mucTIeuNgheNghiep.Text" xml:space="preserve">
     <value>02 năm kinh nghiệm đào tạo kỹ năng bán hàng và kỹ năng mềm tại trường đại học và doanh nghiệp. Kinh nghiệm đứng lớp 50 - 500 học viên. Có thế mạnh về thiết kế chương trình, đào tạo trực tuyến và xây dựng chuẩn đầu ra. Đang tìm kiếm cơ hội làm việc tại vị trí [X] để đóng góp gia tăng chất lượng chương trình đào tạo cho công ty [Y].
 </value>
   </data>

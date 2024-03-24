@@ -14,7 +14,6 @@ namespace Project_Windows_04
 {
     public partial class DangKy_DangNhap : Form
     {
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         dbConnection db = new dbConnection();
         public DangKy_DangNhap()
         {

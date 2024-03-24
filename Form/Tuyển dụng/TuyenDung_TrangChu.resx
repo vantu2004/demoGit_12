@@ -126,7 +126,7 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>737, 17</value>
   </metadata>
-  <data name="richTextBox3.Text" xml:space="preserve">
+  <data name="rtbx_quyenLoi.Text" xml:space="preserve">
     <value>- Lương thưởng, Nghỉ lễ, Nghỉ tết, Thưởng lễ, Thưởng tết
 
 - Lương cứng từ 8tr - 15tr + (Hoa hồng + phụ cấp)
@@ -136,7 +136,7 @@
 - Môi trường làm việc thân thiện, thoải mái, Đầy đủ các chế độ đãi ngộ. CÓ CƠ HỘI THĂNG TIẾN CỰC KÝ TỐT CHO CÁC BẠN XUẤT SẮC
 - Các thông tin cụ thể sẽ trao đổi trực tiếp trong phỏng vấn.</value>
   </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
+  <data name="rtbx_yeuCauUngVien.Text" xml:space="preserve">
     <value>- Là Nữ thành thạo vi tính, Tiếng Anh khá
 - Sử dụng: Thành thạo PHOTOSHOP, ILLUSTRATOR,....
 - Tốt nghiệp ở các trường Đại Học, Cao đẳng hoặc Trung tâm đào tạo Chuyên ngành thiết kế đồ họa, ưu tiên các bạn biết vẽ AI như Midjourney
@@ -149,7 +149,7 @@
 - Ưu Tiên các ứng viên Mong Muốn có Một Công Việc Ổn Định lâu dài
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="rtbx_moTaCongViec.Text" xml:space="preserve">
     <value>Mô tả công việc
 - Thiết kế các mẫu in trên các sản phẩm thời trang: áo, mũ, chăn, giày, tranh canvas, poster, sách tô màu cho baby...
 

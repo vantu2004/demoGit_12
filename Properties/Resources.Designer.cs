@@ -283,6 +283,16 @@ namespace Project_Windows_04.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_speed_test_timer_5acae4113a3aa0_6184639815232460972385 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-speed-test-timer-5acae4113a3aa0.6184639815232460972385", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_computer_icons_stock_photography_email_clip_art_simblo_5b4faed30f1343_1676878115319487550618 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-computer-icons-stock-photography-email-clip-art-simblo-5b4faed30f1343.167" +
@@ -374,6 +384,28 @@ namespace Project_Windows_04.Properties {
             get {
                 object obj = ResourceManager.GetObject("kisspng-star-silhouette-shape-clip-art-rating-star-5b51bfe0b58f29.848001831532084" +
                         "1927437", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_stopwatch_clock_clip_art_stopwatch_cliparts_5a7600c24b7758_0680084115176828823091 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-stopwatch-clock-clip-art-stopwatch-cliparts-5a7600c24b7758.06800841151768" +
+                        "28823091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_stopwatch_timer_clip_art_stopwatch_cliparts_5a76b357e59d45_0215386115177285999405 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-stopwatch-timer-clip-art-stopwatch-cliparts-5a76b357e59d45.02153861151772" +
+                        "85999405", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

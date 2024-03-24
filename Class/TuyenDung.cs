@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Windows_04
 {
-    internal class TuyenDung
+    public class TuyenDung
     {
         private string id;
         private string userType;
