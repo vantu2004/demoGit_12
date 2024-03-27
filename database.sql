@@ -7,10 +7,8 @@ GO
 CREATE TABLE [dbo].[TAIKHOAN] (
     [Id]           VARCHAR (50) NOT NULL,
     [UserType]     VARCHAR (50) NOT NULL,
-
     [UserName]     VARCHAR (32) NOT NULL,
     [UserPassword] VARCHAR (32) NOT NULL,
-
     PRIMARY KEY CLUSTERED ([Id] ASC),
     UNIQUE NONCLUSTERED ([UserName] ASC)
 );
@@ -20,33 +18,13 @@ GO
 CREATE TABLE [dbo].[NHATUYENDUNG] (
     [Id]            VARCHAR (50)   NOT NULL,
     [UserType]      VARCHAR (50)   NOT NULL,
-
     [Fname]         NVARCHAR (62)  NOT NULL,
     [Email]         NVARCHAR (62)  NOT NULL,
     [PhoneNTD]      NVARCHAR (12)  NOT NULL,
     [JobPos]        NVARCHAR (62)  NOT NULL,
     [Company]       NVARCHAR (62)  NOT NULL,
-    [JobLocation]   NVARCHAR (100) NOT NULL,
+    [JobLocation]   VARCHAR (100)  NOT NULL,
     [SocialNetwork] NVARCHAR (100) NOT NULL,
-
-    PRIMARY KEY CLUSTERED ([Id] ASC),
-    FOREIGN KEY ([Id]) REFERENCES [dbo].[TAIKHOAN] ([Id])
-);
-GO
-
--- Ứng viên
-CREATE TABLE [dbo].[UNGVIEN] (
-    [Id]        VARCHAR (50)   NOT NULL,
-    [UserType]  VARCHAR (50)   NOT NULL,
-
-    [Fname]     NVARCHAR (100) NOT NULL,
-    [Phone]     VARCHAR (12)   NOT NULL,
-    [BirthDate] VARCHAR (50)   NOT NULL,
-    [Link]      VARCHAR (100)  NOT NULL,
-    [Email]     NVARCHAR (62)  NOT NULL,
-    [Address_C] NVARCHAR (100) NOT NULL,
-    [Gender]    NVARCHAR (10)  NOT NULL,
-
     PRIMARY KEY CLUSTERED ([Id] ASC),
     FOREIGN KEY ([Id]) REFERENCES [dbo].[TAIKHOAN] ([Id])
 );
@@ -54,31 +32,51 @@ GO
 
 --Tin tuyển dụng
 CREATE TABLE [dbo].[JobPostings] (
-	[Id]		     VARCHAR (50)   NOT NULL,
-	[UserType]       VARCHAR (50)	NOT NULL,
+    [IdCompany]      VARCHAR (50)    NOT NULL,
+    [IdJobPostings]  VARCHAR (50)    NOT NULL,
+    [IconCompany]    IMAGE           NULL,
+    [Job]            NVARCHAR (30)   DEFAULT ('null') NOT NULL,
+    [PositionNeeded] NVARCHAR (62)   DEFAULT ('null') NOT NULL,
+    [Salary]         DECIMAL (10, 2) DEFAULT ((0.0)) NOT NULL,
+    [Experience]     NVARCHAR (100)  DEFAULT ('null') NOT NULL,
+    [WorkFormat]     NVARCHAR (100)  DEFAULT ('null') NOT NULL,
+    [DatePosted]     VARCHAR (50)    DEFAULT ('null') NOT NULL,
+    [Deadline]       VARCHAR (50)    DEFAULT ('null') NOT NULL,
+    [JobDescription] TEXT            DEFAULT ('null') NOT NULL,
+    [Requirements]   TEXT            DEFAULT ('null') NOT NULL,
+    [Benefit]        TEXT            DEFAULT ('null') NOT NULL,
+    PRIMARY KEY CLUSTERED ([IdCompany] ASC, [IdJobPostings] ASC),
+    FOREIGN KEY ([IdCompany]) REFERENCES [dbo].[NHATUYENDUNG] ([Id])
+);
+GO
 
-    [IconCompany]    IMAGE			NOT NULL,
-	[Company]        NVARCHAR (62)  NOT NULL,
-	[SocialNetwork]  NVARCHAR (100) NOT NULL,
-	[JobLocation]    NVARCHAR (100) NOT NULL,
-	[Job]			 NVARCHAR (30)	NOT NULL,
-	[PositionNeeded] NVARCHAR (62)  NOT NULL,
-	[Salary]		 DECIMAL(10, 2) NOT NULL,
-	[Experience]	 NVARCHAR (100) NOT NULL,
-	[WorkFormat]	 NVARCHAR (100) NOT NULL,
-	[Fname]			 NVARCHAR (100)	NOT NULL,
-	[Email]          NVARCHAR (62)	NOT NULL,
-	[PhoneNTD]       NVARCHAR (12)	NOT NULL,
-	[JobPos]         NVARCHAR (62)	NOT NULL,
-	[DatePosted]	 VARCHAR (50)	NOT NULL,
-	[Deadline]		 VARCHAR (50)	NOT NULL,
+-- Ứng viên
+CREATE TABLE [dbo].[UNGVIEN] (
+    [Id]        VARCHAR (50)   NOT NULL,
+    [UserType]  VARCHAR (50)   NOT NULL,
+    [Fname]     NVARCHAR (100) NOT NULL,
+    [Phone]     VARCHAR (12)   NOT NULL,
+    [BirthDate] VARCHAR (50)   NOT NULL,
+    [Link]      VARCHAR (100)  NOT NULL,
+    [Email]     NVARCHAR (62)  NOT NULL,
+    [Address_C] NVARCHAR (100) NOT NULL,
+    [Gender]    NVARCHAR (10)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    FOREIGN KEY ([Id]) REFERENCES [dbo].[TAIKHOAN] ([Id])
+);
+GO
 
-	[JobDescription] TEXT			NOT NULL,
-	[Requirements]   TEXT			NOT NULL,
-	[Benefit]		 TEXT			NOT NULL,
-
-	PRIMARY KEY CLUSTERED ([Id] ASC),
-    FOREIGN KEY ([Id]) REFERENCES [dbo].[NHATUYENDUNG] ([Id])
+--Bảng các CV
+CREATE TABLE [dbo].[CVs] (
+    [Id]         VARCHAR (50)  NOT NULL,
+    [Avatar]     IMAGE         NULL,
+    [JobPos]     NVARCHAR (62) NOT NULL,
+    [CareerGoal] TEXT          NOT NULL,
+    [Education]  TEXT          NOT NULL,
+    [Experience] TEXT          NOT NULL,
+    [UploadDate] VARCHAR(50)   NOT NULL,
+    CONSTRAINT [PK_CVs] PRIMARY KEY CLUSTERED ([Id], [UploadDate] ASC),
+    FOREIGN KEY ([Id]) REFERENCES [dbo].[UNGVIEN] ([Id])
 );
 GO
 
@@ -96,21 +94,4 @@ CREATE TABLE Applications (
 );
 GO
 
---Bảng các CV
-CREATE TABLE CVs (
-    CandidateID INT PRIMARY KEY,
 
-	--Avatar, Fname, BirthDate, Gender, Phone, Link, Email, Address_C, Gender 
-	-- lấy từ UNGVIEN INNER JOIN CVs
-
-	JobPos NVARCHAR(62) NOT NULL, -- Vị trí ứng tuyển
-	
-	CareerGoal	TEXT, -- Mục tiêu nghề nghiệp
-	Education   TEXT, -- Học vấn
-	Experience	TEXT, -- Kinh nghiệm
-
-    UploadDate  DATE, --Ngày cập nhật
-
-    FOREIGN KEY (CandidateID) REFERENCES UNGVIEN(Id)
-);
-GO

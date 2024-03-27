@@ -78,7 +78,7 @@
             this.tabPage1.Location = new System.Drawing.Point(184, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1144, 695);
+            this.tabPage1.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tạo CV";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1138, 689);
+            this.panel2.Size = new System.Drawing.Size(1138, 1041);
             this.panel2.TabIndex = 11;
             // 
             // panel1
@@ -112,7 +112,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(377, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(759, 687);
+            this.panel1.Size = new System.Drawing.Size(759, 1039);
             this.panel1.TabIndex = 28;
             // 
             // panel7
@@ -218,7 +218,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(377, 687);
+            this.panel4.Size = new System.Drawing.Size(377, 1039);
             this.panel4.TabIndex = 27;
             // 
             // cbx_diaChiUV
@@ -319,12 +319,13 @@
             this.btn_hoanTat.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_hoanTat.ForeColor = System.Drawing.Color.White;
             this.btn_hoanTat.IndicateFocus = true;
-            this.btn_hoanTat.Location = new System.Drawing.Point(42, 637);
+            this.btn_hoanTat.Location = new System.Drawing.Point(42, 989);
             this.btn_hoanTat.Name = "btn_hoanTat";
             this.btn_hoanTat.Size = new System.Drawing.Size(306, 42);
             this.btn_hoanTat.TabIndex = 60;
             this.btn_hoanTat.Text = "Hoàn tất";
             this.btn_hoanTat.UseTransparentBackground = true;
+            this.btn_hoanTat.Click += new System.EventHandler(this.btn_hoanTat_Click);
             // 
             // cbx_viTriUngTuyen
             // 
@@ -593,7 +594,7 @@
             this.tabPage3.Location = new System.Drawing.Point(184, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1144, 695);
+            this.tabPage3.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Bảng tin";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -604,7 +605,7 @@
             this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
             this.uC_BangTin1.Name = "uC_BangTin1";
-            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 689);
+            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
             this.uC_BangTin1.TabIndex = 0;
             // 
             // guna2TabControl1
@@ -618,7 +619,7 @@
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1332, 703);
+            this.guna2TabControl1.Size = new System.Drawing.Size(1332, 1055);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -643,7 +644,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.ClientSize = new System.Drawing.Size(1332, 1055);
             this.Controls.Add(this.guna2TabControl1);
             this.Name = "UngVien_TrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

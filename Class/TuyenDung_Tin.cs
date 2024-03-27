@@ -9,9 +9,10 @@ namespace Project_Windows_04
 {
     internal class TuyenDung_Tin
     {
-        private string id;
+        private string idCompany;
+        private string idJobPostings;
         private string userType;
-        private Image logoCongTy;
+        private byte[] logoCongTy;
         private string tenCongTy;
         private string mangXaHoi;
         private string diaChi;
@@ -31,10 +32,11 @@ namespace Project_Windows_04
         private string loiIch;
 
         public TuyenDung_Tin() { }
-        public TuyenDung_Tin( string id, string userType, Image logoCongTy, string tenCongTy, string mangXaHoi, string diaChi, string nganhNghe, string viTriCanTuyen, double luong, string kinhNghiem, 
+        public TuyenDung_Tin(string idCompany, string idJobPosting, string userType, byte[] logoCongTy, string tenCongTy, string mangXaHoi, string diaChi, string nganhNghe, string viTriCanTuyen, double luong, string kinhNghiem, 
             string hinhThucLamViec, string tenHR, string emailHR, string sdtHR, string viTriCongTacHR, string ngayDang, string hanChot, string moTaCongViec, string yeuCau, string loiIch)
         {
-            Id = id;
+            IdCompany = idCompany;
+            IdJobPostings = idJobPosting;
             UserType = userType;
             LogoCongTy = logoCongTy;
             TenCongTy = tenCongTy;
@@ -56,9 +58,7 @@ namespace Project_Windows_04
             LoiIch = loiIch;
         }
 
-        public string Id { get => id; set => id = value; }
         public string UserType { get => userType; set => userType = value; }
-        public Image LogoCongTy { get => logoCongTy; set => logoCongTy = value; }
         public string TenCongTy { get => tenCongTy; set => tenCongTy = value; }
         public string MangXaHoi { get => mangXaHoi; set => mangXaHoi = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
@@ -76,5 +76,8 @@ namespace Project_Windows_04
         public string MoTaCongViec { get => moTaCongViec; set => moTaCongViec = value; }
         public string YeuCau { get => yeuCau; set => yeuCau = value; }
         public string LoiIch { get => loiIch; set => loiIch = value; }
+        public string IdCompany { get => idCompany; set => idCompany = value; }
+        public string IdJobPostings { get => idJobPostings; set => idJobPostings = value; }
+        public byte[] LogoCongTy { get => logoCongTy; set => logoCongTy = value; }
     }
 }

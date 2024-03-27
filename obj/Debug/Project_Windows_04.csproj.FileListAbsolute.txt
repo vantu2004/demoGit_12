@@ -130,3 +130,4 @@ D:\WorkSpace\C#\WinForm\Windows_UTE\Project_Windows_04\bin\Debug\pt-BR\Microsoft
 D:\WorkSpace\C#\WinForm\Windows_UTE\Project_Windows_04\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 D:\WorkSpace\C#\WinForm\Windows_UTE\Project_Windows_04\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 D:\WorkSpace\C#\WinForm\Windows_UTE\Project_Windows_04\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\WorkSpace\C#\WinForm\Windows_UTE\Project_Windows_04\obj\Debug\Project_Windows_04.temp01.resources

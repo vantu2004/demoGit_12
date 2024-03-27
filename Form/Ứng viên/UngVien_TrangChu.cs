@@ -14,6 +14,9 @@ namespace Project_Windows_04
 {
     public partial class UngVien_TrangChu : Form
     {
+        UngVien_DAO UV_DAO = new UngVien_DAO();
+        public string Id;
+
         public UngVien_TrangChu()
         {
             InitializeComponent();
@@ -51,9 +54,6 @@ namespace Project_Windows_04
                 // Thiết lập hình ảnh cho PictureBox và điều chỉnh SizeMode
                 pbx_avatar.Image = image;
                 pbx_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
-
-                // Chuyển image sang byte để lưu vào csdl
-                chuyenAnhSangByte(image);
             }
         }
 
@@ -67,6 +67,33 @@ namespace Project_Windows_04
 
                 // Trả về mảng byte của dữ liệu hình ảnh
                 return memoryStream.ToArray();
+            }
+        }
+
+        public void btn_hoanTat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Chuyển image sang byte để lưu vào csdl
+                byte[] anh_byte = chuyenAnhSangByte(pbx_avatar.Image);
+
+                string gioiTinh;
+                if (rbn_nam.Checked)
+                    gioiTinh = "Nam";
+                else
+                    gioiTinh = "Nữ";
+
+                DateTime dt = DateTime.Now;
+
+                UngVien_Tin u = new UngVien_Tin(Id, anh_byte, tbx_tenUV.Text, dtpr_ngaySinhUV.Value.ToShortDateString(), gioiTinh, 
+                    cbx_diaChiUV.Text, tbx_mangXaHoi.Text, tbx_sdtUV.Text, tbx_emaiUV.Text, cbx_viTriUngTuyen.Text, 
+                    dt.ToString(), rtbx_mucTIeuNgheNghiep.Text, rtbx_hocVan.Text, rtbx_kinhNghiem.Text);
+
+                UV_DAO.taoTin(u);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

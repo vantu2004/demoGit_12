@@ -172,7 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\dbConnection.cs" />
-    <Compile Include="Class\DangKy_DangNhap_DAO.cs" />
     <Compile Include="Form\Chi tiết\ChiTietCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +232,12 @@
     </Compile>
     <Compile Include="Class\TuyenDung_DAO.cs" />
     <Compile Include="Class\TuyenDung_Tin.cs" />
+    <Compile Include="temp01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temp01.Designer.cs">
+      <DependentUpon>temp01.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Controls\UC_BangTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -259,6 +264,7 @@
       <DependentUpon>UngVien_DangKy.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\UngVien_DAO.cs" />
+    <Compile Include="Class\UngVien_Tin.cs" />
     <EmbeddedResource Include="Form\Chi tiết\ChiTietCV.resx">
       <DependentUpon>ChiTietCV.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Tuyển dụng\TuyenDung_DangKy.resx">
       <DependentUpon>TuyenDung_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp01.resx">
+      <DependentUpon>temp01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Controls\UC_BangTin.resx">
       <DependentUpon>UC_BangTin.cs</DependentUpon>
@@ -388,6 +397,7 @@
     <None Include="Resources\pngwing.com3.png" />
     <None Include="Resources\pngegg.png" />
     <None Include="Resources\pngegg %2822%29.png" />
+    <None Include="Resources\pngegg %2823%29.png" />
     <Content Include="Resources\Screenshot 2024-03-05 204513.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

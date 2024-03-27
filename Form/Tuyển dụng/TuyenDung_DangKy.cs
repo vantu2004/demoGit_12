@@ -17,7 +17,6 @@ namespace Project_Windows_04
 {
     public partial class TuyenDung_DangKy : Form
     {
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         TuyenDung_DAO NTD_DAO = new TuyenDung_DAO();
         public TuyenDung_DangKy()
         {

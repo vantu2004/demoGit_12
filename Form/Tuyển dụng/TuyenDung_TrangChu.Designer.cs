@@ -45,12 +45,14 @@
             this.rtbx_moTaCongViec = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tbx_luong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbx_diaChi_CongTy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpr_hanChot = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpr_ngayDang = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.cbx_viTriCanTuyen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tbx_viTriCongTacHR = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbx_viTriCongTac_HR = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_hoanTat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tbx_tenHR = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbx_emailHR = new Guna.UI2.WinForms.Guna2TextBox();
@@ -61,7 +63,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.cbx_kinhNghiem = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbx_luong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tbx_mangXaHoi = new Guna.UI2.WinForms.Guna2TextBox();
@@ -69,12 +70,12 @@
             this.tbx_tenCongTy = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbx_logoCongTy = new System.Windows.Forms.PictureBox();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.uC_BangTin1 = new Project_Windows_04.UC_BangTin();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pbx_logoCongTy = new System.Windows.Forms.PictureBox();
+            this.uC_BangTin1 = new Project_Windows_04.UC_BangTin();
             this.uC_TinDaDang1 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang2 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang3 = new Project_Windows_04.UC_TinDaDang();
@@ -84,17 +85,16 @@
             this.uC_TinDaDang7 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang8 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang9 = new Project_Windows_04.UC_TinDaDang();
-            this.cbx_diaChi_CongTy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse3
@@ -235,6 +235,8 @@
             // 
             this.panel4.AutoScroll = true;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.pbx_logoCongTy);
+            this.panel4.Controls.Add(this.tbx_luong);
             this.panel4.Controls.Add(this.cbx_diaChi_CongTy);
             this.panel4.Controls.Add(this.dtpr_hanChot);
             this.panel4.Controls.Add(this.dtpr_ngayDang);
@@ -247,7 +249,6 @@
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.cbx_kinhNghiem);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.cbx_luong);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.tbx_mangXaHoi);
@@ -255,12 +256,118 @@
             this.panel4.Controls.Add(this.tbx_tenCongTy);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.pbx_logoCongTy);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(411, 1041);
             this.panel4.TabIndex = 27;
+            // 
+            // tbx_luong
+            // 
+            this.tbx_luong.BorderRadius = 10;
+            this.tbx_luong.BorderThickness = 0;
+            this.tbx_luong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_luong.DefaultText = "";
+            this.tbx_luong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_luong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_luong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_luong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_luong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tbx_luong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbx_luong.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.tbx_luong.ForeColor = System.Drawing.Color.Black;
+            this.tbx_luong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbx_luong.Location = new System.Drawing.Point(48, 580);
+            this.tbx_luong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbx_luong.Name = "tbx_luong";
+            this.tbx_luong.PasswordChar = '\0';
+            this.tbx_luong.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_luong.PlaceholderText = "Lương";
+            this.tbx_luong.SelectedText = "";
+            this.tbx_luong.Size = new System.Drawing.Size(303, 36);
+            this.tbx_luong.TabIndex = 96;
+            // 
+            // cbx_diaChi_CongTy
+            // 
+            this.cbx_diaChi_CongTy.BackColor = System.Drawing.Color.Transparent;
+            this.cbx_diaChi_CongTy.BorderColor = System.Drawing.Color.Black;
+            this.cbx_diaChi_CongTy.BorderRadius = 10;
+            this.cbx_diaChi_CongTy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_diaChi_CongTy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_diaChi_CongTy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.cbx_diaChi_CongTy.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_diaChi_CongTy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_diaChi_CongTy.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbx_diaChi_CongTy.ForeColor = System.Drawing.Color.Black;
+            this.cbx_diaChi_CongTy.ItemHeight = 30;
+            this.cbx_diaChi_CongTy.Items.AddRange(new object[] {
+            "An Giang\t",
+            "Kon Tum",
+            "Bà Rịa – Vũng Tàu\t",
+            "Lai Châu",
+            "Bắc Giang\t",
+            "Lâm Đồng",
+            "Bắc Kạn\t",
+            "Lạng Sơn",
+            "Bạc Liêu\t",
+            "Lào Cai",
+            "Bắc Ninh\t",
+            "Long An",
+            "Bến Tre\t",
+            "Nam Định",
+            "Bình Định\t",
+            "Nghệ An",
+            "Bình Dương\t",
+            "Ninh Bình",
+            "Bình Phước\t",
+            "Ninh Thuận",
+            "Bình Thuận\t",
+            "Phú Thọ",
+            "Cà Mau\t",
+            "Phú Yên",
+            "Cần Thơ\t",
+            "Quảng Bình",
+            "Cao Bằng\t",
+            "Quảng Nam",
+            "Đà Nẵng\t",
+            "Quảng Ngãi",
+            "Đắk Lắk\t",
+            "Quảng Ninh",
+            "Đắk Nông\t",
+            "Quảng Trị",
+            "Điện Biên\t",
+            "Sóc Trăng",
+            "Đồng Nai\t",
+            "Sơn La",
+            "Đồng Tháp\t",
+            "Tây Ninh",
+            "Gia Lai\t",
+            "Thái Bình",
+            "Hà Giang\t",
+            "Thái Nguyên",
+            "Hà Nam\t",
+            "Thanh Hóa",
+            "Hà Nội\t",
+            "Thừa Thiên Huế",
+            "Hà Tĩnh\t",
+            "Tiền Giang",
+            "Hải Dương\t",
+            "TP Hồ Chí Minh",
+            "Hải Phòng\t",
+            "Trà Vinh",
+            "Hậu Giang\t",
+            "Tuyên Quang",
+            "Hòa Bình\t",
+            "Vĩnh Long",
+            "Hưng Yên\t",
+            "Vĩnh Phúc",
+            "Khánh Hòa\t",
+            "Yên Bái",
+            "Kiên Giang"});
+            this.cbx_diaChi_CongTy.Location = new System.Drawing.Point(51, 296);
+            this.cbx_diaChi_CongTy.Name = "cbx_diaChi_CongTy";
+            this.cbx_diaChi_CongTy.Size = new System.Drawing.Size(303, 36);
+            this.cbx_diaChi_CongTy.TabIndex = 95;
             // 
             // dtpr_hanChot
             // 
@@ -273,7 +380,7 @@
             this.dtpr_hanChot.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.dtpr_hanChot.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpr_hanChot.IndicateFocus = true;
-            this.dtpr_hanChot.Location = new System.Drawing.Point(46, 894);
+            this.dtpr_hanChot.Location = new System.Drawing.Point(48, 894);
             this.dtpr_hanChot.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpr_hanChot.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpr_hanChot.Name = "dtpr_hanChot";
@@ -293,7 +400,7 @@
             this.dtpr_ngayDang.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.dtpr_ngayDang.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpr_ngayDang.IndicateFocus = true;
-            this.dtpr_ngayDang.Location = new System.Drawing.Point(46, 852);
+            this.dtpr_ngayDang.Location = new System.Drawing.Point(48, 852);
             this.dtpr_ngayDang.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpr_ngayDang.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpr_ngayDang.Name = "dtpr_ngayDang";
@@ -307,7 +414,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(14, 819);
+            this.label7.Location = new System.Drawing.Point(16, 819);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 28);
             this.label7.TabIndex = 91;
@@ -334,47 +441,48 @@
             "Phó giám đốc",
             "Giám đốc",
             "Tổng giám đốc"});
-            this.cbx_viTriCanTuyen.Location = new System.Drawing.Point(50, 485);
+            this.cbx_viTriCanTuyen.Location = new System.Drawing.Point(52, 485);
             this.cbx_viTriCanTuyen.Name = "cbx_viTriCanTuyen";
-            this.cbx_viTriCanTuyen.Size = new System.Drawing.Size(306, 36);
+            this.cbx_viTriCanTuyen.Size = new System.Drawing.Size(302, 36);
             this.cbx_viTriCanTuyen.TabIndex = 90;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.tbx_viTriCongTacHR);
+            this.panel3.Controls.Add(this.cbx_viTriCongTac_HR);
             this.panel3.Controls.Add(this.btn_hoanTat);
             this.panel3.Controls.Add(this.tbx_tenHR);
             this.panel3.Controls.Add(this.tbx_emailHR);
             this.panel3.Controls.Add(this.tbx_sdtHR);
-            this.panel3.Location = new System.Drawing.Point(18, 982);
+            this.panel3.Location = new System.Drawing.Point(20, 982);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(353, 287);
             this.panel3.TabIndex = 89;
             // 
-            // tbx_viTriCongTacHR
+            // cbx_viTriCongTac_HR
             // 
-            this.tbx_viTriCongTacHR.BorderRadius = 10;
-            this.tbx_viTriCongTacHR.BorderThickness = 0;
-            this.tbx_viTriCongTacHR.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_viTriCongTacHR.DefaultText = "";
-            this.tbx_viTriCongTacHR.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbx_viTriCongTacHR.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbx_viTriCongTacHR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_viTriCongTacHR.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbx_viTriCongTacHR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tbx_viTriCongTacHR.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbx_viTriCongTacHR.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.tbx_viTriCongTacHR.ForeColor = System.Drawing.Color.Black;
-            this.tbx_viTriCongTacHR.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbx_viTriCongTacHR.Location = new System.Drawing.Point(32, 136);
-            this.tbx_viTriCongTacHR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbx_viTriCongTacHR.Name = "tbx_viTriCongTacHR";
-            this.tbx_viTriCongTacHR.PasswordChar = '\0';
-            this.tbx_viTriCongTacHR.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_viTriCongTacHR.PlaceholderText = "Vị trí công tác";
-            this.tbx_viTriCongTacHR.SelectedText = "";
-            this.tbx_viTriCongTacHR.Size = new System.Drawing.Size(303, 36);
-            this.tbx_viTriCongTacHR.TabIndex = 95;
+            this.cbx_viTriCongTac_HR.BackColor = System.Drawing.Color.Transparent;
+            this.cbx_viTriCongTac_HR.BorderColor = System.Drawing.Color.Black;
+            this.cbx_viTriCongTac_HR.BorderRadius = 10;
+            this.cbx_viTriCongTac_HR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_viTriCongTac_HR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_viTriCongTac_HR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.cbx_viTriCongTac_HR.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_viTriCongTac_HR.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_viTriCongTac_HR.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.cbx_viTriCongTac_HR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbx_viTriCongTac_HR.ItemHeight = 30;
+            this.cbx_viTriCongTac_HR.Items.AddRange(new object[] {
+            "Nhân viên",
+            "Trưởng nhóm",
+            "Phó phòng",
+            "Trưởng phòng",
+            "Phó giám đốc",
+            "Giám đốc",
+            "Tổng giám đốc"});
+            this.cbx_viTriCongTac_HR.Location = new System.Drawing.Point(28, 135);
+            this.cbx_viTriCongTac_HR.Name = "cbx_viTriCongTac_HR";
+            this.cbx_viTriCongTac_HR.Size = new System.Drawing.Size(306, 36);
+            this.cbx_viTriCongTac_HR.TabIndex = 95;
             // 
             // btn_hoanTat
             // 
@@ -398,6 +506,7 @@
             this.btn_hoanTat.TabIndex = 84;
             this.btn_hoanTat.Text = "Hoàn tất";
             this.btn_hoanTat.UseTransparentBackground = true;
+            this.btn_hoanTat.Click += new System.EventHandler(this.btn_hoanTat_Click);
             // 
             // tbx_tenHR
             // 
@@ -479,7 +588,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(13, 454);
+            this.label3.Location = new System.Drawing.Point(15, 454);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 28);
             this.label3.TabIndex = 88;
@@ -501,7 +610,7 @@
             this.cbx_hinhThucLamViec.Items.AddRange(new object[] {
             "Trực tiếp",
             "Từ xa"});
-            this.cbx_hinhThucLamViec.Location = new System.Drawing.Point(49, 763);
+            this.cbx_hinhThucLamViec.Location = new System.Drawing.Point(51, 763);
             this.cbx_hinhThucLamViec.Name = "cbx_hinhThucLamViec";
             this.cbx_hinhThucLamViec.Size = new System.Drawing.Size(303, 36);
             this.cbx_hinhThucLamViec.TabIndex = 81;
@@ -511,7 +620,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label13.Location = new System.Drawing.Point(14, 732);
+            this.label13.Location = new System.Drawing.Point(16, 732);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(191, 28);
             this.label13.TabIndex = 83;
@@ -522,7 +631,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label11.Location = new System.Drawing.Point(14, 639);
+            this.label11.Location = new System.Drawing.Point(16, 639);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 28);
             this.label11.TabIndex = 82;
@@ -546,7 +655,7 @@
             "1 năm - 2 năm",
             "2 năm - 3 năm",
             "> 3 năm"});
-            this.cbx_kinhNghiem.Location = new System.Drawing.Point(50, 673);
+            this.cbx_kinhNghiem.Location = new System.Drawing.Point(52, 673);
             this.cbx_kinhNghiem.Name = "cbx_kinhNghiem";
             this.cbx_kinhNghiem.Size = new System.Drawing.Size(303, 36);
             this.cbx_kinhNghiem.TabIndex = 79;
@@ -556,41 +665,18 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(14, 546);
+            this.label5.Location = new System.Drawing.Point(16, 546);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 28);
             this.label5.TabIndex = 78;
             this.label5.Text = "Lương";
-            // 
-            // cbx_luong
-            // 
-            this.cbx_luong.BackColor = System.Drawing.Color.Transparent;
-            this.cbx_luong.BorderColor = System.Drawing.Color.Black;
-            this.cbx_luong.BorderRadius = 10;
-            this.cbx_luong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbx_luong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_luong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.cbx_luong.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_luong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_luong.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbx_luong.ForeColor = System.Drawing.Color.Black;
-            this.cbx_luong.ItemHeight = 30;
-            this.cbx_luong.Items.AddRange(new object[] {
-            "< 10 triệu",
-            "10 triệu - 20 triệu",
-            "20 triệu - 30 triệu",
-            "> 30 triệu"});
-            this.cbx_luong.Location = new System.Drawing.Point(50, 581);
-            this.cbx_luong.Name = "cbx_luong";
-            this.cbx_luong.Size = new System.Drawing.Size(303, 36);
-            this.cbx_luong.TabIndex = 81;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(13, 360);
+            this.label9.Location = new System.Drawing.Point(15, 360);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 28);
             this.label9.TabIndex = 56;
@@ -599,7 +685,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel5.Location = new System.Drawing.Point(73, 343);
+            this.panel5.Location = new System.Drawing.Point(75, 343);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(250, 2);
             this.panel5.TabIndex = 55;
@@ -619,7 +705,7 @@
             this.tbx_mangXaHoi.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.tbx_mangXaHoi.ForeColor = System.Drawing.Color.Black;
             this.tbx_mangXaHoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbx_mangXaHoi.Location = new System.Drawing.Point(50, 257);
+            this.tbx_mangXaHoi.Location = new System.Drawing.Point(52, 257);
             this.tbx_mangXaHoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_mangXaHoi.Name = "tbx_mangXaHoi";
             this.tbx_mangXaHoi.PasswordChar = '\0';
@@ -650,7 +736,7 @@
             "Xây dựng",
             "Công nghệ thực phẩm",
             "Kiến trúc sư"});
-            this.cbx_nganhNghe.Location = new System.Drawing.Point(49, 394);
+            this.cbx_nganhNghe.Location = new System.Drawing.Point(51, 394);
             this.cbx_nganhNghe.Name = "cbx_nganhNghe";
             this.cbx_nganhNghe.Size = new System.Drawing.Size(303, 36);
             this.cbx_nganhNghe.TabIndex = 77;
@@ -670,7 +756,7 @@
             this.tbx_tenCongTy.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.tbx_tenCongTy.ForeColor = System.Drawing.Color.Black;
             this.tbx_tenCongTy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbx_tenCongTy.Location = new System.Drawing.Point(50, 213);
+            this.tbx_tenCongTy.Location = new System.Drawing.Point(52, 213);
             this.tbx_tenCongTy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_tenCongTy.Name = "tbx_tenCongTy";
             this.tbx_tenCongTy.PasswordChar = '\0';
@@ -685,7 +771,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(13, 181);
+            this.label2.Location = new System.Drawing.Point(15, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 28);
             this.label2.TabIndex = 36;
@@ -696,24 +782,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(13, 951);
+            this.label1.Location = new System.Drawing.Point(15, 951);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 28);
             this.label1.TabIndex = 35;
             this.label1.Text = "Liên hệ";
-            // 
-            // pbx_logoCongTy
-            // 
-            this.pbx_logoCongTy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbx_logoCongTy.Image = global::Project_Windows_04.Properties.Resources.isometric_landing_page_design_background_template;
-            this.pbx_logoCongTy.InitialImage = null;
-            this.pbx_logoCongTy.Location = new System.Drawing.Point(18, 24);
-            this.pbx_logoCongTy.Name = "pbx_logoCongTy";
-            this.pbx_logoCongTy.Size = new System.Drawing.Size(352, 140);
-            this.pbx_logoCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx_logoCongTy.TabIndex = 24;
-            this.pbx_logoCongTy.TabStop = false;
-            this.pbx_logoCongTy.Click += new System.EventHandler(this.pbx_logoCongTy_Click);
             // 
             // guna2TabControl1
             // 
@@ -759,15 +832,6 @@
             this.tabPage3.Text = "Bảng tin";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // uC_BangTin1
-            // 
-            this.uC_BangTin1.BackColor = System.Drawing.Color.White;
-            this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
-            this.uC_BangTin1.Name = "uC_BangTin1";
-            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
-            this.uC_BangTin1.TabIndex = 0;
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
@@ -796,6 +860,26 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1141, 1041);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // pbx_logoCongTy
+            // 
+            this.pbx_logoCongTy.Image = global::Project_Windows_04.Properties.Resources.isometric_landing_page_design_background_template;
+            this.pbx_logoCongTy.Location = new System.Drawing.Point(20, 24);
+            this.pbx_logoCongTy.Name = "pbx_logoCongTy";
+            this.pbx_logoCongTy.Size = new System.Drawing.Size(352, 140);
+            this.pbx_logoCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_logoCongTy.TabIndex = 70;
+            this.pbx_logoCongTy.TabStop = false;
+            this.pbx_logoCongTy.Click += new System.EventHandler(this.pbx_logoCongTy_Click_1);
+            // 
+            // uC_BangTin1
+            // 
+            this.uC_BangTin1.BackColor = System.Drawing.Color.White;
+            this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
+            this.uC_BangTin1.Name = "uC_BangTin1";
+            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
+            this.uC_BangTin1.TabIndex = 0;
             // 
             // uC_TinDaDang1
             // 
@@ -878,88 +962,6 @@
             this.uC_TinDaDang9.Size = new System.Drawing.Size(1130, 53);
             this.uC_TinDaDang9.TabIndex = 8;
             // 
-            // cbx_diaChi_CongTy
-            // 
-            this.cbx_diaChi_CongTy.BackColor = System.Drawing.Color.Transparent;
-            this.cbx_diaChi_CongTy.BorderColor = System.Drawing.Color.Black;
-            this.cbx_diaChi_CongTy.BorderRadius = 10;
-            this.cbx_diaChi_CongTy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbx_diaChi_CongTy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_diaChi_CongTy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.cbx_diaChi_CongTy.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_diaChi_CongTy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_diaChi_CongTy.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbx_diaChi_CongTy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbx_diaChi_CongTy.ItemHeight = 30;
-            this.cbx_diaChi_CongTy.Items.AddRange(new object[] {
-            "An Giang\t",
-            "Kon Tum",
-            "Bà Rịa – Vũng Tàu\t",
-            "Lai Châu",
-            "Bắc Giang\t",
-            "Lâm Đồng",
-            "Bắc Kạn\t",
-            "Lạng Sơn",
-            "Bạc Liêu\t",
-            "Lào Cai",
-            "Bắc Ninh\t",
-            "Long An",
-            "Bến Tre\t",
-            "Nam Định",
-            "Bình Định\t",
-            "Nghệ An",
-            "Bình Dương\t",
-            "Ninh Bình",
-            "Bình Phước\t",
-            "Ninh Thuận",
-            "Bình Thuận\t",
-            "Phú Thọ",
-            "Cà Mau\t",
-            "Phú Yên",
-            "Cần Thơ\t",
-            "Quảng Bình",
-            "Cao Bằng\t",
-            "Quảng Nam",
-            "Đà Nẵng\t",
-            "Quảng Ngãi",
-            "Đắk Lắk\t",
-            "Quảng Ninh",
-            "Đắk Nông\t",
-            "Quảng Trị",
-            "Điện Biên\t",
-            "Sóc Trăng",
-            "Đồng Nai\t",
-            "Sơn La",
-            "Đồng Tháp\t",
-            "ây Ninh",
-            "Gia Lai\t",
-            "Thái Bình",
-            "Hà Giang\t",
-            "Thái Nguyên",
-            "Hà Nam\t",
-            "Thanh Hóa",
-            "Hà Nội\t",
-            "Thừa Thiên Huế",
-            "Hà Tĩnh\t",
-            "Tiền Giang",
-            "Hải Dương\t",
-            "TP Hồ Chí Minh",
-            "Hải Phòng\t",
-            "Trà Vinh",
-            "Hậu Giang\t",
-            "Tuyên Quang",
-            "Hòa Bình\t",
-            "Vĩnh Long",
-            "Hưng Yên\t",
-            "Vĩnh Phúc",
-            "Khánh Hòa\t",
-            "Yên Bái",
-            "Kiên Giang"});
-            this.cbx_diaChi_CongTy.Location = new System.Drawing.Point(46, 296);
-            this.cbx_diaChi_CongTy.Name = "cbx_diaChi_CongTy";
-            this.cbx_diaChi_CongTy.Size = new System.Drawing.Size(306, 36);
-            this.cbx_diaChi_CongTy.TabIndex = 94;
-            // 
             // TuyenDung_TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -978,18 +980,17 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).EndInit();
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         public Guna.UI2.WinForms.Guna2ComboBox cbx_kinhNghiem;
-        public Guna.UI2.WinForms.Guna2ComboBox cbx_luong;
         public Guna.UI2.WinForms.Guna2ComboBox cbx_nganhNghe;
         public Guna.UI2.WinForms.Guna2ComboBox cbx_hinhThucLamViec;
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
@@ -1006,7 +1007,6 @@
         public System.Windows.Forms.TabPage tabPage3;
         public UC_BangTin uC_BangTin1;
         public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.PictureBox pbx_logoCongTy;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel panel7;
         public System.Windows.Forms.Panel panel6;
@@ -1038,11 +1038,13 @@
         public UC_TinDaDang uC_TinDaDang8;
         public UC_TinDaDang uC_TinDaDang9;
         public System.Windows.Forms.Panel panel3;
-        public Guna.UI2.WinForms.Guna2TextBox tbx_viTriCongTacHR;
         public Guna.UI2.WinForms.Guna2TextBox tbx_tenHR;
         public Guna.UI2.WinForms.Guna2TextBox tbx_emailHR;
         public Guna.UI2.WinForms.Guna2TextBox tbx_sdtHR;
         public System.Windows.Forms.Label label7;
         public Guna.UI2.WinForms.Guna2ComboBox cbx_diaChi_CongTy;
+        public Guna.UI2.WinForms.Guna2ComboBox cbx_viTriCongTac_HR;
+        public Guna.UI2.WinForms.Guna2TextBox tbx_luong;
+        private System.Windows.Forms.PictureBox pbx_logoCongTy;
     }
 }
