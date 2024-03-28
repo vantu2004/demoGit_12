@@ -78,7 +78,7 @@ namespace Project_Windows_04
                 byte[] anh_byte = chuyenAnhSangByte(pbx_logoCongTy.Image);
                 
                 TuyenDung_Tin t = new TuyenDung_Tin(IdCompany, g.ToString(), "Employer", anh_byte, tbx_tenCongTy.Text, tbx_mangXaHoi.Text, cbx_diaChi_CongTy.Text,
-                    cbx_nganhNghe.Text, cbx_viTriCanTuyen.Text, Convert.ToDouble(tbx_luong.Text), cbx_kinhNghiem.Text, cbx_hinhThucLamViec.Text,
+                    cbx_nganhNghe.Text, tbx_tenCongViec.Text, Convert.ToDouble(tbx_luong.Text), cbx_kinhNghiem.Text, cbx_hinhThucLamViec.Text,
                     tbx_tenHR.Text, tbx_emailHR.Text, tbx_sdtHR.Text, cbx_viTriCongTac_HR.Text, dtpr_ngayDang.Value.ToShortDateString(),
                     dtpr_hanChot.Value.ToShortDateString(), rtbx_moTaCongViec.Text, rtbx_yeuCauUngVien.Text, rtbx_quyenLoi.Text);
 

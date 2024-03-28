@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\form\\\u1EE9ng vi\u00EAn\\ungvien_trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:form\\\u1EE9ng vi\u00EAn\\ungvien_trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\\u1EE9ng vi\u00EAn\\ungvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\\u1EE9ng vi\u00EAn\\ungvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\\u1EE9ng vi\u00EAn\\ungvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\\u1EE9ng vi\u00EAn\\ungvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\\u1EE9ng vi\u00EAn\\ungvien_tin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\\u1EE9ng vi\u00EAn\\ungvien_tin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\form\\\u1EE9ng vi\u00EAn\\ungvien_dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:form\\\u1EE9ng vi\u00EAn\\ungvien_dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\tuy\u1EC3n d\u1EE5ng\\tuyendung_tin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\tuy\u1EC3n d\u1EE5ng\\tuyendung_tin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\class\\ungvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\ungvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\tuy\u1EC3n d\u1EE5ng\\tuyendung_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\tuy\u1EC3n d\u1EE5ng\\tuyendung_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\form\\tuy\u1EC3n d\u1EE5ng\\tuyendung_trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:form\\tuy\u1EC3n d\u1EE5ng\\tuyendung_trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\form\\\u1EE9ng vi\u00EAn\\ungvien_trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:form\\\u1EE9ng vi\u00EAn\\ungvien_trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|d:\\workspace\\c#\\winform\\windows_ute\\project_windows_04\\class\\tuy\u1EC3n d\u1EE5ng\\tuyendung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A87476-D1ED-4CAE-8213-3890068D4DA4}|Project_Windows_04.csproj|solutionrelative:class\\tuy\u1EC3n d\u1EE5ng\\tuyendung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +42,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UngVien_Tin.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\\u1EE8ng vi\u00EAn\\UngVien_Tin.cs",
+              "RelativeDocumentMoniker": "Class\\\u1EE8ng vi\u00EAn\\UngVien_Tin.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\\u1EE8ng vi\u00EAn\\UngVien_Tin.cs",
+              "RelativeToolTip": "Class\\\u1EE8ng vi\u00EAn\\UngVien_Tin.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:44:11.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UngVien_DAO.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\\u1EE8ng vi\u00EAn\\UngVien_DAO.cs",
+              "RelativeDocumentMoniker": "Class\\\u1EE8ng vi\u00EAn\\UngVien_DAO.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\\u1EE8ng vi\u00EAn\\UngVien_DAO.cs",
+              "RelativeToolTip": "Class\\\u1EE8ng vi\u00EAn\\UngVien_DAO.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwCUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:43:53.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UngVien.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\\u1EE8ng vi\u00EAn\\UngVien.cs",
+              "RelativeDocumentMoniker": "Class\\\u1EE8ng vi\u00EAn\\UngVien.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\\u1EE8ng vi\u00EAn\\UngVien.cs",
+              "RelativeToolTip": "Class\\\u1EE8ng vi\u00EAn\\UngVien.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:43:50.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TuyenDung_Tin.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_Tin.cs",
+              "RelativeDocumentMoniker": "Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_Tin.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_Tin.cs",
+              "RelativeToolTip": "Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_Tin.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:43:47.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TuyenDung_DAO.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_DAO.cs",
+              "RelativeDocumentMoniker": "Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_DAO.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_DAO.cs",
+              "RelativeToolTip": "Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_DAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:43:37.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TuyenDung.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung.cs",
+              "RelativeDocumentMoniker": "Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung.cs",
+              "RelativeToolTip": "Class\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:43:27.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UngVien_TrangChu.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
+              "RelativeDocumentMoniker": "Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
+              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
+              "RelativeToolTip": "Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAewGwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:42:56.169Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -50,63 +153,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TuyenDung_TrangChu.cs",
-              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_TrangChu.cs",
-              "RelativeDocumentMoniker": "Form\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_TrangChu.cs",
-              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_TrangChu.cs",
-              "RelativeToolTip": "Form\\Tuy\u1EC3n d\u1EE5ng\\TuyenDung_TrangChu.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAA2wBIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T16:41:55.834Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UngVien_TrangChu.cs",
-              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
-              "RelativeDocumentMoniker": "Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
-              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
-              "RelativeToolTip": "Form\\\u1EE8ng vi\u00EAn\\UngVien_TrangChu.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAswBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T16:41:50.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UngVien_DAO.cs",
-              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\UngVien_DAO.cs",
-              "RelativeDocumentMoniker": "Class\\UngVien_DAO.cs",
-              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\UngVien_DAO.cs",
-              "RelativeToolTip": "Class\\UngVien_DAO.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBUAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:47:27.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UngVien_DangKy.cs",
-              "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\\u1EE8ng vi\u00EAn\\UngVien_DangKy.cs",
-              "RelativeDocumentMoniker": "Form\\\u1EE8ng vi\u00EAn\\UngVien_DangKy.cs",
-              "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Form\\\u1EE8ng vi\u00EAn\\UngVien_DangKy.cs",
-              "RelativeToolTip": "Form\\\u1EE8ng vi\u00EAn\\UngVien_DangKy.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADwvxcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:47:19.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "dbConnection.cs",
               "DocumentMoniker": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\dbConnection.cs",
               "RelativeDocumentMoniker": "Class\\dbConnection.cs",
               "ToolTip": "D:\\WorkSpace\\C#\\WinForm\\Windows_UTE\\Project_Windows_04\\Class\\dbConnection.cs",
               "RelativeToolTip": "Class\\dbConnection.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAswEcAAAARAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAIwIwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T18:25:47.41Z",
+              "WhenOpened": "2024-03-28T08:42:30.063Z",
               "EditorCaption": ""
             }
           ]

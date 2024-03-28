@@ -59,9 +59,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(17, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 31);
+            this.label1.Size = new System.Drawing.Size(251, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "|| Vị trí công việc";
+            this.label1.Text = "|| The name of the job";
             // 
             // label2
             // 
@@ -69,9 +69,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(269, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 25);
+            this.label2.Size = new System.Drawing.Size(138, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Tên công ty";
+            this.label2.Text = "Company name";
             // 
             // label3
             // 
@@ -79,9 +79,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.Location = new System.Drawing.Point(629, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 25);
+            this.label3.Size = new System.Drawing.Size(123, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Hình thức làm việc";
+            this.label3.Text = "Working form";
             // 
             // label4
             // 
@@ -89,9 +89,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.Location = new System.Drawing.Point(629, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 25);
+            this.label4.Size = new System.Drawing.Size(77, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Địa điểm";
+            this.label4.Text = "Address";
             // 
             // label5
             // 
@@ -99,9 +99,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.Location = new System.Drawing.Point(269, 114);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 25);
+            this.label5.Size = new System.Drawing.Size(65, 25);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Lương";
+            this.label5.Text = "Salary";
             // 
             // label6
             // 
@@ -109,9 +109,9 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.Location = new System.Drawing.Point(629, 67);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 25);
+            this.label6.Size = new System.Drawing.Size(95, 25);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Kinh nghiệm";
+            this.label6.Text = "Experience";
             // 
             // panel2
             // 
@@ -198,9 +198,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.Location = new System.Drawing.Point(269, 158);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 25);
+            this.label7.Size = new System.Drawing.Size(62, 25);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Ngành nghề";
+            this.label7.Text = "Career";
             // 
             // UC_TinTuyenDung
             // 

@@ -45,9 +45,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(68, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 31);
+            this.label2.Size = new System.Drawing.Size(145, 31);
             this.label2.TabIndex = 86;
-            this.label2.Text = "Thời gian đăng";
+            this.label2.Text = "Update date";
             // 
             // label1
             // 
@@ -56,9 +56,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(396, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 31);
+            this.label1.Size = new System.Drawing.Size(229, 31);
             this.label1.TabIndex = 87;
-            this.label1.Text = "Vị trí công việc";
+            this.label1.Text = "The name of the job";
             // 
             // guna2PictureBox2
             // 

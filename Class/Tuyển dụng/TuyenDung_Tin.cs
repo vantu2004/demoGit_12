@@ -17,7 +17,7 @@ namespace Project_Windows_04
         private string mangXaHoi;
         private string diaChi;
         private string nganhNghe;
-        private string viTriCanTuyen;
+        private string tenCongViec;
         private double luong;
         private string kinhNghiem;
         private string hinhThucLamViec;
@@ -32,7 +32,7 @@ namespace Project_Windows_04
         private string loiIch;
 
         public TuyenDung_Tin() { }
-        public TuyenDung_Tin(string idCompany, string idJobPosting, string userType, byte[] logoCongTy, string tenCongTy, string mangXaHoi, string diaChi, string nganhNghe, string viTriCanTuyen, double luong, string kinhNghiem, 
+        public TuyenDung_Tin(string idCompany, string idJobPosting, string userType, byte[] logoCongTy, string tenCongTy, string mangXaHoi, string diaChi, string nganhNghe, string tenCongViec, double luong, string kinhNghiem, 
             string hinhThucLamViec, string tenHR, string emailHR, string sdtHR, string viTriCongTacHR, string ngayDang, string hanChot, string moTaCongViec, string yeuCau, string loiIch)
         {
             IdCompany = idCompany;
@@ -43,7 +43,7 @@ namespace Project_Windows_04
             MangXaHoi = mangXaHoi;
             DiaChi = diaChi;
             NganhNghe = nganhNghe;
-            ViTriCanTuyen = viTriCanTuyen;
+            TenCongViec = tenCongViec;
             Luong = luong;
             KinhNghiem = kinhNghiem;
             HinhThucLamViec = hinhThucLamViec;
@@ -63,7 +63,6 @@ namespace Project_Windows_04
         public string MangXaHoi { get => mangXaHoi; set => mangXaHoi = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string NganhNghe { get => nganhNghe; set => nganhNghe = value; }
-        public string ViTriCanTuyen { get => viTriCanTuyen; set => viTriCanTuyen = value; }
         public double Luong { get => luong; set => luong = value; }
         public string KinhNghiem { get => kinhNghiem; set => kinhNghiem = value; }
         public string HinhThucLamViec { get => hinhThucLamViec; set => hinhThucLamViec = value; }
@@ -79,5 +78,6 @@ namespace Project_Windows_04
         public string IdCompany { get => idCompany; set => idCompany = value; }
         public string IdJobPostings { get => idJobPostings; set => idJobPostings = value; }
         public byte[] LogoCongTy { get => logoCongTy; set => logoCongTy = value; }
+        public string TenCongViec { get => tenCongViec; set => tenCongViec = value; }
     }
 }

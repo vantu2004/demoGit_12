@@ -27,7 +27,20 @@ namespace Project_Windows_04
             string sqlQuery_taoTin = string.Format("INSERT INTO CVs(Id, Avatar, JobPos, CareerGoal, Education, Experience, UploadDate) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
                 u.Id, u.AnhDaiDien, u.ViTriUngTuyen, u.MucTieuNgheNghiep, u.HocVan, u.KinhNghiem, u.NgayCapNhatCV);
 
-            db.thucThi_taoTin(sqlQuery_taoTin);
+            db.thucThi_taoTin_chinhSuaTin(sqlQuery_taoTin);
+        }
+
+        public void chinhSuaTin(UngVien_Tin u)
+        {
+            string sqlQuery_chinhSuaTin_CVs = string.Format("UPDATE CVs SET Avatar = '{0}', JobPos = '{1}', CareerGoal = '{2}', Education = '{3}', Experience = '{4}', UploadDate = '{5}' WHERE Id = '{6}'",
+                u.AnhDaiDien, u.ViTriUngTuyen, u.MucTieuNgheNghiep, u.HocVan, u.KinhNghiem, u.NgayCapNhatCV, u.Id);
+
+            db.thucThi_taoTin_chinhSuaTin(sqlQuery_chinhSuaTin_CVs);
+
+            string sqlQuery_chinhSuaTin_UNGVIEN = string.Format("UPDATE UNGVIEN SET Fname = '{0}', Phone = '{1}', BirthDate = '{2}', Link = '{3}', Email = '{4}', Address_C = '{5}', Gender = '{6}' WHERE Id = '{7}'",
+                u.TenUV, u.SdtUV, u.NgaySinhUV, u.MangXaHoi, u.EmailUV, u.DiaChi, u.GioiTinhUV, u.Id);
+
+            db.thucThi_taoTin_chinhSuaTin(sqlQuery_chinhSuaTin_UNGVIEN);
         }
     }
 }

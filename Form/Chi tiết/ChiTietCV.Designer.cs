@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietCV));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -40,6 +39,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,11 +62,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -74,7 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,7 +121,7 @@
             this.richTextBox3.ReadOnly = true;
             this.richTextBox3.Size = new System.Drawing.Size(653, 600);
             this.richTextBox3.TabIndex = 67;
-            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            this.richTextBox3.Text = "";
             // 
             // label4
             // 
@@ -131,9 +130,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(22, 592);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 28);
+            this.label4.Size = new System.Drawing.Size(140, 28);
             this.label4.TabIndex = 66;
-            this.label4.Text = "|| Kinh nghiệm:";
+            this.label4.Text = "|| Experience:";
             // 
             // richTextBox2
             // 
@@ -145,7 +144,7 @@
             this.richTextBox2.ReadOnly = true;
             this.richTextBox2.Size = new System.Drawing.Size(653, 212);
             this.richTextBox2.TabIndex = 65;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.richTextBox2.Text = "";
             // 
             // label6
             // 
@@ -154,9 +153,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(22, 305);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 28);
+            this.label6.Size = new System.Drawing.Size(131, 28);
             this.label6.TabIndex = 64;
-            this.label6.Text = "|| Học vấn:";
+            this.label6.Text = "|| Education:";
             // 
             // richTextBox1
             // 
@@ -168,7 +167,7 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(653, 212);
             this.richTextBox1.TabIndex = 63;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "";
             // 
             // label10
             // 
@@ -177,9 +176,9 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label10.Location = new System.Drawing.Point(22, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(245, 28);
+            this.label10.Size = new System.Drawing.Size(145, 28);
             this.label10.TabIndex = 62;
-            this.label10.Text = "|| Mục tiêu nghề nghiệp:";
+            this.label10.Text = "|| Career goal:";
             // 
             // label8
             // 
@@ -224,6 +223,38 @@
             this.panel4.Size = new System.Drawing.Size(411, 1055);
             this.panel4.TabIndex = 29;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngegg__23_;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(42, 816);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox5.TabIndex = 115;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label16.Location = new System.Drawing.Point(12, 778);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(128, 28);
+            this.label16.TabIndex = 114;
+            this.label16.Text = "Update date";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(92, 816);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(121, 28);
+            this.label17.TabIndex = 113;
+            this.label17.Text = "Update date";
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = global::Project_Windows_04.Properties.Resources.kisspng_computer_icons_hierarchy_5ae173f77b01a9_2322034515247247275038;
@@ -241,9 +272,9 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label11.Location = new System.Drawing.Point(12, 685);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(162, 28);
+            this.label11.Size = new System.Drawing.Size(168, 28);
             this.label11.TabIndex = 111;
-            this.label11.Text = "Vị trí ứng tuyển";
+            this.label11.Text = "Applied position";
             // 
             // label9
             // 
@@ -252,9 +283,9 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label9.Location = new System.Drawing.Point(12, 548);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 28);
+            this.label9.Size = new System.Drawing.Size(85, 28);
             this.label9.TabIndex = 110;
-            this.label9.Text = "Liên hệ";
+            this.label9.Text = "Contact";
             // 
             // label7
             // 
@@ -263,9 +294,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(92, 409);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 28);
+            this.label7.Size = new System.Drawing.Size(76, 28);
             this.label7.TabIndex = 109;
-            this.label7.Text = "Giới tính";
+            this.label7.Text = "Gender";
             // 
             // pictureBox3
             // 
@@ -284,9 +315,9 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(92, 368);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 28);
+            this.label15.Size = new System.Drawing.Size(85, 28);
             this.label15.TabIndex = 107;
-            this.label15.Text = "Ngày sinh";
+            this.label15.Text = "Birthday";
             // 
             // pictureBox11
             // 
@@ -336,9 +367,9 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(92, 589);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 28);
+            this.label13.Size = new System.Drawing.Size(140, 28);
             this.label13.TabIndex = 101;
-            this.label13.Text = "Liên hệ";
+            this.label13.Text = "Phone number";
             // 
             // pictureBox9
             // 
@@ -357,9 +388,9 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(92, 723);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(147, 28);
+            this.label12.Size = new System.Drawing.Size(158, 28);
             this.label12.TabIndex = 99;
-            this.label12.Text = "Vị trí ứng tuyển";
+            this.label12.Text = "Applied position";
             // 
             // pictureBox8
             // 
@@ -378,9 +409,9 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(92, 450);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 28);
+            this.label5.Size = new System.Drawing.Size(82, 28);
             this.label5.TabIndex = 95;
-            this.label5.Text = "Địa chỉ";
+            this.label5.Text = "Address";
             // 
             // pictureBox6
             // 
@@ -399,9 +430,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(92, 491);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 28);
+            this.label3.Size = new System.Drawing.Size(47, 28);
             this.label3.TabIndex = 94;
-            this.label3.Text = "Mạng xã hội";
+            this.label3.Text = "Link";
             // 
             // label1
             // 
@@ -412,7 +443,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 28);
             this.label1.TabIndex = 37;
-            this.label1.Text = "Họ và tên";
+            this.label1.Text = "Full name";
             // 
             // pictureBox2
             // 
@@ -432,41 +463,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(12, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 28);
+            this.label2.Size = new System.Drawing.Size(106, 28);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Cá nhân";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Project_Windows_04.Properties.Resources.pngegg__23_;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(42, 816);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.TabIndex = 115;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label16.Location = new System.Drawing.Point(12, 778);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(150, 28);
-            this.label16.TabIndex = 114;
-            this.label16.Text = "Ngày cập nhật";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(92, 816);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(139, 28);
-            this.label17.TabIndex = 113;
-            this.label17.Text = "Ngày cập nhật";
+            this.label2.Text = "Individual";
             // 
             // ChiTietCV
             // 
@@ -477,12 +476,13 @@
             this.Controls.Add(this.panel4);
             this.Name = "ChiTietCV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chi tiết";
+            this.Text = "Detail";
             this.Load += new System.EventHandler(this.ChiTietCV_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -492,7 +492,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

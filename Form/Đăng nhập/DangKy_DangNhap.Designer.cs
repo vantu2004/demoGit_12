@@ -109,7 +109,7 @@
             this.tbx_matKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_matKhau.Name = "tbx_matKhau";
             this.tbx_matKhau.PasswordChar = '●';
-            this.tbx_matKhau.PlaceholderText = "Mật khẩu";
+            this.tbx_matKhau.PlaceholderText = "Password";
             this.tbx_matKhau.SelectedText = "";
             this.tbx_matKhau.Size = new System.Drawing.Size(291, 55);
             this.tbx_matKhau.TabIndex = 7;
@@ -152,7 +152,7 @@
             this.tbx_tenDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_tenDangNhap.Name = "tbx_tenDangNhap";
             this.tbx_tenDangNhap.PasswordChar = '\0';
-            this.tbx_tenDangNhap.PlaceholderText = "Tên đăng nhập";
+            this.tbx_tenDangNhap.PlaceholderText = "User name";
             this.tbx_tenDangNhap.SelectedText = "";
             this.tbx_tenDangNhap.Size = new System.Drawing.Size(291, 55);
             this.tbx_tenDangNhap.TabIndex = 7;
@@ -177,7 +177,7 @@
             this.btn_dangKy.Name = "btn_dangKy";
             this.btn_dangKy.Size = new System.Drawing.Size(350, 55);
             this.btn_dangKy.TabIndex = 5;
-            this.btn_dangKy.Text = "Đăng ký";
+            this.btn_dangKy.Text = "Sign up";
             this.btn_dangKy.UseTransparentBackground = true;
             this.btn_dangKy.Click += new System.EventHandler(this.btn_dangKy_Click);
             // 
@@ -201,7 +201,7 @@
             this.btn_dangNhap.Name = "btn_dangNhap";
             this.btn_dangNhap.Size = new System.Drawing.Size(350, 55);
             this.btn_dangNhap.TabIndex = 4;
-            this.btn_dangNhap.Text = "Đăng nhập";
+            this.btn_dangNhap.Text = "Log in";
             this.btn_dangNhap.UseTransparentBackground = true;
             this.btn_dangNhap.Click += new System.EventHandler(this.btn_dangNhap_Click_1);
             // 
@@ -218,7 +218,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "DangKy_DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng ký - Đăng nhập";
+            this.Text = "Log in  - Sign up";
             this.Load += new System.EventHandler(this.DangKy_DangNhap_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

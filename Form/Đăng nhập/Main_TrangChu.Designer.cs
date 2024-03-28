@@ -49,7 +49,7 @@
             this.Controls.Add(this.UC_Main_TrangChu);
             this.Name = "Main_TrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trang chủ";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Main_TrangChu_Load);
             this.ResumeLayout(false);
 

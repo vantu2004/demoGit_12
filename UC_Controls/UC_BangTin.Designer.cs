@@ -96,7 +96,7 @@
             this.btn_dangKy.Name = "btn_dangKy";
             this.btn_dangKy.Size = new System.Drawing.Size(149, 46);
             this.btn_dangKy.TabIndex = 11;
-            this.btn_dangKy.Text = "Đăng ký";
+            this.btn_dangKy.Text = "Sign up";
             this.btn_dangKy.UseTransparentBackground = true;
             // 
             // btn_dangNhap
@@ -120,7 +120,7 @@
             this.btn_dangNhap.Name = "btn_dangNhap";
             this.btn_dangNhap.Size = new System.Drawing.Size(149, 46);
             this.btn_dangNhap.TabIndex = 10;
-            this.btn_dangNhap.Text = "Đăng nhập";
+            this.btn_dangNhap.Text = "Log in";
             this.btn_dangNhap.UseTransparentBackground = true;
             // 
             // btn_dangTinTuyenDung
@@ -144,7 +144,7 @@
             this.btn_dangTinTuyenDung.Name = "btn_dangTinTuyenDung";
             this.btn_dangTinTuyenDung.Size = new System.Drawing.Size(250, 46);
             this.btn_dangTinTuyenDung.TabIndex = 2;
-            this.btn_dangTinTuyenDung.Text = "Đăng tin tuyển dụng";
+            this.btn_dangTinTuyenDung.Text = "Published recruitment";
             this.btn_dangTinTuyenDung.UseTransparentBackground = true;
             // 
             // guna2PictureBox1
@@ -177,9 +177,8 @@
             this.cbx_loc_sapXep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_loc_sapXep.ItemHeight = 30;
             this.cbx_loc_sapXep.Items.AddRange(new object[] {
-            "Lương",
-            "Kinh nghiệm",
-            "Ngày đăng"});
+            "Salary",
+            "Update date"});
             this.cbx_loc_sapXep.Location = new System.Drawing.Point(56, 72);
             this.cbx_loc_sapXep.Name = "cbx_loc_sapXep";
             this.cbx_loc_sapXep.Size = new System.Drawing.Size(252, 36);
@@ -234,9 +233,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(50, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 31);
+            this.label1.Size = new System.Drawing.Size(108, 31);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Lọc theo:";
+            this.label1.Text = "Filter by:";
             // 
             // cbx_loc_nganhNghe
             // 
@@ -251,13 +250,15 @@
             this.cbx_loc_nganhNghe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_loc_nganhNghe.ItemHeight = 30;
             this.cbx_loc_nganhNghe.Items.AddRange(new object[] {
-            "Y – Dược",
-            "Công nghệ thông tin",
-            "Kế toán",
+            "Information Technology (IT)",
+            "Engineering",
+            "Medicine",
+            "Finance",
             "Marketing",
-            "Xây dựng",
-            "Công nghệ thực phẩm",
-            "Kiến trúc sư"});
+            "Education",
+            "Hospitality and Tourism",
+            "Human Resources",
+            "Law"});
             this.cbx_loc_nganhNghe.Location = new System.Drawing.Point(56, 306);
             this.cbx_loc_nganhNghe.Name = "cbx_loc_nganhNghe";
             this.cbx_loc_nganhNghe.Size = new System.Drawing.Size(252, 36);
@@ -276,10 +277,10 @@
             this.cbx_loc_kinhNghiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_loc_kinhNghiem.ItemHeight = 30;
             this.cbx_loc_kinhNghiem.Items.AddRange(new object[] {
-            "Thực tập",
-            "1 năm - 2 năm",
-            "2 năm - 3 năm",
-            "> 3 năm"});
+            "Intern",
+            "1y - 2y",
+            "2y - 3y",
+            "> 3y"});
             this.cbx_loc_kinhNghiem.Location = new System.Drawing.Point(56, 254);
             this.cbx_loc_kinhNghiem.Name = "cbx_loc_kinhNghiem";
             this.cbx_loc_kinhNghiem.Size = new System.Drawing.Size(252, 36);
@@ -298,10 +299,10 @@
             this.cbx_loc_Luong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_loc_Luong.ItemHeight = 30;
             this.cbx_loc_Luong.Items.AddRange(new object[] {
-            "< 10 triệu",
-            "10 triệu - 20 triệu",
-            "20 triệu - 30 triệu",
-            "> 30 triệu"});
+            "< 10m",
+            "10m - 20m",
+            "20m - 30m",
+            "> 30m"});
             this.cbx_loc_Luong.Location = new System.Drawing.Point(56, 202);
             this.cbx_loc_Luong.Name = "cbx_loc_Luong";
             this.cbx_loc_Luong.Size = new System.Drawing.Size(252, 36);
@@ -351,7 +352,7 @@
             this.btn_loc_timKiem.Name = "btn_loc_timKiem";
             this.btn_loc_timKiem.Size = new System.Drawing.Size(296, 46);
             this.btn_loc_timKiem.TabIndex = 13;
-            this.btn_loc_timKiem.Text = "Tìm kiếm";
+            this.btn_loc_timKiem.Text = "Search";
             this.btn_loc_timKiem.UseTransparentBackground = true;
             // 
             // pictureBox5
@@ -417,69 +418,69 @@
             this.cbx_loc_diaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_loc_diaChi.ItemHeight = 30;
             this.cbx_loc_diaChi.Items.AddRange(new object[] {
-            "An Giang\t",
+            "An Giang",
             "Kon Tum",
-            "Bà Rịa – Vũng Tàu\t",
-            "Lai Châu",
-            "Bắc Giang\t",
-            "Lâm Đồng",
-            "Bắc Kạn\t",
-            "Lạng Sơn",
-            "Bạc Liêu\t",
-            "Lào Cai",
-            "Bắc Ninh\t",
+            "Ba Ria - Vung Tau",
+            "Lai Chau",
+            "Bac Giang",
+            "Lam Dong",
+            "Bac Kan",
+            "Lang Son",
+            "Bac Lieu",
+            "Lao Cai",
+            "Bac Ninh",
             "Long An",
-            "Bến Tre\t",
-            "Nam Định",
-            "Bình Định\t",
-            "Nghệ An",
-            "Bình Dương\t",
-            "Ninh Bình",
-            "Bình Phước\t",
-            "Ninh Thuận",
-            "Bình Thuận\t",
-            "Phú Thọ",
-            "Cà Mau\t",
-            "Phú Yên",
-            "Cần Thơ\t",
-            "Quảng Bình",
-            "Cao Bằng\t",
-            "Quảng Nam",
-            "Đà Nẵng\t",
-            "Quảng Ngãi",
-            "Đắk Lắk\t",
-            "Quảng Ninh",
-            "Đắk Nông\t",
-            "Quảng Trị",
-            "Điện Biên\t",
-            "Sóc Trăng",
-            "Đồng Nai\t",
-            "Sơn La",
-            "Đồng Tháp\t",
-            "ây Ninh",
-            "Gia Lai\t",
-            "Thái Bình",
-            "Hà Giang\t",
-            "Thái Nguyên",
-            "Hà Nam\t",
-            "Thanh Hóa",
-            "Hà Nội\t",
-            "Thừa Thiên Huế",
-            "Hà Tĩnh\t",
-            "Tiền Giang",
-            "Hải Dương\t",
-            "TP Hồ Chí Minh",
-            "Hải Phòng\t",
-            "Trà Vinh",
-            "Hậu Giang\t",
-            "Tuyên Quang",
-            "Hòa Bình\t",
-            "Vĩnh Long",
-            "Hưng Yên\t",
-            "Vĩnh Phúc",
-            "Khánh Hòa\t",
-            "Yên Bái",
-            "Kiên Giang"});
+            "Ben Tre",
+            "Nam Dinh",
+            "Binh Dinh",
+            "Nghe An",
+            "Binh Duong",
+            "Ninh Binh",
+            "Binh Phuoc",
+            "Ninh Thuan",
+            "Binh Thuan",
+            "Phu Tho",
+            "Ca Mau",
+            "Phu Yen",
+            "Can Tho",
+            "Quang Binh",
+            "Cao Bang",
+            "Quang Nam",
+            "Da Nang",
+            "Quang Ngai",
+            "Dak Lak",
+            "Quang Ninh",
+            "Dak Nong",
+            "Quang Tri",
+            "Dien Bien",
+            "Soc Trang",
+            "Dong Nai",
+            "Son La",
+            "Dong Thap",
+            "Tay Ninh",
+            "Gia Lai",
+            "Thai Binh",
+            "Ha Giang",
+            "Thai Nguyen",
+            "Ha Nam",
+            "Thanh Hoa",
+            "Ha Noi",
+            "Thua Thien Hue",
+            "Ha Tinh",
+            "Tien Giang",
+            "Hai Duong",
+            "TP Ho Chi Minh",
+            "Hai Phong",
+            "Tra Vinh",
+            "Hau Giang",
+            "Tuyen Quang",
+            "Hoa Binh",
+            "Vinh Long",
+            "Hung Yen",
+            "Vinh Phuc",
+            "Khanh Hoa",
+            "Yen Bai",
+            "Kien Giang"});
             this.cbx_loc_diaChi.Location = new System.Drawing.Point(56, 151);
             this.cbx_loc_diaChi.Name = "cbx_loc_diaChi";
             this.cbx_loc_diaChi.Size = new System.Drawing.Size(252, 36);

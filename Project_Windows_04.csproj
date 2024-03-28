@@ -223,15 +223,15 @@
       <DependentUpon>UngVien_TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\TaiKhoan.cs" />
-    <Compile Include="Class\TuyenDung.cs" />
+    <Compile Include="Class\Tuyển dụng\TuyenDung.cs" />
     <Compile Include="Form\Tuyển dụng\TuyenDung_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Tuyển dụng\TuyenDung_DangKy.Designer.cs">
       <DependentUpon>TuyenDung_DangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\TuyenDung_DAO.cs" />
-    <Compile Include="Class\TuyenDung_Tin.cs" />
+    <Compile Include="Class\Tuyển dụng\TuyenDung_DAO.cs" />
+    <Compile Include="Class\Tuyển dụng\TuyenDung_Tin.cs" />
     <Compile Include="temp01.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,15 +256,15 @@
     <Compile Include="UC_Controls\UC_TinDaDang.Designer.cs">
       <DependentUpon>UC_TinDaDang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\UngVien.cs" />
+    <Compile Include="Class\Ứng viên\UngVien.cs" />
     <Compile Include="Form\Ứng viên\UngVien_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Ứng viên\UngVien_DangKy.Designer.cs">
       <DependentUpon>UngVien_DangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\UngVien_DAO.cs" />
-    <Compile Include="Class\UngVien_Tin.cs" />
+    <Compile Include="Class\Ứng viên\UngVien_DAO.cs" />
+    <Compile Include="Class\Ứng viên\UngVien_Tin.cs" />
     <EmbeddedResource Include="Form\Chi tiết\ChiTietCV.resx">
       <DependentUpon>ChiTietCV.cs</DependentUpon>
     </EmbeddedResource>

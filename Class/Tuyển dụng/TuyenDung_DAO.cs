@@ -24,10 +24,10 @@ namespace Project_Windows_04
 
         public void taoTin(TuyenDung_Tin t)
         {
-            string sqlQuery_taoTin = string.Format("INSERT INTO JobPostings(IdCompany, IdJobPostings, IconCompany, Job, PositionNeeded, Salary, Experience, WorkFormat, DatePosted, Deadline, JobDescription, Requirements, Benefit) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')",
-                t.IdCompany, t.IdJobPostings, t.LogoCongTy, t.NganhNghe, t.ViTriCanTuyen, t.Luong, t.KinhNghiem, t.HinhThucLamViec, t.NgayDang, t.HanChot, t.MoTaCongViec, t.YeuCau, t.LoiIch);
+            string sqlQuery_taoTin = string.Format("INSERT INTO JobPostings(IdCompany, IdJobPostings, IconCompany, Job, JobName, Salary, Experience, WorkFormat, DatePosted, Deadline, JobDescription, Requirements, Benefit) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')",
+                t.IdCompany, t.IdJobPostings, t.LogoCongTy, t.NganhNghe, t.TenCongViec, t.Luong, t.KinhNghiem, t.HinhThucLamViec, t.NgayDang, t.HanChot, t.MoTaCongViec, t.YeuCau, t.LoiIch);
 
-            db.thucThi_taoTin(sqlQuery_taoTin);
+            db.thucThi_taoTin_chinhSuaTin(sqlQuery_taoTin);
         }
     }
 }

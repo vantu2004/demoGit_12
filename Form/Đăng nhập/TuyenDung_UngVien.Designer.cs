@@ -68,7 +68,7 @@
             this.btn_ungVien.Name = "btn_ungVien";
             this.btn_ungVien.Size = new System.Drawing.Size(338, 56);
             this.btn_ungVien.TabIndex = 4;
-            this.btn_ungVien.Text = "Ứng viên";
+            this.btn_ungVien.Text = "Candidate";
             this.btn_ungVien.UseTransparentBackground = true;
             this.btn_ungVien.Click += new System.EventHandler(this.btn_ungVien_Click);
             // 
@@ -93,7 +93,7 @@
             this.btn_tuyenDung.Name = "btn_tuyenDung";
             this.btn_tuyenDung.Size = new System.Drawing.Size(338, 56);
             this.btn_tuyenDung.TabIndex = 3;
-            this.btn_tuyenDung.Text = "Nhà tuyển dụng";
+            this.btn_tuyenDung.Text = "Recruiter";
             this.btn_tuyenDung.UseTransparentBackground = true;
             this.btn_tuyenDung.Click += new System.EventHandler(this.btn_tuyenDung_Click);
             // 
@@ -119,7 +119,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Name = "TuyenDung_UngVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tuyển dụng - Ứng viên";
+            this.Text = "Recruiter - Candidate";
             this.Load += new System.EventHandler(this.TuyenDung_UngVien_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

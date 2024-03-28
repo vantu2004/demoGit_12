@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietTinTuyenDung));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -137,7 +136,7 @@
             this.richTextBox3.ReadOnly = true;
             this.richTextBox3.Size = new System.Drawing.Size(653, 600);
             this.richTextBox3.TabIndex = 67;
-            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            this.richTextBox3.Text = "";
             // 
             // label4
             // 
@@ -146,9 +145,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(22, 592);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 28);
+            this.label4.Size = new System.Drawing.Size(106, 28);
             this.label4.TabIndex = 66;
-            this.label4.Text = "|| Quyền lợi:";
+            this.label4.Text = "|| Benefit:";
             // 
             // richTextBox2
             // 
@@ -160,7 +159,7 @@
             this.richTextBox2.ReadOnly = true;
             this.richTextBox2.Size = new System.Drawing.Size(653, 212);
             this.richTextBox2.TabIndex = 65;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.richTextBox2.Text = "";
             // 
             // label6
             // 
@@ -169,9 +168,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(22, 305);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 28);
+            this.label6.Size = new System.Drawing.Size(264, 28);
             this.label6.TabIndex = 64;
-            this.label6.Text = "|| Yêu cầu ứng viên:";
+            this.label6.Text = "|| Candidate requirements:";
             // 
             // richTextBox1
             // 
@@ -183,7 +182,7 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(653, 212);
             this.richTextBox1.TabIndex = 63;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "";
             // 
             // label10
             // 
@@ -192,9 +191,9 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label10.Location = new System.Drawing.Point(22, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(189, 28);
+            this.label10.Size = new System.Drawing.Size(182, 28);
             this.label10.TabIndex = 62;
-            this.label10.Text = "|| Mô tả công việc:";
+            this.label10.Text = "|| Job description:";
             // 
             // label8
             // 
@@ -266,9 +265,9 @@
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(86, 853);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 28);
+            this.label21.Size = new System.Drawing.Size(89, 28);
             this.label21.TabIndex = 118;
-            this.label21.Text = "Hạn chót";
+            this.label21.Text = "Deadline";
             // 
             // label20
             // 
@@ -277,9 +276,9 @@
             this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(86, 812);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(89, 28);
+            this.label20.Size = new System.Drawing.Size(93, 28);
             this.label20.TabIndex = 116;
-            this.label20.Text = "Đăng lúc";
+            this.label20.Text = "Posted at";
             // 
             // pictureBox14
             // 
@@ -320,9 +319,9 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(86, 674);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 28);
+            this.label18.Size = new System.Drawing.Size(140, 28);
             this.label18.TabIndex = 112;
-            this.label18.Text = "Số điện thoại";
+            this.label18.Text = "Phone number";
             // 
             // pictureBox13
             // 
@@ -343,7 +342,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(96, 28);
             this.label17.TabIndex = 110;
-            this.label17.Text = "Họ và tên";
+            this.label17.Text = "Full name";
             // 
             // label16
             // 
@@ -363,9 +362,9 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(86, 377);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(142, 28);
+            this.label15.Size = new System.Drawing.Size(216, 28);
             this.label15.TabIndex = 107;
-            this.label15.Text = "Vị trí cần tuyển";
+            this.label15.Text = "Position to be recruited";
             // 
             // pictureBox11
             // 
@@ -397,7 +396,7 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(369, 42);
             this.guna2GradientButton1.TabIndex = 105;
-            this.guna2GradientButton1.Text = "Ứng tuyển";
+            this.guna2GradientButton1.Text = "Apply";
             this.guna2GradientButton1.UseTransparentBackground = true;
             // 
             // label14
@@ -428,9 +427,9 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(86, 715);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(133, 28);
+            this.label13.Size = new System.Drawing.Size(82, 28);
             this.label13.TabIndex = 101;
-            this.label13.Text = "Vị trí công tác";
+            this.label13.Text = "Position";
             // 
             // pictureBox9
             // 
@@ -449,9 +448,9 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(86, 500);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(173, 28);
+            this.label12.Size = new System.Drawing.Size(134, 28);
             this.label12.TabIndex = 99;
-            this.label12.Text = "Hình thức làm việc";
+            this.label12.Text = "Working form";
             // 
             // pictureBox5
             // 
@@ -470,9 +469,9 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(86, 459);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(122, 28);
+            this.label11.Size = new System.Drawing.Size(105, 28);
             this.label11.TabIndex = 98;
-            this.label11.Text = "Kinh nghiệm";
+            this.label11.Text = "Experience";
             // 
             // label9
             // 
@@ -481,9 +480,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(86, 418);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 28);
+            this.label9.Size = new System.Drawing.Size(65, 28);
             this.label9.TabIndex = 97;
-            this.label9.Text = "Lương";
+            this.label9.Text = "Salary";
             // 
             // pictureBox4
             // 
@@ -502,9 +501,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(86, 336);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 28);
+            this.label7.Size = new System.Drawing.Size(68, 28);
             this.label7.TabIndex = 96;
-            this.label7.Text = "Ngành nghề";
+            this.label7.Text = "Career";
             // 
             // pictureBox7
             // 
@@ -543,9 +542,9 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(86, 295);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 28);
+            this.label5.Size = new System.Drawing.Size(82, 28);
             this.label5.TabIndex = 95;
-            this.label5.Text = "Địa điểm";
+            this.label5.Text = "Address";
             // 
             // pictureBox6
             // 
@@ -564,9 +563,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(86, 254);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 28);
+            this.label3.Size = new System.Drawing.Size(47, 28);
             this.label3.TabIndex = 94;
-            this.label3.Text = "Mạng xã hội";
+            this.label3.Text = "Link";
             // 
             // label1
             // 
@@ -575,9 +574,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(86, 213);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 28);
+            this.label1.Size = new System.Drawing.Size(149, 28);
             this.label1.TabIndex = 37;
-            this.label1.Text = "Tên công ty";
+            this.label1.Text = "Company name";
             // 
             // pictureBox2
             // 
@@ -596,9 +595,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(15, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 28);
+            this.label2.Size = new System.Drawing.Size(100, 28);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Công ty";
+            this.label2.Text = "Company";
             // 
             // pictureBox1
             // 
@@ -619,7 +618,7 @@
             this.Controls.Add(this.panel4);
             this.Name = "ChiTietTinTuyenDung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chi tiết";
+            this.Text = "Detail";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ChiTietTinTuyenDung_Load);
             this.panel1.ResumeLayout(false);

@@ -29,18 +29,21 @@ namespace Project_Windows_04
             uC_BangTin1.btn_dangKy.Hide();
         }
 
-        public void layDuLieu(UngVien UV)
+        public void layDuLieu(UngVien_Tin UV)
         {
-            tbx_tenUV.Text = UV.Ten;
-            dtpr_ngaySinhUV.Value = Convert.ToDateTime(UV.NgaySinh);
-            if (UV.GioiTinh == "Nam")
+            tbx_tenUV.Text = UV.TenUV;
+            dtpr_ngaySinhUV.Value = Convert.ToDateTime(UV.NgaySinhUV);
+            if (UV.GioiTinhUV == "Male")
                 rbn_nam.Checked = true;
             else
                 rbn_nu.Checked = true;
             cbx_diaChiUV.Text = UV.DiaChi;
             tbx_mangXaHoi.Text = UV.MangXaHoi;
-            tbx_sdtUV.Text = UV.Sdt;
-            tbx_emaiUV.Text = UV.Email;
+            tbx_sdtUV.Text = UV.SdtUV;
+            tbx_emaiUV.Text = UV.EmailUV;
+            rtbx_mucTIeuNgheNghiep.Text = UV.MucTieuNgheNghiep;
+            rtbx_hocVan.Text = UV.HocVan;
+            rtbx_kinhNghiem.Text = UV.KinhNghiem;
         }
 
         private void pbx_avatar_Click(object sender, EventArgs e)
@@ -70,7 +73,7 @@ namespace Project_Windows_04
             }
         }
 
-        public void btn_hoanTat_Click(object sender, EventArgs e)
+        public UngVien_Tin taoUngVien()
         {
             try
             {
@@ -79,22 +82,32 @@ namespace Project_Windows_04
 
                 string gioiTinh;
                 if (rbn_nam.Checked)
-                    gioiTinh = "Nam";
+                    gioiTinh = "Male";
                 else
-                    gioiTinh = "Nữ";
+                    gioiTinh = "Female";
 
                 DateTime dt = DateTime.Now;
 
-                UngVien_Tin u = new UngVien_Tin(Id, anh_byte, tbx_tenUV.Text, dtpr_ngaySinhUV.Value.ToShortDateString(), gioiTinh, 
-                    cbx_diaChiUV.Text, tbx_mangXaHoi.Text, tbx_sdtUV.Text, tbx_emaiUV.Text, cbx_viTriUngTuyen.Text, 
-                    dt.ToString(), rtbx_mucTIeuNgheNghiep.Text, rtbx_hocVan.Text, rtbx_kinhNghiem.Text);
+                UngVien_Tin u = new UngVien_Tin(Id, anh_byte, tbx_tenUV.Text, dtpr_ngaySinhUV.Value.ToShortDateString(), gioiTinh,
+                    cbx_diaChiUV.Text, tbx_mangXaHoi.Text, tbx_sdtUV.Text, tbx_emaiUV.Text, cbx_viTriUngTuyen.Text,
+                    dt.ToString("dd/MM/yyyy"), rtbx_mucTIeuNgheNghiep.Text, rtbx_hocVan.Text, rtbx_kinhNghiem.Text);
 
-                UV_DAO.taoTin(u);
+                return u;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            return null;
+        }
+        public void btn_hoanTat_Click(object sender, EventArgs e)
+        {
+            UV_DAO.taoTin(taoUngVien());
+        }
+
+        public void btn_luuChinhSua_Click(object sender, EventArgs e)
+        {
+            UV_DAO.chinhSuaTin(taoUngVien());
         }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TuyenDung_TrangChu));
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -45,12 +44,13 @@
             this.rtbx_moTaCongViec = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tbx_tenCongViec = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pbx_logoCongTy = new System.Windows.Forms.PictureBox();
             this.tbx_luong = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbx_diaChi_CongTy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpr_hanChot = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpr_ngayDang = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbx_viTriCanTuyen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cbx_viTriCongTac_HR = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_hoanTat = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -72,10 +72,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.uC_BangTin1 = new Project_Windows_04.UC_BangTin();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pbx_logoCongTy = new System.Windows.Forms.PictureBox();
-            this.uC_BangTin1 = new Project_Windows_04.UC_BangTin();
             this.uC_TinDaDang1 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang2 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang3 = new Project_Windows_04.UC_TinDaDang();
@@ -89,12 +88,12 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).BeginInit();
             this.panel3.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse3
@@ -118,7 +117,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Tạo Tin";
+            this.tabPage1.Text = "Create news";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -176,7 +175,7 @@
             this.rtbx_quyenLoi.Name = "rtbx_quyenLoi";
             this.rtbx_quyenLoi.Size = new System.Drawing.Size(653, 600);
             this.rtbx_quyenLoi.TabIndex = 67;
-            this.rtbx_quyenLoi.Text = resources.GetString("rtbx_quyenLoi.Text");
+            this.rtbx_quyenLoi.Text = "";
             // 
             // label4
             // 
@@ -185,9 +184,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(25, 602);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 28);
+            this.label4.Size = new System.Drawing.Size(106, 28);
             this.label4.TabIndex = 66;
-            this.label4.Text = "|| Quyền lợi:";
+            this.label4.Text = "|| Benefit:";
             // 
             // rtbx_yeuCauUngVien
             // 
@@ -197,7 +196,7 @@
             this.rtbx_yeuCauUngVien.Name = "rtbx_yeuCauUngVien";
             this.rtbx_yeuCauUngVien.Size = new System.Drawing.Size(653, 212);
             this.rtbx_yeuCauUngVien.TabIndex = 65;
-            this.rtbx_yeuCauUngVien.Text = resources.GetString("rtbx_yeuCauUngVien.Text");
+            this.rtbx_yeuCauUngVien.Text = "";
             // 
             // label6
             // 
@@ -206,9 +205,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(25, 313);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 28);
+            this.label6.Size = new System.Drawing.Size(264, 28);
             this.label6.TabIndex = 64;
-            this.label6.Text = "|| Yêu cầu ứng viên:";
+            this.label6.Text = "|| Candidate requirements:";
             // 
             // rtbx_moTaCongViec
             // 
@@ -218,7 +217,7 @@
             this.rtbx_moTaCongViec.Name = "rtbx_moTaCongViec";
             this.rtbx_moTaCongViec.Size = new System.Drawing.Size(653, 212);
             this.rtbx_moTaCongViec.TabIndex = 63;
-            this.rtbx_moTaCongViec.Text = resources.GetString("rtbx_moTaCongViec.Text");
+            this.rtbx_moTaCongViec.Text = "";
             // 
             // label10
             // 
@@ -227,21 +226,21 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label10.Location = new System.Drawing.Point(25, 24);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(189, 28);
+            this.label10.Size = new System.Drawing.Size(182, 28);
             this.label10.TabIndex = 62;
-            this.label10.Text = "|| Mô tả công việc:";
+            this.label10.Text = "|| Job description:";
             // 
             // panel4
             // 
             this.panel4.AutoScroll = true;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.tbx_tenCongViec);
             this.panel4.Controls.Add(this.pbx_logoCongTy);
             this.panel4.Controls.Add(this.tbx_luong);
             this.panel4.Controls.Add(this.cbx_diaChi_CongTy);
             this.panel4.Controls.Add(this.dtpr_hanChot);
             this.panel4.Controls.Add(this.dtpr_ngayDang);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.cbx_viTriCanTuyen);
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.cbx_hinhThucLamViec);
@@ -259,8 +258,44 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(411, 1041);
+            this.panel4.Size = new System.Drawing.Size(1138, 1041);
             this.panel4.TabIndex = 27;
+            // 
+            // tbx_tenCongViec
+            // 
+            this.tbx_tenCongViec.BorderRadius = 10;
+            this.tbx_tenCongViec.BorderThickness = 0;
+            this.tbx_tenCongViec.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_tenCongViec.DefaultText = "";
+            this.tbx_tenCongViec.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbx_tenCongViec.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbx_tenCongViec.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_tenCongViec.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbx_tenCongViec.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tbx_tenCongViec.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbx_tenCongViec.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.tbx_tenCongViec.ForeColor = System.Drawing.Color.Black;
+            this.tbx_tenCongViec.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbx_tenCongViec.Location = new System.Drawing.Point(52, 488);
+            this.tbx_tenCongViec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbx_tenCongViec.Name = "tbx_tenCongViec";
+            this.tbx_tenCongViec.PasswordChar = '\0';
+            this.tbx_tenCongViec.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbx_tenCongViec.PlaceholderText = "The name of the job";
+            this.tbx_tenCongViec.SelectedText = "";
+            this.tbx_tenCongViec.Size = new System.Drawing.Size(303, 36);
+            this.tbx_tenCongViec.TabIndex = 97;
+            // 
+            // pbx_logoCongTy
+            // 
+            this.pbx_logoCongTy.Image = global::Project_Windows_04.Properties.Resources.isometric_landing_page_design_background_template;
+            this.pbx_logoCongTy.Location = new System.Drawing.Point(20, 24);
+            this.pbx_logoCongTy.Name = "pbx_logoCongTy";
+            this.pbx_logoCongTy.Size = new System.Drawing.Size(352, 140);
+            this.pbx_logoCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_logoCongTy.TabIndex = 70;
+            this.pbx_logoCongTy.TabStop = false;
+            this.pbx_logoCongTy.Click += new System.EventHandler(this.pbx_logoCongTy_Click_1);
             // 
             // tbx_luong
             // 
@@ -282,7 +317,7 @@
             this.tbx_luong.Name = "tbx_luong";
             this.tbx_luong.PasswordChar = '\0';
             this.tbx_luong.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_luong.PlaceholderText = "Lương";
+            this.tbx_luong.PlaceholderText = "Salary";
             this.tbx_luong.SelectedText = "";
             this.tbx_luong.Size = new System.Drawing.Size(303, 36);
             this.tbx_luong.TabIndex = 96;
@@ -301,69 +336,69 @@
             this.cbx_diaChi_CongTy.ForeColor = System.Drawing.Color.Black;
             this.cbx_diaChi_CongTy.ItemHeight = 30;
             this.cbx_diaChi_CongTy.Items.AddRange(new object[] {
-            "An Giang\t",
+            "An Giang",
             "Kon Tum",
-            "Bà Rịa – Vũng Tàu\t",
-            "Lai Châu",
-            "Bắc Giang\t",
-            "Lâm Đồng",
-            "Bắc Kạn\t",
-            "Lạng Sơn",
-            "Bạc Liêu\t",
-            "Lào Cai",
-            "Bắc Ninh\t",
+            "Ba Ria - Vung Tau",
+            "Lai Chau",
+            "Bac Giang",
+            "Lam Dong",
+            "Bac Kan",
+            "Lang Son",
+            "Bac Lieu",
+            "Lao Cai",
+            "Bac Ninh",
             "Long An",
-            "Bến Tre\t",
-            "Nam Định",
-            "Bình Định\t",
-            "Nghệ An",
-            "Bình Dương\t",
-            "Ninh Bình",
-            "Bình Phước\t",
-            "Ninh Thuận",
-            "Bình Thuận\t",
-            "Phú Thọ",
-            "Cà Mau\t",
-            "Phú Yên",
-            "Cần Thơ\t",
-            "Quảng Bình",
-            "Cao Bằng\t",
-            "Quảng Nam",
-            "Đà Nẵng\t",
-            "Quảng Ngãi",
-            "Đắk Lắk\t",
-            "Quảng Ninh",
-            "Đắk Nông\t",
-            "Quảng Trị",
-            "Điện Biên\t",
-            "Sóc Trăng",
-            "Đồng Nai\t",
-            "Sơn La",
-            "Đồng Tháp\t",
-            "Tây Ninh",
-            "Gia Lai\t",
-            "Thái Bình",
-            "Hà Giang\t",
-            "Thái Nguyên",
-            "Hà Nam\t",
-            "Thanh Hóa",
-            "Hà Nội\t",
-            "Thừa Thiên Huế",
-            "Hà Tĩnh\t",
-            "Tiền Giang",
-            "Hải Dương\t",
-            "TP Hồ Chí Minh",
-            "Hải Phòng\t",
-            "Trà Vinh",
-            "Hậu Giang\t",
-            "Tuyên Quang",
-            "Hòa Bình\t",
-            "Vĩnh Long",
-            "Hưng Yên\t",
-            "Vĩnh Phúc",
-            "Khánh Hòa\t",
-            "Yên Bái",
-            "Kiên Giang"});
+            "Ben Tre",
+            "Nam Dinh",
+            "Binh Dinh",
+            "Nghe An",
+            "Binh Duong",
+            "Ninh Binh",
+            "Binh Phuoc",
+            "Ninh Thuan",
+            "Binh Thuan",
+            "Phu Tho",
+            "Ca Mau",
+            "Phu Yen",
+            "Can Tho",
+            "Quang Binh",
+            "Cao Bang",
+            "Quang Nam",
+            "Da Nang",
+            "Quang Ngai",
+            "Dak Lak",
+            "Quang Ninh",
+            "Dak Nong",
+            "Quang Tri",
+            "Dien Bien",
+            "Soc Trang",
+            "Dong Nai",
+            "Son La",
+            "Dong Thap",
+            "Tay Ninh",
+            "Gia Lai",
+            "Thai Binh",
+            "Ha Giang",
+            "Thai Nguyen",
+            "Ha Nam",
+            "Thanh Hoa",
+            "Ha Noi",
+            "Thua Thien Hue",
+            "Ha Tinh",
+            "Tien Giang",
+            "Hai Duong",
+            "TP Ho Chi Minh",
+            "Hai Phong",
+            "Tra Vinh",
+            "Hau Giang",
+            "Tuyen Quang",
+            "Hoa Binh",
+            "Vinh Long",
+            "Hung Yen",
+            "Vinh Phuc",
+            "Khanh Hoa",
+            "Yen Bai",
+            "Kien Giang"});
             this.cbx_diaChi_CongTy.Location = new System.Drawing.Point(51, 296);
             this.cbx_diaChi_CongTy.Name = "cbx_diaChi_CongTy";
             this.cbx_diaChi_CongTy.Size = new System.Drawing.Size(303, 36);
@@ -416,35 +451,9 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label7.Location = new System.Drawing.Point(16, 819);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 28);
+            this.label7.Size = new System.Drawing.Size(59, 28);
             this.label7.TabIndex = 91;
-            this.label7.Text = "Thời gian";
-            // 
-            // cbx_viTriCanTuyen
-            // 
-            this.cbx_viTriCanTuyen.BackColor = System.Drawing.Color.Transparent;
-            this.cbx_viTriCanTuyen.BorderColor = System.Drawing.Color.Black;
-            this.cbx_viTriCanTuyen.BorderRadius = 10;
-            this.cbx_viTriCanTuyen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbx_viTriCanTuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_viTriCanTuyen.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.cbx_viTriCanTuyen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_viTriCanTuyen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_viTriCanTuyen.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbx_viTriCanTuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbx_viTriCanTuyen.ItemHeight = 30;
-            this.cbx_viTriCanTuyen.Items.AddRange(new object[] {
-            "Nhân viên",
-            "Trưởng nhóm",
-            "Phó phòng",
-            "Trưởng phòng",
-            "Phó giám đốc",
-            "Giám đốc",
-            "Tổng giám đốc"});
-            this.cbx_viTriCanTuyen.Location = new System.Drawing.Point(52, 485);
-            this.cbx_viTriCanTuyen.Name = "cbx_viTriCanTuyen";
-            this.cbx_viTriCanTuyen.Size = new System.Drawing.Size(302, 36);
-            this.cbx_viTriCanTuyen.TabIndex = 90;
+            this.label7.Text = "Time";
             // 
             // panel3
             // 
@@ -453,7 +462,7 @@
             this.panel3.Controls.Add(this.tbx_tenHR);
             this.panel3.Controls.Add(this.tbx_emailHR);
             this.panel3.Controls.Add(this.tbx_sdtHR);
-            this.panel3.Location = new System.Drawing.Point(20, 982);
+            this.panel3.Location = new System.Drawing.Point(21, 982);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(353, 287);
             this.panel3.TabIndex = 89;
@@ -472,13 +481,13 @@
             this.cbx_viTriCongTac_HR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_viTriCongTac_HR.ItemHeight = 30;
             this.cbx_viTriCongTac_HR.Items.AddRange(new object[] {
-            "Nhân viên",
-            "Trưởng nhóm",
-            "Phó phòng",
-            "Trưởng phòng",
-            "Phó giám đốc",
-            "Giám đốc",
-            "Tổng giám đốc"});
+            "Employee",
+            "Team Leader",
+            "Deputy Manager",
+            "Department Manager",
+            "Deputy Director",
+            "Director",
+            "CEO (Chief Executive Officer)"});
             this.cbx_viTriCongTac_HR.Location = new System.Drawing.Point(28, 135);
             this.cbx_viTriCongTac_HR.Name = "cbx_viTriCongTac_HR";
             this.cbx_viTriCongTac_HR.Size = new System.Drawing.Size(306, 36);
@@ -504,7 +513,7 @@
             this.btn_hoanTat.Name = "btn_hoanTat";
             this.btn_hoanTat.Size = new System.Drawing.Size(303, 42);
             this.btn_hoanTat.TabIndex = 84;
-            this.btn_hoanTat.Text = "Hoàn tất";
+            this.btn_hoanTat.Text = "Complete";
             this.btn_hoanTat.UseTransparentBackground = true;
             this.btn_hoanTat.Click += new System.EventHandler(this.btn_hoanTat_Click);
             // 
@@ -528,7 +537,7 @@
             this.tbx_tenHR.Name = "tbx_tenHR";
             this.tbx_tenHR.PasswordChar = '\0';
             this.tbx_tenHR.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_tenHR.PlaceholderText = "Họ và tên";
+            this.tbx_tenHR.PlaceholderText = "Full name HR";
             this.tbx_tenHR.SelectedText = "";
             this.tbx_tenHR.Size = new System.Drawing.Size(303, 36);
             this.tbx_tenHR.TabIndex = 94;
@@ -553,7 +562,7 @@
             this.tbx_emailHR.Name = "tbx_emailHR";
             this.tbx_emailHR.PasswordChar = '\0';
             this.tbx_emailHR.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_emailHR.PlaceholderText = "Email";
+            this.tbx_emailHR.PlaceholderText = "Email HR";
             this.tbx_emailHR.SelectedText = "";
             this.tbx_emailHR.Size = new System.Drawing.Size(303, 36);
             this.tbx_emailHR.TabIndex = 91;
@@ -578,7 +587,7 @@
             this.tbx_sdtHR.Name = "tbx_sdtHR";
             this.tbx_sdtHR.PasswordChar = '\0';
             this.tbx_sdtHR.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_sdtHR.PlaceholderText = "Số điện thoại";
+            this.tbx_sdtHR.PlaceholderText = "Phone number HR";
             this.tbx_sdtHR.SelectedText = "";
             this.tbx_sdtHR.Size = new System.Drawing.Size(303, 36);
             this.tbx_sdtHR.TabIndex = 93;
@@ -590,9 +599,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(15, 454);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 28);
+            this.label3.Size = new System.Drawing.Size(204, 28);
             this.label3.TabIndex = 88;
-            this.label3.Text = "Vị trí cần tuyển";
+            this.label3.Text = "The name of the job";
             // 
             // cbx_hinhThucLamViec
             // 
@@ -608,8 +617,8 @@
             this.cbx_hinhThucLamViec.ForeColor = System.Drawing.Color.Black;
             this.cbx_hinhThucLamViec.ItemHeight = 30;
             this.cbx_hinhThucLamViec.Items.AddRange(new object[] {
-            "Trực tiếp",
-            "Từ xa"});
+            "Direct",
+            "Remote"});
             this.cbx_hinhThucLamViec.Location = new System.Drawing.Point(51, 763);
             this.cbx_hinhThucLamViec.Name = "cbx_hinhThucLamViec";
             this.cbx_hinhThucLamViec.Size = new System.Drawing.Size(303, 36);
@@ -622,9 +631,9 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label13.Location = new System.Drawing.Point(16, 732);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(191, 28);
+            this.label13.Size = new System.Drawing.Size(144, 28);
             this.label13.TabIndex = 83;
-            this.label13.Text = "Hình thức làm việc";
+            this.label13.Text = "Working form";
             // 
             // label11
             // 
@@ -633,9 +642,9 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label11.Location = new System.Drawing.Point(16, 639);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 28);
+            this.label11.Size = new System.Drawing.Size(115, 28);
             this.label11.TabIndex = 82;
-            this.label11.Text = "Kinh nghiệm";
+            this.label11.Text = "Experience";
             // 
             // cbx_kinhNghiem
             // 
@@ -651,10 +660,10 @@
             this.cbx_kinhNghiem.ForeColor = System.Drawing.Color.Black;
             this.cbx_kinhNghiem.ItemHeight = 30;
             this.cbx_kinhNghiem.Items.AddRange(new object[] {
-            "Thực tập",
-            "1 năm - 2 năm",
-            "2 năm - 3 năm",
-            "> 3 năm"});
+            "Intern",
+            "1y - 2y",
+            "2y - 3y",
+            "> 3y"});
             this.cbx_kinhNghiem.Location = new System.Drawing.Point(52, 673);
             this.cbx_kinhNghiem.Name = "cbx_kinhNghiem";
             this.cbx_kinhNghiem.Size = new System.Drawing.Size(303, 36);
@@ -667,9 +676,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(16, 546);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 28);
+            this.label5.Size = new System.Drawing.Size(71, 28);
             this.label5.TabIndex = 78;
-            this.label5.Text = "Lương";
+            this.label5.Text = "Salary";
             // 
             // label9
             // 
@@ -678,9 +687,9 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label9.Location = new System.Drawing.Point(15, 360);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 28);
+            this.label9.Size = new System.Drawing.Size(73, 28);
             this.label9.TabIndex = 56;
-            this.label9.Text = "Ngành nghề";
+            this.label9.Text = "Career";
             // 
             // panel5
             // 
@@ -710,7 +719,7 @@
             this.tbx_mangXaHoi.Name = "tbx_mangXaHoi";
             this.tbx_mangXaHoi.PasswordChar = '\0';
             this.tbx_mangXaHoi.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_mangXaHoi.PlaceholderText = "Mạng xã hội";
+            this.tbx_mangXaHoi.PlaceholderText = "Link";
             this.tbx_mangXaHoi.SelectedText = "";
             this.tbx_mangXaHoi.Size = new System.Drawing.Size(303, 36);
             this.tbx_mangXaHoi.TabIndex = 38;
@@ -729,13 +738,15 @@
             this.cbx_nganhNghe.ForeColor = System.Drawing.Color.Black;
             this.cbx_nganhNghe.ItemHeight = 30;
             this.cbx_nganhNghe.Items.AddRange(new object[] {
-            "Y – Dược",
-            "Công nghệ thông tin",
-            "Kế toán",
+            "Information Technology (IT)",
+            "Engineering",
+            "Medicine",
+            "Finance",
             "Marketing",
-            "Xây dựng",
-            "Công nghệ thực phẩm",
-            "Kiến trúc sư"});
+            "Education",
+            "Hospitality and Tourism",
+            "Human Resources",
+            "Law"});
             this.cbx_nganhNghe.Location = new System.Drawing.Point(51, 394);
             this.cbx_nganhNghe.Name = "cbx_nganhNghe";
             this.cbx_nganhNghe.Size = new System.Drawing.Size(303, 36);
@@ -761,7 +772,7 @@
             this.tbx_tenCongTy.Name = "tbx_tenCongTy";
             this.tbx_tenCongTy.PasswordChar = '\0';
             this.tbx_tenCongTy.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_tenCongTy.PlaceholderText = "Tên công ty";
+            this.tbx_tenCongTy.PlaceholderText = "Company name";
             this.tbx_tenCongTy.SelectedText = "";
             this.tbx_tenCongTy.Size = new System.Drawing.Size(303, 36);
             this.tbx_tenCongTy.TabIndex = 37;
@@ -773,9 +784,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(15, 181);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 28);
+            this.label2.Size = new System.Drawing.Size(100, 28);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Công ty";
+            this.label2.Text = "Company";
             // 
             // label1
             // 
@@ -784,9 +795,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(15, 951);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 28);
+            this.label1.Size = new System.Drawing.Size(85, 28);
             this.label1.TabIndex = 35;
-            this.label1.Text = "Liên hệ";
+            this.label1.Text = "Contact";
             // 
             // guna2TabControl1
             // 
@@ -829,8 +840,17 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Bảng tin";
+            this.tabPage3.Text = "News";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // uC_BangTin1
+            // 
+            this.uC_BangTin1.BackColor = System.Drawing.Color.White;
+            this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
+            this.uC_BangTin1.Name = "uC_BangTin1";
+            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
+            this.uC_BangTin1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -841,7 +861,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "Tin đã đăng";
+            this.tabPage2.Text = "Posted news";
             // 
             // flowLayoutPanel1
             // 
@@ -860,26 +880,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1141, 1041);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // pbx_logoCongTy
-            // 
-            this.pbx_logoCongTy.Image = global::Project_Windows_04.Properties.Resources.isometric_landing_page_design_background_template;
-            this.pbx_logoCongTy.Location = new System.Drawing.Point(20, 24);
-            this.pbx_logoCongTy.Name = "pbx_logoCongTy";
-            this.pbx_logoCongTy.Size = new System.Drawing.Size(352, 140);
-            this.pbx_logoCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx_logoCongTy.TabIndex = 70;
-            this.pbx_logoCongTy.TabStop = false;
-            this.pbx_logoCongTy.Click += new System.EventHandler(this.pbx_logoCongTy_Click_1);
-            // 
-            // uC_BangTin1
-            // 
-            this.uC_BangTin1.BackColor = System.Drawing.Color.White;
-            this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
-            this.uC_BangTin1.Name = "uC_BangTin1";
-            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
-            this.uC_BangTin1.TabIndex = 0;
             // 
             // uC_TinDaDang1
             // 
@@ -970,7 +970,7 @@
             this.Controls.Add(this.guna2TabControl1);
             this.Name = "TuyenDung_TrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tuyển dụng";
+            this.Text = "Recruiter";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TuyenDung_TrangChu_Load);
             this.tabPage1.ResumeLayout(false);
@@ -979,12 +979,12 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).EndInit();
             this.panel3.ResumeLayout(false);
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -994,7 +994,6 @@
         public Guna.UI2.WinForms.Guna2ComboBox cbx_nganhNghe;
         public Guna.UI2.WinForms.Guna2ComboBox cbx_hinhThucLamViec;
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
-        public Guna.UI2.WinForms.Guna2ComboBox cbx_viTriCanTuyen;
         public Guna.UI2.WinForms.Guna2DateTimePicker dtpr_hanChot;
         public Guna.UI2.WinForms.Guna2DateTimePicker dtpr_ngayDang;
         public Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
@@ -1046,5 +1045,6 @@
         public Guna.UI2.WinForms.Guna2ComboBox cbx_viTriCongTac_HR;
         public Guna.UI2.WinForms.Guna2TextBox tbx_luong;
         private System.Windows.Forms.PictureBox pbx_logoCongTy;
+        public Guna.UI2.WinForms.Guna2TextBox tbx_tenCongViec;
     }
 }

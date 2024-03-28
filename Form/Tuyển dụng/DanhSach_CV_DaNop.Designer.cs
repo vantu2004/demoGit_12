@@ -115,25 +115,25 @@
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Thời gian nộp";
+            this.Column1.HeaderText = "Submission time";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Họ và tên";
+            this.Column2.HeaderText = "Full name";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Chi tiết";
+            this.Column3.HeaderText = "Detail";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Duyệt/ Không duyệt";
+            this.Column4.HeaderText = "Yes/ No";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
@@ -145,7 +145,7 @@
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "DanhSach_CV_DaNop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DanhSach_CV_DaNop";
+            this.Text = "List of submitted CVs";
             this.Load += new System.EventHandler(this.DanhSach_CV_DaNop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);

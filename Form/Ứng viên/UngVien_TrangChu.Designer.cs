@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UngVien_TrangChu));
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,6 +40,7 @@
             this.rtbx_mucTIeuNgheNghiep = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_luuChinhSua = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbx_diaChiUV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_hoanTat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbx_viTriUngTuyen = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -80,7 +80,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Tạo CV";
+            this.tabPage1.Text = "Create CV";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -118,7 +118,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel7.Location = new System.Drawing.Point(128, 581);
+            this.panel7.Location = new System.Drawing.Point(135, 581);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(500, 2);
             this.panel7.TabIndex = 60;
@@ -126,7 +126,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel6.Location = new System.Drawing.Point(128, 292);
+            this.panel6.Location = new System.Drawing.Point(135, 292);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(500, 2);
             this.panel6.TabIndex = 59;
@@ -135,68 +135,69 @@
             // 
             this.rtbx_kinhNghiem.BackColor = System.Drawing.Color.White;
             this.rtbx_kinhNghiem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbx_kinhNghiem.Location = new System.Drawing.Point(35, 624);
+            this.rtbx_kinhNghiem.Location = new System.Drawing.Point(42, 624);
             this.rtbx_kinhNghiem.Name = "rtbx_kinhNghiem";
             this.rtbx_kinhNghiem.Size = new System.Drawing.Size(653, 600);
             this.rtbx_kinhNghiem.TabIndex = 58;
-            this.rtbx_kinhNghiem.Text = resources.GetString("rtbx_kinhNghiem.Text");
+            this.rtbx_kinhNghiem.Text = "";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(30, 593);
+            this.label5.Location = new System.Drawing.Point(37, 593);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 28);
+            this.label5.Size = new System.Drawing.Size(140, 28);
             this.label5.TabIndex = 57;
-            this.label5.Text = "|| Kinh nghiệm:";
+            this.label5.Text = "|| Experience:";
             // 
             // rtbx_hocVan
             // 
             this.rtbx_hocVan.BackColor = System.Drawing.Color.White;
             this.rtbx_hocVan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbx_hocVan.Location = new System.Drawing.Point(35, 337);
+            this.rtbx_hocVan.Location = new System.Drawing.Point(42, 337);
             this.rtbx_hocVan.Name = "rtbx_hocVan";
             this.rtbx_hocVan.Size = new System.Drawing.Size(653, 212);
             this.rtbx_hocVan.TabIndex = 56;
-            this.rtbx_hocVan.Text = resources.GetString("rtbx_hocVan.Text");
+            this.rtbx_hocVan.Text = "";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(30, 306);
+            this.label2.Location = new System.Drawing.Point(37, 306);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 28);
+            this.label2.Size = new System.Drawing.Size(131, 28);
             this.label2.TabIndex = 55;
-            this.label2.Text = "|| Học vấn:";
+            this.label2.Text = "|| Education:";
             // 
             // rtbx_mucTIeuNgheNghiep
             // 
             this.rtbx_mucTIeuNgheNghiep.BackColor = System.Drawing.Color.White;
             this.rtbx_mucTIeuNgheNghiep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbx_mucTIeuNgheNghiep.Location = new System.Drawing.Point(35, 47);
+            this.rtbx_mucTIeuNgheNghiep.Location = new System.Drawing.Point(42, 47);
             this.rtbx_mucTIeuNgheNghiep.Name = "rtbx_mucTIeuNgheNghiep";
             this.rtbx_mucTIeuNgheNghiep.Size = new System.Drawing.Size(653, 212);
             this.rtbx_mucTIeuNgheNghiep.TabIndex = 54;
-            this.rtbx_mucTIeuNgheNghiep.Text = resources.GetString("rtbx_mucTIeuNgheNghiep.Text");
+            this.rtbx_mucTIeuNgheNghiep.Text = "";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(30, 16);
+            this.label1.Location = new System.Drawing.Point(37, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 28);
+            this.label1.Size = new System.Drawing.Size(145, 28);
             this.label1.TabIndex = 53;
-            this.label1.Text = "|| Mục tiêu nghề nghiệp:";
+            this.label1.Text = "|| Career goal:";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.btn_luuChinhSua);
             this.panel4.Controls.Add(this.cbx_diaChiUV);
             this.panel4.Controls.Add(this.btn_hoanTat);
             this.panel4.Controls.Add(this.cbx_viTriUngTuyen);
@@ -221,6 +222,30 @@
             this.panel4.Size = new System.Drawing.Size(377, 1039);
             this.panel4.TabIndex = 27;
             // 
+            // btn_luuChinhSua
+            // 
+            this.btn_luuChinhSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_luuChinhSua.Animated = true;
+            this.btn_luuChinhSua.BackColor = System.Drawing.Color.Transparent;
+            this.btn_luuChinhSua.BorderRadius = 10;
+            this.btn_luuChinhSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_luuChinhSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_luuChinhSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_luuChinhSua.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_luuChinhSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_luuChinhSua.FillColor = System.Drawing.Color.Green;
+            this.btn_luuChinhSua.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_luuChinhSua.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btn_luuChinhSua.ForeColor = System.Drawing.Color.White;
+            this.btn_luuChinhSua.IndicateFocus = true;
+            this.btn_luuChinhSua.Location = new System.Drawing.Point(41, 945);
+            this.btn_luuChinhSua.Name = "btn_luuChinhSua";
+            this.btn_luuChinhSua.Size = new System.Drawing.Size(306, 42);
+            this.btn_luuChinhSua.TabIndex = 62;
+            this.btn_luuChinhSua.Text = "Edit";
+            this.btn_luuChinhSua.UseTransparentBackground = true;
+            this.btn_luuChinhSua.Click += new System.EventHandler(this.btn_luuChinhSua_Click);
+            // 
             // cbx_diaChiUV
             // 
             this.cbx_diaChiUV.BackColor = System.Drawing.Color.Transparent;
@@ -235,69 +260,69 @@
             this.cbx_diaChiUV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbx_diaChiUV.ItemHeight = 30;
             this.cbx_diaChiUV.Items.AddRange(new object[] {
-            "An Giang\t",
+            "An Giang",
             "Kon Tum",
-            "Bà Rịa – Vũng Tàu\t",
-            "Lai Châu",
-            "Bắc Giang\t",
-            "Lâm Đồng",
-            "Bắc Kạn\t",
-            "Lạng Sơn",
-            "Bạc Liêu\t",
-            "Lào Cai",
-            "Bắc Ninh\t",
+            "Ba Ria - Vung Tau",
+            "Lai Chau",
+            "Bac Giang",
+            "Lam Dong",
+            "Bac Kan",
+            "Lang Son",
+            "Bac Lieu",
+            "Lao Cai",
+            "Bac Ninh",
             "Long An",
-            "Bến Tre\t",
-            "Nam Định",
-            "Bình Định\t",
-            "Nghệ An",
-            "Bình Dương\t",
-            "Ninh Bình",
-            "Bình Phước\t",
-            "Ninh Thuận",
-            "Bình Thuận\t",
-            "Phú Thọ",
-            "Cà Mau\t",
-            "Phú Yên",
-            "Cần Thơ\t",
-            "Quảng Bình",
-            "Cao Bằng\t",
-            "Quảng Nam",
-            "Đà Nẵng\t",
-            "Quảng Ngãi",
-            "Đắk Lắk\t",
-            "Quảng Ninh",
-            "Đắk Nông\t",
-            "Quảng Trị",
-            "Điện Biên\t",
-            "Sóc Trăng",
-            "Đồng Nai\t",
-            "Sơn La",
-            "Đồng Tháp\t",
-            "ây Ninh",
-            "Gia Lai\t",
-            "Thái Bình",
-            "Hà Giang\t",
-            "Thái Nguyên",
-            "Hà Nam\t",
-            "Thanh Hóa",
-            "Hà Nội\t",
-            "Thừa Thiên Huế",
-            "Hà Tĩnh\t",
-            "Tiền Giang",
-            "Hải Dương\t",
-            "TP Hồ Chí Minh",
-            "Hải Phòng\t",
-            "Trà Vinh",
-            "Hậu Giang\t",
-            "Tuyên Quang",
-            "Hòa Bình\t",
-            "Vĩnh Long",
-            "Hưng Yên\t",
-            "Vĩnh Phúc",
-            "Khánh Hòa\t",
-            "Yên Bái",
-            "Kiên Giang"});
+            "Ben Tre",
+            "Nam Dinh",
+            "Binh Dinh",
+            "Nghe An",
+            "Binh Duong",
+            "Ninh Binh",
+            "Binh Phuoc",
+            "Ninh Thuan",
+            "Binh Thuan",
+            "Phu Tho",
+            "Ca Mau",
+            "Phu Yen",
+            "Can Tho",
+            "Quang Binh",
+            "Cao Bang",
+            "Quang Nam",
+            "Da Nang",
+            "Quang Ngai",
+            "Dak Lak",
+            "Quang Ninh",
+            "Dak Nong",
+            "Quang Tri",
+            "Dien Bien",
+            "Soc Trang",
+            "Dong Nai",
+            "Son La",
+            "Dong Thap",
+            "Tay Ninh",
+            "Gia Lai",
+            "Thai Binh",
+            "Ha Giang",
+            "Thai Nguyen",
+            "Ha Nam",
+            "Thanh Hoa",
+            "Ha Noi",
+            "Thua Thien Hue",
+            "Ha Tinh",
+            "Tien Giang",
+            "Hai Duong",
+            "TP Ho Chi Minh",
+            "Hai Phong",
+            "Tra Vinh",
+            "Hau Giang",
+            "Tuyen Quang",
+            "Hoa Binh",
+            "Vinh Long",
+            "Hung Yen",
+            "Vinh Phuc",
+            "Khanh Hoa",
+            "Yen Bai",
+            "Kien Giang"});
             this.cbx_diaChiUV.Location = new System.Drawing.Point(42, 375);
             this.cbx_diaChiUV.Name = "cbx_diaChiUV";
             this.cbx_diaChiUV.Size = new System.Drawing.Size(306, 36);
@@ -319,11 +344,11 @@
             this.btn_hoanTat.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_hoanTat.ForeColor = System.Drawing.Color.White;
             this.btn_hoanTat.IndicateFocus = true;
-            this.btn_hoanTat.Location = new System.Drawing.Point(42, 989);
+            this.btn_hoanTat.Location = new System.Drawing.Point(41, 993);
             this.btn_hoanTat.Name = "btn_hoanTat";
             this.btn_hoanTat.Size = new System.Drawing.Size(306, 42);
             this.btn_hoanTat.TabIndex = 60;
-            this.btn_hoanTat.Text = "Hoàn tất";
+            this.btn_hoanTat.Text = "Complete";
             this.btn_hoanTat.UseTransparentBackground = true;
             this.btn_hoanTat.Click += new System.EventHandler(this.btn_hoanTat_Click);
             // 
@@ -341,12 +366,13 @@
             this.cbx_viTriUngTuyen.ForeColor = System.Drawing.Color.Black;
             this.cbx_viTriUngTuyen.ItemHeight = 30;
             this.cbx_viTriUngTuyen.Items.AddRange(new object[] {
-            "Nhân viên",
-            "Trưởng nhóm",
-            "Phó phòng",
-            "Trưởng phòng",
-            "Phó giám đốc",
-            "Giám đốc"});
+            "Employee",
+            "Team Leader",
+            "Deputy Manager",
+            "Department Manager",
+            "Deputy Director",
+            "Director",
+            "CEO (Chief Executive Officer)"});
             this.cbx_viTriUngTuyen.Location = new System.Drawing.Point(42, 699);
             this.cbx_viTriUngTuyen.Name = "cbx_viTriUngTuyen";
             this.cbx_viTriUngTuyen.Size = new System.Drawing.Size(306, 36);
@@ -367,9 +393,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(23, 658);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 28);
+            this.label6.Size = new System.Drawing.Size(168, 28);
             this.label6.TabIndex = 57;
-            this.label6.Text = "Vị trí ứng tuyển";
+            this.label6.Text = "Applied position";
             // 
             // panel5
             // 
@@ -394,9 +420,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(22, 223);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 28);
+            this.label4.Size = new System.Drawing.Size(125, 28);
             this.label4.TabIndex = 52;
-            this.label4.Text = "Thông tin";
+            this.label4.Text = "Information";
             // 
             // label3
             // 
@@ -405,9 +431,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(22, 502);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 28);
+            this.label3.Size = new System.Drawing.Size(85, 28);
             this.label3.TabIndex = 51;
-            this.label3.Text = "Liên hệ";
+            this.label3.Text = "Contact";
             // 
             // tbx_tenUV
             // 
@@ -429,7 +455,7 @@
             this.tbx_tenUV.Name = "tbx_tenUV";
             this.tbx_tenUV.PasswordChar = '\0';
             this.tbx_tenUV.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_tenUV.PlaceholderText = "Họ và tên";
+            this.tbx_tenUV.PlaceholderText = "Full name";
             this.tbx_tenUV.SelectedText = "";
             this.tbx_tenUV.Size = new System.Drawing.Size(306, 36);
             this.tbx_tenUV.TabIndex = 48;
@@ -475,10 +501,10 @@
             this.rbn_nu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rbn_nu.Location = new System.Drawing.Point(232, 340);
             this.rbn_nu.Name = "rbn_nu";
-            this.rbn_nu.Size = new System.Drawing.Size(54, 27);
+            this.rbn_nu.Size = new System.Drawing.Size(85, 27);
             this.rbn_nu.TabIndex = 45;
             this.rbn_nu.TabStop = true;
-            this.rbn_nu.Text = "Nữ";
+            this.rbn_nu.Text = "Female";
             this.rbn_nu.UseVisualStyleBackColor = true;
             // 
             // rbn_nam
@@ -490,7 +516,7 @@
             this.rbn_nam.Size = new System.Drawing.Size(68, 27);
             this.rbn_nam.TabIndex = 44;
             this.rbn_nam.TabStop = true;
-            this.rbn_nam.Text = "Nam";
+            this.rbn_nam.Text = "Male";
             this.rbn_nam.UseVisualStyleBackColor = true;
             // 
             // tbx_mangXaHoi
@@ -513,7 +539,7 @@
             this.tbx_mangXaHoi.Name = "tbx_mangXaHoi";
             this.tbx_mangXaHoi.PasswordChar = '\0';
             this.tbx_mangXaHoi.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_mangXaHoi.PlaceholderText = "Skype/Facebook/Git....";
+            this.tbx_mangXaHoi.PlaceholderText = "Link";
             this.tbx_mangXaHoi.SelectedText = "";
             this.tbx_mangXaHoi.Size = new System.Drawing.Size(306, 36);
             this.tbx_mangXaHoi.TabIndex = 38;
@@ -583,7 +609,7 @@
             this.tbx_sdtUV.Name = "tbx_sdtUV";
             this.tbx_sdtUV.PasswordChar = '\0';
             this.tbx_sdtUV.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbx_sdtUV.PlaceholderText = "Số điện thoại cá nhân";
+            this.tbx_sdtUV.PlaceholderText = "Phone number";
             this.tbx_sdtUV.SelectedText = "";
             this.tbx_sdtUV.Size = new System.Drawing.Size(306, 36);
             this.tbx_sdtUV.TabIndex = 39;
@@ -596,7 +622,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1144, 1047);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Bảng tin";
+            this.tabPage3.Text = "News";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // uC_BangTin1
@@ -699,5 +725,6 @@
         public UC_BangTin uC_BangTin1;
         public Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         public Guna.UI2.WinForms.Guna2ComboBox cbx_diaChiUV;
+        public Guna.UI2.WinForms.Guna2GradientButton btn_luuChinhSua;
     }
 }

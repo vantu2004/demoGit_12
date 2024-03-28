@@ -29,12 +29,12 @@ namespace Project_Windows_04
                     SqlCommand cmd_NTD_UV = new SqlCommand(sqlQuery_NTD_UV, conn);
 
                     if (cmd_NTD_UV.ExecuteNonQuery() > 0)
-                        MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Success!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -53,7 +53,7 @@ namespace Project_Windows_04
 
                 if (data.Read() == true)
                 {
-                    MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Success!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     
                     if (data.GetString(1) == "Employer")
                     {
@@ -63,19 +63,19 @@ namespace Project_Windows_04
                     }
                     else
                     {
-                        string sqlQuery_UV = string.Format("SELECT * FROM UNGVIEN WHERE Id = '{0}'", data.GetString(0));
+                        string sqlQuery_UV = string.Format("SELECT * FROM UNGVIEN INNER JOIN CVs ON UNGVIEN.Id = CVs.Id WHERE UNGVIEN.Id = '{0}'", data.GetString(0));
                         conn.Close();
                         thucThi_layDuLieu_UV(sqlQuery_UV);
                     }    
                 }
                 else
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Not found!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -102,11 +102,11 @@ namespace Project_Windows_04
                     TD_TC.btn_hoanTat.Click += TD_TC.btn_hoanTat_Click;
                 }
                 else
-                    MessageBox.Show("Thông tin không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Not found!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -121,33 +121,34 @@ namespace Project_Windows_04
 
                 if (data.Read() == true)
                 {
-                    UngVien u = new UngVien(data.GetString(0), data.GetString(1), data.GetString(2), data.GetString(3), data.GetString(4), data.GetString(5), data.GetString(6), data.GetString(7), data.GetString(8));
+                    UngVien_Tin u = new UngVien_Tin(data.GetString(0), (byte[])data.GetValue(10), data.GetString(2), data.GetString(4), data.GetString(8), data.GetString(7), data.GetString(5), data.GetString(3), data.GetString(6), data.GetString(11), data.GetString(15), data.GetString(12), data.GetString(13), data.GetString(14));
                     UngVien_TrangChu UV_TC = new UngVien_TrangChu();
                     UV_TC.layDuLieu(u);
                     UV_TC.Id = u.Id;
                     UV_TC.ShowDialog();
                     UV_TC.btn_hoanTat.Click += UV_TC.btn_hoanTat_Click;
+                    UV_TC.btn_luuChinhSua.Click += UV_TC.btn_luuChinhSua_Click;
                 }
                 else
-                    MessageBox.Show("Thông tin không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Not found!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! + '\n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        public void thucThi_taoTin(string sqlQuery_taoTin)
+        public void thucThi_taoTin_chinhSuaTin(string sqlQuery_taoTin_chinhSuaTin)
         {
-            //try
+            try
             {
                 {
                     conn.Open();
 
-                    SqlCommand cmd_TT = new SqlCommand(sqlQuery_taoTin, conn);
+                    SqlCommand cmd_TT = new SqlCommand(sqlQuery_taoTin_chinhSuaTin, conn);
 
                     if (cmd_TT.ExecuteNonQuery() > 0)
-                        MessageBox.Show("Tạo tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Success!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //SqlDataReader data = cmd_TT.ExecuteReader();
 
                     //if (data.Read() == true)
@@ -164,12 +165,12 @@ namespace Project_Windows_04
                     //    MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error! + \n" + ex.Message, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-            //finally
+            finally
             {
                 conn.Close();
             }

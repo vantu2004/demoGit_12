@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Windows_04
 {
-    internal class UngVien_Tin
+    public class UngVien_Tin
     {
         private string id;
         private byte[] anhDaiDien;
