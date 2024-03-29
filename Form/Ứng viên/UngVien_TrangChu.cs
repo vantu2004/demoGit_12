@@ -16,6 +16,7 @@ namespace Project_Windows_04
     {
         UngVien_DAO UV_DAO = new UngVien_DAO();
         public string Id;
+        string userType;
 
         public UngVien_TrangChu()
         {
@@ -24,9 +25,11 @@ namespace Project_Windows_04
 
         private void UngVien_TrangChu_Load(object sender, EventArgs e)
         {
-            uC_BangTin1.btn_dangTinTuyenDung.Hide();
-            uC_BangTin1.btn_dangNhap.Hide();
-            uC_BangTin1.btn_dangKy.Hide();
+            UC_BangTin_UV.btn_dangTinTuyenDung.Hide();
+            UC_BangTin_UV.btn_dangNhap.Hide();
+            UC_BangTin_UV.btn_dangKy.Hide();
+
+            UV_DAO.load_tinTuyenDung(UC_BangTin_UV.flpl_danhSachTinTuyenDung, Id, userType);
         }
 
         public void layDuLieu(UngVien_Tin UV)
@@ -44,6 +47,9 @@ namespace Project_Windows_04
             rtbx_mucTIeuNgheNghiep.Text = UV.MucTieuNgheNghiep;
             rtbx_hocVan.Text = UV.HocVan;
             rtbx_kinhNghiem.Text = UV.KinhNghiem;
+
+            this.Id = UV.Id;
+            this.userType = "Candidate";
         }
 
         private void pbx_avatar_Click(object sender, EventArgs e)

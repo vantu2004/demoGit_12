@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_Windows_04
 {
-    internal class TuyenDung_Tin
+    public class TuyenDung_Tin
     {
         private string idCompany;
         private string idJobPostings;

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_ngayDang = new System.Windows.Forms.Label();
+            this.lbl_tenCongViec = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -38,27 +38,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // lbl_ngayDang
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(68, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 31);
-            this.label2.TabIndex = 86;
-            this.label2.Text = "Update date";
+            this.lbl_ngayDang.AutoSize = true;
+            this.lbl_ngayDang.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_ngayDang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lbl_ngayDang.Location = new System.Drawing.Point(68, 11);
+            this.lbl_ngayDang.Name = "lbl_ngayDang";
+            this.lbl_ngayDang.Size = new System.Drawing.Size(145, 31);
+            this.lbl_ngayDang.TabIndex = 86;
+            this.lbl_ngayDang.Text = "Update date";
             // 
-            // label1
+            // lbl_tenCongViec
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(396, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 31);
-            this.label1.TabIndex = 87;
-            this.label1.Text = "The name of the job";
+            this.lbl_tenCongViec.AutoSize = true;
+            this.lbl_tenCongViec.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tenCongViec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lbl_tenCongViec.Location = new System.Drawing.Point(396, 11);
+            this.lbl_tenCongViec.Name = "lbl_tenCongViec";
+            this.lbl_tenCongViec.Size = new System.Drawing.Size(229, 31);
+            this.lbl_tenCongViec.TabIndex = 87;
+            this.lbl_tenCongViec.Text = "The name of the job";
             // 
             // guna2PictureBox2
             // 
@@ -96,8 +96,8 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_tenCongViec);
+            this.Controls.Add(this.lbl_ngayDang);
             this.Name = "UC_TinDaDang";
             this.Size = new System.Drawing.Size(1130, 53);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -108,8 +108,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_ngayDang;
+        private System.Windows.Forms.Label lbl_tenCongViec;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;

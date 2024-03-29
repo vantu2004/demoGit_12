@@ -36,7 +36,7 @@ CREATE TABLE [dbo].[JobPostings] (
     [IdJobPostings]  VARCHAR (50)    NOT NULL,
     [IconCompany]    IMAGE           NULL,
     [Job]            NVARCHAR (30)   DEFAULT ('null') NOT NULL,
-    [PositionNeeded] NVARCHAR (62)   DEFAULT ('null') NOT NULL,
+    [JobName]        NVARCHAR (62)   DEFAULT ('null') NOT NULL,
     [Salary]         DECIMAL (10, 2) DEFAULT ((0.0)) NOT NULL,
     [Experience]     NVARCHAR (100)  DEFAULT ('null') NOT NULL,
     [WorkFormat]     NVARCHAR (100)  DEFAULT ('null') NOT NULL,
@@ -74,23 +74,20 @@ CREATE TABLE [dbo].[CVs] (
     [CareerGoal] TEXT          NOT NULL,
     [Education]  TEXT          NOT NULL,
     [Experience] TEXT          NOT NULL,
-    [UploadDate] VARCHAR(50)   NOT NULL,
-    CONSTRAINT [PK_CVs] PRIMARY KEY CLUSTERED ([Id], [UploadDate] ASC),
+    [UploadDate] VARCHAR (50)  NOT NULL,
+    CONSTRAINT [PK_CVs] PRIMARY KEY CLUSTERED ([Id] ASC),
     FOREIGN KEY ([Id]) REFERENCES [dbo].[UNGVIEN] ([Id])
 );
 GO
 
 --Đơn ứng tuyển
-CREATE TABLE Applications (
-    JobID INT,
-    CandidateID INT,	   -- Mã ứng viên
-    ApplicationDate DATE,  -- Ngày ứng tuyển
-    AStatus VARCHAR(50),   -- Trạng thái (đậu hay chưa đậu )
-
-	FOREIGN KEY (JobID) REFERENCES JobPostings(JobID),
-    FOREIGN KEY (CandidateID) REFERENCES UNGVIEN(Id),
-
-	PRIMARY KEY(jobID, CandidateID),
+CREATE TABLE [dbo].[Applications] (
+    [IdCompany]     VARCHAR (50) NOT NULL,
+    [IdJobPostings] VARCHAR (50) NOT NULL,
+    [IdCandidate]   VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([IdCompany] ASC, [IdJobPostings] ASC, [IdCandidate] ASC),
+    FOREIGN KEY ([IdCompany], [IdJobPostings]) REFERENCES [dbo].[JobPostings] ([IdCompany], [IdJobPostings]),
+    FOREIGN KEY ([IdCandidate]) REFERENCES [dbo].[UNGVIEN] ([Id])
 );
 GO
 

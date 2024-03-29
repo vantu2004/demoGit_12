@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Project_Windows_04
 {
@@ -41,6 +42,13 @@ namespace Project_Windows_04
                 u.TenUV, u.SdtUV, u.NgaySinhUV, u.MangXaHoi, u.EmailUV, u.DiaChi, u.GioiTinhUV, u.Id);
 
             db.thucThi_taoTin_chinhSuaTin(sqlQuery_chinhSuaTin_UNGVIEN);
+        }
+
+        public void load_tinTuyenDung(FlowLayoutPanel flowLayoutPanel, string Id, string kieuNguoiDung)
+        {
+            string sqlQuery_xuat_tinTuyenDung = string.Format("SELECT * FROM NHATUYENDUNG INNER JOIN JobPostings ON NHATUYENDUNG.Id = JobPostings.IdCompany");
+
+            db.thucThi_load_tinTuyenDung(sqlQuery_xuat_tinTuyenDung, flowLayoutPanel, Id, kieuNguoiDung);
         }
     }
 }

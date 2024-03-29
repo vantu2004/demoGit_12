@@ -60,7 +60,7 @@
             this.tbx_emaiUV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbx_sdtUV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.uC_BangTin1 = new Project_Windows_04.UC_BangTin();
+            this.UC_BangTin_UV = new Project_Windows_04.UC_BangTin();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -616,7 +616,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.uC_BangTin1);
+            this.tabPage3.Controls.Add(this.UC_BangTin_UV);
             this.tabPage3.Location = new System.Drawing.Point(184, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -625,14 +625,14 @@
             this.tabPage3.Text = "News";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // uC_BangTin1
+            // UC_BangTin_UV
             // 
-            this.uC_BangTin1.BackColor = System.Drawing.Color.White;
-            this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
-            this.uC_BangTin1.Name = "uC_BangTin1";
-            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
-            this.uC_BangTin1.TabIndex = 0;
+            this.UC_BangTin_UV.BackColor = System.Drawing.Color.White;
+            this.UC_BangTin_UV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UC_BangTin_UV.Location = new System.Drawing.Point(3, 3);
+            this.UC_BangTin_UV.Name = "UC_BangTin_UV";
+            this.UC_BangTin_UV.Size = new System.Drawing.Size(1138, 1041);
+            this.UC_BangTin_UV.TabIndex = 0;
             // 
             // guna2TabControl1
             // 
@@ -722,7 +722,7 @@
         public Guna.UI2.WinForms.Guna2TextBox tbx_emaiUV;
         public Guna.UI2.WinForms.Guna2TextBox tbx_sdtUV;
         public System.Windows.Forms.TabPage tabPage3;
-        public UC_BangTin uC_BangTin1;
+        public UC_BangTin UC_BangTin_UV;
         public Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         public Guna.UI2.WinForms.Guna2ComboBox cbx_diaChiUV;
         public Guna.UI2.WinForms.Guna2GradientButton btn_luuChinhSua;

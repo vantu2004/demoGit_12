@@ -13,6 +13,8 @@ namespace Project_Windows_04
 {
     public partial class Main_TrangChu : Form
     {
+        TrangChu_DAO TC_DAO = new TrangChu_DAO();
+
         public Main_TrangChu()
         {
             InitializeComponent();
@@ -35,7 +37,8 @@ namespace Project_Windows_04
             UC_Main_TrangChu.btn_dangKy.Click += Btn_dangKy_Click;
             UC_Main_TrangChu.btn_dangNhap.Click += Btn_dangNhap_Click;
             UC_Main_TrangChu.btn_dangTinTuyenDung.Click += Btn_dangNhap_Click;
-        }
 
+            TC_DAO.load_tinTuyenDung(UC_Main_TrangChu.flpl_danhSachTinTuyenDung, "null", "null");
+        }
     }
 }

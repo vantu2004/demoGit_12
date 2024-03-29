@@ -232,12 +232,7 @@
     </Compile>
     <Compile Include="Class\Tuyển dụng\TuyenDung_DAO.cs" />
     <Compile Include="Class\Tuyển dụng\TuyenDung_Tin.cs" />
-    <Compile Include="temp01.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="temp01.Designer.cs">
-      <DependentUpon>temp01.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Class\TrangChu_DAO.cs" />
     <Compile Include="UC_Controls\UC_BangTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -265,6 +260,9 @@
     </Compile>
     <Compile Include="Class\Ứng viên\UngVien_DAO.cs" />
     <Compile Include="Class\Ứng viên\UngVien_Tin.cs" />
+    <Compile Include="Class\Xuat_ThongTin.cs" />
+    <Compile Include="Class\Ứng tuyển\UngTuyen.cs" />
+    <Compile Include="Class\Ứng tuyển\UngTuyen_DAO.cs" />
     <EmbeddedResource Include="Form\Chi tiết\ChiTietCV.resx">
       <DependentUpon>ChiTietCV.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,9 +294,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Tuyển dụng\TuyenDung_DangKy.resx">
       <DependentUpon>TuyenDung_DangKy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="temp01.resx">
-      <DependentUpon>temp01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Controls\UC_BangTin.resx">
       <DependentUpon>UC_BangTin.cs</DependentUpon>

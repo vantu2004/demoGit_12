@@ -72,9 +72,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.uC_BangTin1 = new Project_Windows_04.UC_BangTin();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.UC_BangTin_NTD = new Project_Windows_04.UC_BangTin();
             this.uC_TinDaDang1 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang2 = new Project_Windows_04.UC_TinDaDang();
             this.uC_TinDaDang3 = new Project_Windows_04.UC_TinDaDang();
@@ -154,7 +154,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel7.Location = new System.Drawing.Point(109, 587);
+            this.panel7.Location = new System.Drawing.Point(108, 587);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(500, 2);
             this.panel7.TabIndex = 69;
@@ -162,7 +162,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel6.Location = new System.Drawing.Point(109, 296);
+            this.panel6.Location = new System.Drawing.Point(108, 296);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(500, 2);
             this.panel6.TabIndex = 68;
@@ -171,7 +171,7 @@
             // 
             this.rtbx_quyenLoi.BackColor = System.Drawing.Color.White;
             this.rtbx_quyenLoi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbx_quyenLoi.Location = new System.Drawing.Point(30, 630);
+            this.rtbx_quyenLoi.Location = new System.Drawing.Point(29, 630);
             this.rtbx_quyenLoi.Name = "rtbx_quyenLoi";
             this.rtbx_quyenLoi.Size = new System.Drawing.Size(653, 600);
             this.rtbx_quyenLoi.TabIndex = 67;
@@ -182,7 +182,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(25, 602);
+            this.label4.Location = new System.Drawing.Point(24, 602);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 28);
             this.label4.TabIndex = 66;
@@ -192,7 +192,7 @@
             // 
             this.rtbx_yeuCauUngVien.BackColor = System.Drawing.Color.White;
             this.rtbx_yeuCauUngVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbx_yeuCauUngVien.Location = new System.Drawing.Point(30, 341);
+            this.rtbx_yeuCauUngVien.Location = new System.Drawing.Point(29, 341);
             this.rtbx_yeuCauUngVien.Name = "rtbx_yeuCauUngVien";
             this.rtbx_yeuCauUngVien.Size = new System.Drawing.Size(653, 212);
             this.rtbx_yeuCauUngVien.TabIndex = 65;
@@ -203,7 +203,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(25, 313);
+            this.label6.Location = new System.Drawing.Point(24, 313);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(264, 28);
             this.label6.TabIndex = 64;
@@ -213,7 +213,7 @@
             // 
             this.rtbx_moTaCongViec.BackColor = System.Drawing.Color.White;
             this.rtbx_moTaCongViec.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbx_moTaCongViec.Location = new System.Drawing.Point(30, 55);
+            this.rtbx_moTaCongViec.Location = new System.Drawing.Point(29, 55);
             this.rtbx_moTaCongViec.Name = "rtbx_moTaCongViec";
             this.rtbx_moTaCongViec.Size = new System.Drawing.Size(653, 212);
             this.rtbx_moTaCongViec.TabIndex = 63;
@@ -224,7 +224,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label10.Location = new System.Drawing.Point(25, 24);
+            this.label10.Location = new System.Drawing.Point(24, 24);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(182, 28);
             this.label10.TabIndex = 62;
@@ -532,7 +532,7 @@
             this.tbx_tenHR.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.tbx_tenHR.ForeColor = System.Drawing.Color.Black;
             this.tbx_tenHR.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbx_tenHR.Location = new System.Drawing.Point(33, 4);
+            this.tbx_tenHR.Location = new System.Drawing.Point(32, 4);
             this.tbx_tenHR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_tenHR.Name = "tbx_tenHR";
             this.tbx_tenHR.PasswordChar = '\0';
@@ -834,7 +834,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.uC_BangTin1);
+            this.tabPage3.Controls.Add(this.UC_BangTin_NTD);
             this.tabPage3.Location = new System.Drawing.Point(184, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -842,15 +842,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "News";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // uC_BangTin1
-            // 
-            this.uC_BangTin1.BackColor = System.Drawing.Color.White;
-            this.uC_BangTin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_BangTin1.Location = new System.Drawing.Point(3, 3);
-            this.uC_BangTin1.Name = "uC_BangTin1";
-            this.uC_BangTin1.Size = new System.Drawing.Size(1138, 1041);
-            this.uC_BangTin1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -880,6 +871,15 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1141, 1041);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // UC_BangTin_NTD
+            // 
+            this.UC_BangTin_NTD.BackColor = System.Drawing.Color.White;
+            this.UC_BangTin_NTD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UC_BangTin_NTD.Location = new System.Drawing.Point(3, 3);
+            this.UC_BangTin_NTD.Name = "UC_BangTin_NTD";
+            this.UC_BangTin_NTD.Size = new System.Drawing.Size(1138, 1041);
+            this.UC_BangTin_NTD.TabIndex = 0;
             // 
             // uC_TinDaDang1
             // 
@@ -1004,7 +1004,7 @@
         public System.Windows.Forms.Panel panel4;
         public Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         public System.Windows.Forms.TabPage tabPage3;
-        public UC_BangTin uC_BangTin1;
+        public UC_BangTin UC_BangTin_NTD;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel panel7;

@@ -28,90 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_tenCongViec = new System.Windows.Forms.Label();
+            this.lbl_tenCongTy = new System.Windows.Forms.Label();
+            this.lbl_hinhThucLamViec = new System.Windows.Forms.Label();
+            this.lbl_diaChi = new System.Windows.Forms.Label();
+            this.lbl_luong = new System.Windows.Forms.Label();
+            this.lbl_kinhNghiem = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbx_logoCongTy = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_nganhNghe = new System.Windows.Forms.Label();
+            this.lbl_IdCompany = new System.Windows.Forms.Label();
+            this.lbl_IdJobPostings = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_tenCongViec
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(17, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "|| The name of the job";
+            this.lbl_tenCongViec.AutoSize = true;
+            this.lbl_tenCongViec.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tenCongViec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lbl_tenCongViec.Location = new System.Drawing.Point(17, 12);
+            this.lbl_tenCongViec.Name = "lbl_tenCongViec";
+            this.lbl_tenCongViec.Size = new System.Drawing.Size(251, 31);
+            this.lbl_tenCongViec.TabIndex = 0;
+            this.lbl_tenCongViec.Text = "|| The name of the job";
             // 
-            // label2
+            // lbl_tenCongTy
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(269, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Company name";
+            this.lbl_tenCongTy.AutoSize = true;
+            this.lbl_tenCongTy.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tenCongTy.Location = new System.Drawing.Point(269, 67);
+            this.lbl_tenCongTy.Name = "lbl_tenCongTy";
+            this.lbl_tenCongTy.Size = new System.Drawing.Size(138, 25);
+            this.lbl_tenCongTy.TabIndex = 1;
+            this.lbl_tenCongTy.Text = "Company name";
             // 
-            // label3
+            // lbl_hinhThucLamViec
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(629, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Working form";
+            this.lbl_hinhThucLamViec.AutoSize = true;
+            this.lbl_hinhThucLamViec.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_hinhThucLamViec.Location = new System.Drawing.Point(629, 114);
+            this.lbl_hinhThucLamViec.Name = "lbl_hinhThucLamViec";
+            this.lbl_hinhThucLamViec.Size = new System.Drawing.Size(123, 25);
+            this.lbl_hinhThucLamViec.TabIndex = 2;
+            this.lbl_hinhThucLamViec.Text = "Working form";
             // 
-            // label4
+            // lbl_diaChi
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(629, 158);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Address";
+            this.lbl_diaChi.AutoSize = true;
+            this.lbl_diaChi.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_diaChi.Location = new System.Drawing.Point(629, 158);
+            this.lbl_diaChi.Name = "lbl_diaChi";
+            this.lbl_diaChi.Size = new System.Drawing.Size(77, 25);
+            this.lbl_diaChi.TabIndex = 3;
+            this.lbl_diaChi.Text = "Address";
             // 
-            // label5
+            // lbl_luong
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(269, 114);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Salary";
+            this.lbl_luong.AutoSize = true;
+            this.lbl_luong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_luong.Location = new System.Drawing.Point(269, 114);
+            this.lbl_luong.Name = "lbl_luong";
+            this.lbl_luong.Size = new System.Drawing.Size(65, 25);
+            this.lbl_luong.TabIndex = 4;
+            this.lbl_luong.Text = "Salary";
             // 
-            // label6
+            // lbl_kinhNghiem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(629, 67);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 25);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Experience";
+            this.lbl_kinhNghiem.AutoSize = true;
+            this.lbl_kinhNghiem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_kinhNghiem.Location = new System.Drawing.Point(629, 67);
+            this.lbl_kinhNghiem.Name = "lbl_kinhNghiem";
+            this.lbl_kinhNghiem.Size = new System.Drawing.Size(95, 25);
+            this.lbl_kinhNghiem.TabIndex = 9;
+            this.lbl_kinhNghiem.Text = "Experience";
             // 
             // panel2
             // 
@@ -162,15 +164,16 @@
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // pbx_logoCongTy
             // 
-            this.pictureBox1.BackgroundImage = global::Project_Windows_04.Properties.Resources.isometric_landing_page_design_background_template;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 82);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.pbx_logoCongTy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbx_logoCongTy.Image = global::Project_Windows_04.Properties.Resources.isometric_landing_page_design_background_template;
+            this.pbx_logoCongTy.Location = new System.Drawing.Point(23, 63);
+            this.pbx_logoCongTy.Name = "pbx_logoCongTy";
+            this.pbx_logoCongTy.Size = new System.Drawing.Size(172, 82);
+            this.pbx_logoCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_logoCongTy.TabIndex = 13;
+            this.pbx_logoCongTy.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -192,43 +195,67 @@
             this.pictureBox7.TabIndex = 20;
             this.pictureBox7.TabStop = false;
             // 
-            // label7
+            // lbl_nganhNghe
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(269, 158);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 25);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Career";
+            this.lbl_nganhNghe.AutoSize = true;
+            this.lbl_nganhNghe.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_nganhNghe.Location = new System.Drawing.Point(269, 158);
+            this.lbl_nganhNghe.Name = "lbl_nganhNghe";
+            this.lbl_nganhNghe.Size = new System.Drawing.Size(62, 25);
+            this.lbl_nganhNghe.TabIndex = 19;
+            this.lbl_nganhNghe.Text = "Career";
+            // 
+            // lbl_IdCompany
+            // 
+            this.lbl_IdCompany.AutoSize = true;
+            this.lbl_IdCompany.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_IdCompany.Location = new System.Drawing.Point(586, 17);
+            this.lbl_IdCompany.Name = "lbl_IdCompany";
+            this.lbl_IdCompany.Size = new System.Drawing.Size(105, 25);
+            this.lbl_IdCompany.TabIndex = 21;
+            this.lbl_IdCompany.Text = "IdCompany";
+            this.lbl_IdCompany.Visible = false;
+            // 
+            // lbl_IdJobPostings
+            // 
+            this.lbl_IdJobPostings.AutoSize = true;
+            this.lbl_IdJobPostings.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_IdJobPostings.Location = new System.Drawing.Point(697, 17);
+            this.lbl_IdJobPostings.Name = "lbl_IdJobPostings";
+            this.lbl_IdJobPostings.Size = new System.Drawing.Size(123, 25);
+            this.lbl_IdJobPostings.TabIndex = 22;
+            this.lbl_IdJobPostings.Text = "IdJobPostings";
+            this.lbl_IdJobPostings.Visible = false;
             // 
             // UC_TinTuyenDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lbl_IdJobPostings);
+            this.Controls.Add(this.lbl_IdCompany);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lbl_nganhNghe);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbx_logoCongTy);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_kinhNghiem);
+            this.Controls.Add(this.lbl_luong);
+            this.Controls.Add(this.lbl_diaChi);
+            this.Controls.Add(this.lbl_hinhThucLamViec);
+            this.Controls.Add(this.lbl_tenCongTy);
+            this.Controls.Add(this.lbl_tenCongViec);
             this.Name = "UC_TinTuyenDung";
             this.Size = new System.Drawing.Size(1018, 200);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_logoCongTy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
@@ -238,20 +265,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label lbl_tenCongViec;
+        public System.Windows.Forms.Label lbl_tenCongTy;
+        public System.Windows.Forms.Label lbl_hinhThucLamViec;
+        public System.Windows.Forms.Label lbl_diaChi;
+        public System.Windows.Forms.Label lbl_luong;
+        public System.Windows.Forms.Label lbl_kinhNghiem;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.PictureBox pbx_logoCongTy;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.PictureBox pictureBox7;
+        public System.Windows.Forms.Label lbl_nganhNghe;
+        public System.Windows.Forms.Label lbl_IdCompany;
+        public System.Windows.Forms.Label lbl_IdJobPostings;
     }
 }

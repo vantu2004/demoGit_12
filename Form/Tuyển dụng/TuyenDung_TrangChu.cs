@@ -16,6 +16,8 @@ namespace Project_Windows_04
     public partial class TuyenDung_TrangChu : Form
     {
         TuyenDung_DAO NTD_DAO = new TuyenDung_DAO();
+        TuyenDung NTD = new TuyenDung();
+        Xuat_ThongTin xuat_TT = new Xuat_ThongTin();
         public string IdCompany;
 
         public TuyenDung_TrangChu()
@@ -25,9 +27,11 @@ namespace Project_Windows_04
 
         private void TuyenDung_TrangChu_Load(object sender, EventArgs e)
         {
-            uC_BangTin1.btn_dangTinTuyenDung.Hide();
-            uC_BangTin1.btn_dangNhap.Hide();
-            uC_BangTin1.btn_dangKy.Hide();
+            UC_BangTin_NTD.btn_dangTinTuyenDung.Hide();
+            UC_BangTin_NTD.btn_dangNhap.Hide();
+            UC_BangTin_NTD.btn_dangKy.Hide();
+
+            NTD_DAO.load_tinTuyenDung(UC_BangTin_NTD.flpl_danhSachTinTuyenDung, NTD.Id, NTD.UserType);
         }
 
         private void pbx_logoCongTy_Click_1(object sender, EventArgs e)
@@ -66,6 +70,8 @@ namespace Project_Windows_04
             tbx_emailHR.Text = NTD.EmailHR;
             tbx_sdtHR.Text = NTD.SdtHR;
             cbx_viTriCongTac_HR.Text = NTD.ViTriCongTacHR;
+
+            this.NTD = NTD;
         }
 
         public void btn_hoanTat_Click(object sender, EventArgs e)
@@ -81,6 +87,8 @@ namespace Project_Windows_04
                     cbx_nganhNghe.Text, tbx_tenCongViec.Text, Convert.ToDouble(tbx_luong.Text), cbx_kinhNghiem.Text, cbx_hinhThucLamViec.Text,
                     tbx_tenHR.Text, tbx_emailHR.Text, tbx_sdtHR.Text, cbx_viTriCongTac_HR.Text, dtpr_ngayDang.Value.ToShortDateString(),
                     dtpr_hanChot.Value.ToShortDateString(), rtbx_moTaCongViec.Text, rtbx_yeuCauUngVien.Text, rtbx_quyenLoi.Text);
+
+                UC_BangTin_NTD.flpl_danhSachTinTuyenDung.Controls.Add(xuat_TT.them_tinTuyenDung(t, t.IdCompany, t.UserType));
 
                 NTD_DAO.taoTin(t);
             }

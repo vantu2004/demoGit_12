@@ -14,7 +14,7 @@ namespace Project_Windows_04
     internal class dbConnection
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-
+        private Xuat_ThongTin xuat_TT = new Xuat_ThongTin();
         public dbConnection() { }
 
         public void thucThi_dangKy(string sqlQuery_NTD_UV, string sqlQuery_TK)
@@ -34,7 +34,7 @@ namespace Project_Windows_04
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -75,7 +75,7 @@ namespace Project_Windows_04
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -106,7 +106,11 @@ namespace Project_Windows_04
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error! + \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! \n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
 
@@ -134,7 +138,11 @@ namespace Project_Windows_04
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error! + '\n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! '\n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
 
@@ -149,25 +157,11 @@ namespace Project_Windows_04
 
                     if (cmd_TT.ExecuteNonQuery() > 0)
                         MessageBox.Show("Success!", "Notify", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //SqlDataReader data = cmd_TT.ExecuteReader();
-
-                    //if (data.Read() == true)
-                    //{
-                    //    MessageBox.Show("Tạo tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    //    byte[] imageData = (byte[])data.GetValue(2);
-                    //    Image image = ByteArrayToImage(imageData);
-                    //    temp01 t = new temp01();
-                    //    t.pbx_temp.Image = image;
-                    //    t.ShowDialog();
-                    //}
-                    //else
-                    //    MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error! + \n" + ex.Message, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! \n" + ex.Message, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             finally
@@ -183,5 +177,35 @@ namespace Project_Windows_04
         //        return Image.FromStream(ms);
         //    }
         //}
+
+        public void thucThi_load_tinTuyenDung(string sqlQuery_xuat_tinTuyenDung, FlowLayoutPanel flowLayoutPanel, string Id, string kieuNguoiDung)
+        {
+            try
+            {
+                conn.Open();
+
+                Xuat_ThongTin xuat_TT = new Xuat_ThongTin();
+
+                SqlCommand cmd = new SqlCommand(sqlQuery_xuat_tinTuyenDung, conn);
+                SqlDataReader data = cmd.ExecuteReader();
+
+                while (data.Read() == true)
+                {
+                    TuyenDung_Tin t = new TuyenDung_Tin(data.GetString(0), data.GetString(10), data.GetString(1), null, data.GetString(6), data.GetString(8), 
+                        data.GetString(7), data.GetString(12), data.GetString(13), Convert.ToDouble(data.GetDecimal(14)), data.GetString(15), data.GetString(16), data.GetString(2), 
+                        data.GetString(3), data.GetString(4), data.GetString(5), data.GetString(17), data.GetString(18), data.GetString(19), data.GetString(20), data.GetString(21));
+
+                    flowLayoutPanel.Controls.Add(xuat_TT.them_tinTuyenDung(t, Id, kieuNguoiDung));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error! '\n" + ex, "Notify", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
