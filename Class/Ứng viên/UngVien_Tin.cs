@@ -9,7 +9,7 @@ namespace Project_Windows_04
     public class UngVien_Tin
     {
         private string id;
-        private byte[] anhDaiDien;
+        private string anhDaiDien;
         private string tenUV;
         private string ngaySinhUV;
         private string gioiTinhUV;
@@ -23,7 +23,7 @@ namespace Project_Windows_04
         private string hocVan;
         private string kinhNghiem;
 
-        public UngVien_Tin(string id, byte[] anhDaiDien, string tenUV, string ngaySinhUV, string gioiTinhUV, string diaChi, string mangXaHoi, string sdtUV, string emailUV, string viTriUngTuyen, string ngayCapNhatCV, string mucTieuNgheNghiep, string hocVan, string kinhNghiem)
+        public UngVien_Tin(string id, string anhDaiDien, string tenUV, string ngaySinhUV, string gioiTinhUV, string diaChi, string mangXaHoi, string sdtUV, string emailUV, string viTriUngTuyen, string ngayCapNhatCV, string mucTieuNgheNghiep, string hocVan, string kinhNghiem)
         {
             Id = id;
             AnhDaiDien = anhDaiDien;
@@ -42,7 +42,6 @@ namespace Project_Windows_04
         }
 
         public string Id { get => id; set => id = value; }
-        public byte[] AnhDaiDien { get => anhDaiDien; set => anhDaiDien = value; }
         public string TenUV { get => tenUV; set => tenUV = value; }
         public string NgaySinhUV { get => ngaySinhUV; set => ngaySinhUV = value; }
         public string GioiTinhUV { get => gioiTinhUV; set => gioiTinhUV = value; }
@@ -55,5 +54,6 @@ namespace Project_Windows_04
         public string MucTieuNgheNghiep { get => mucTieuNgheNghiep; set => mucTieuNgheNghiep = value; }
         public string HocVan { get => hocVan; set => hocVan = value; }
         public string KinhNghiem { get => kinhNghiem; set => kinhNghiem = value; }
+        public string AnhDaiDien { get => anhDaiDien; set => anhDaiDien = value; }
     }
 }

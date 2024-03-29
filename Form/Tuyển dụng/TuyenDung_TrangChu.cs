@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using DevExpress.XtraEditors;
+using static DevExpress.Skins.SolidColorHelper;
 
 namespace Project_Windows_04
 {
@@ -19,7 +20,7 @@ namespace Project_Windows_04
         TuyenDung NTD = new TuyenDung();
         Xuat_ThongTin xuat_TT = new Xuat_ThongTin();
         public string IdCompany;
-
+        private string linkAnh;
         public TuyenDung_TrangChu()
         {
             InitializeComponent();
@@ -45,19 +46,7 @@ namespace Project_Windows_04
                 // Thiết lập hình ảnh cho PictureBox và điều chỉnh SizeMode
                 pbx_logoCongTy.Image = image;
                 pbx_logoCongTy.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-        }
-
-        public byte[] chuyenAnhSangByte(Image image)
-        {
-            // Tạo một MemoryStream để lưu trữ dữ liệu hình ảnh
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                // Lưu trữ hình ảnh vào MemoryStream
-                image.Save(memoryStream, image.RawFormat);
-
-                // Trả về mảng byte của dữ liệu hình ảnh
-                return memoryStream.ToArray();
+                this.linkAnh = ofd.FileName;
             }
         }
 
@@ -70,7 +59,11 @@ namespace Project_Windows_04
             tbx_emailHR.Text = NTD.EmailHR;
             tbx_sdtHR.Text = NTD.SdtHR;
             cbx_viTriCongTac_HR.Text = NTD.ViTriCongTacHR;
-
+            if (this.linkAnh != null)
+            {
+                pbx_logoCongTy.Image = Image.FromFile(this.linkAnh);
+            }
+            
             this.NTD = NTD;
         }
 
@@ -80,10 +73,8 @@ namespace Project_Windows_04
             {
                 Guid g = Guid.NewGuid();
 
-                // Chuyển image sang byte để lưu vào csdl
-                byte[] anh_byte = chuyenAnhSangByte(pbx_logoCongTy.Image);
-                
-                TuyenDung_Tin t = new TuyenDung_Tin(IdCompany, g.ToString(), "Employer", anh_byte, tbx_tenCongTy.Text, tbx_mangXaHoi.Text, cbx_diaChi_CongTy.Text,
+                MessageBox.Show(linkAnh);
+                TuyenDung_Tin t = new TuyenDung_Tin(IdCompany, g.ToString(), "Employer", linkAnh, tbx_tenCongTy.Text, tbx_mangXaHoi.Text, cbx_diaChi_CongTy.Text,
                     cbx_nganhNghe.Text, tbx_tenCongViec.Text, Convert.ToDouble(tbx_luong.Text), cbx_kinhNghiem.Text, cbx_hinhThucLamViec.Text,
                     tbx_tenHR.Text, tbx_emailHR.Text, tbx_sdtHR.Text, cbx_viTriCongTac_HR.Text, dtpr_ngayDang.Value.ToShortDateString(),
                     dtpr_hanChot.Value.ToShortDateString(), rtbx_moTaCongViec.Text, rtbx_yeuCauUngVien.Text, rtbx_quyenLoi.Text);

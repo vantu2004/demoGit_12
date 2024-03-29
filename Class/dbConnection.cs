@@ -63,7 +63,8 @@ namespace Project_Windows_04
                     }
                     else
                     {
-                        string sqlQuery_UV = string.Format("SELECT * FROM UNGVIEN INNER JOIN CVs ON UNGVIEN.Id = CVs.Id WHERE UNGVIEN.Id = '{0}'", data.GetString(0));
+                        //string sqlQuery_UV = string.Format("SELECT * FROM UNGVIEN INNER JOIN CVs ON UNGVIEN.Id = CVs.Id WHERE UNGVIEN.Id = '{0}'", data.GetString(0));
+                        string sqlQuery_UV = string.Format("SELECT * FROM UNGVIEN  WHERE Id = '{0}'", data.GetString(0));
                         conn.Close();
                         thucThi_layDuLieu_UV(sqlQuery_UV);
                     }    
@@ -125,7 +126,8 @@ namespace Project_Windows_04
 
                 if (data.Read() == true)
                 {
-                    UngVien_Tin u = new UngVien_Tin(data.GetString(0), (byte[])data.GetValue(10), data.GetString(2), data.GetString(4), data.GetString(8), data.GetString(7), data.GetString(5), data.GetString(3), data.GetString(6), data.GetString(11), data.GetString(15), data.GetString(12), data.GetString(13), data.GetString(14));
+                    //UngVien_Tin u = new UngVien_Tin(data.GetString(0), data.GetString(10), data.GetString(2), data.GetString(4), data.GetString(8), data.GetString(7), data.GetString(5), data.GetString(3), data.GetString(6), data.GetString(11), data.GetString(15), data.GetString(12), data.GetString(13), data.GetString(14));
+                    UngVien u = new UngVien(data.GetString(0), data.GetString(1), data.GetString(2), data.GetString(3), data.GetString(4), data.GetString(5), data.GetString(6), data.GetString(7), data.GetString(8));
                     UngVien_TrangChu UV_TC = new UngVien_TrangChu();
                     UV_TC.layDuLieu(u);
                     UV_TC.Id = u.Id;
@@ -170,14 +172,6 @@ namespace Project_Windows_04
             }
         }
 
-        //static Image chuyenByteSangAnh(byte[] imageData)
-        //{
-        //    using (MemoryStream ms = new MemoryStream(imageData))
-        //    {
-        //        return Image.FromStream(ms);
-        //    }
-        //}
-
         public void thucThi_load_tinTuyenDung(string sqlQuery_xuat_tinTuyenDung, FlowLayoutPanel flowLayoutPanel, string Id, string kieuNguoiDung)
         {
             try
@@ -191,7 +185,7 @@ namespace Project_Windows_04
 
                 while (data.Read() == true)
                 {
-                    TuyenDung_Tin t = new TuyenDung_Tin(data.GetString(0), data.GetString(10), data.GetString(1), null, data.GetString(6), data.GetString(8), 
+                    TuyenDung_Tin t = new TuyenDung_Tin(data.GetString(0), data.GetString(10), data.GetString(1), data.GetString(11), data.GetString(6), data.GetString(8), 
                         data.GetString(7), data.GetString(12), data.GetString(13), Convert.ToDouble(data.GetDecimal(14)), data.GetString(15), data.GetString(16), data.GetString(2), 
                         data.GetString(3), data.GetString(4), data.GetString(5), data.GetString(17), data.GetString(18), data.GetString(19), data.GetString(20), data.GetString(21));
 

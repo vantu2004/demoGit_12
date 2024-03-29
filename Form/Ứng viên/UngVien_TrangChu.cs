@@ -17,6 +17,7 @@ namespace Project_Windows_04
         UngVien_DAO UV_DAO = new UngVien_DAO();
         public string Id;
         string userType;
+        private string linkAnh;
 
         public UngVien_TrangChu()
         {
@@ -32,21 +33,41 @@ namespace Project_Windows_04
             UV_DAO.load_tinTuyenDung(UC_BangTin_UV.flpl_danhSachTinTuyenDung, Id, userType);
         }
 
-        public void layDuLieu(UngVien_Tin UV)
+        public void layDuLieu(UngVien UV)
         {
-            tbx_tenUV.Text = UV.TenUV;
-            dtpr_ngaySinhUV.Value = Convert.ToDateTime(UV.NgaySinhUV);
-            if (UV.GioiTinhUV == "Male")
+            //tbx_tenUV.Text = UV.Ten;
+            //dtpr_ngaySinhUV.Value = Convert.ToDateTime(UV.NgaySinh);
+            //if (UV.GioiTinh == "Male")
+            //    rbn_nam.Checked = true;
+            //else
+            //    rbn_nu.Checked = true;
+            //cbx_diaChiUV.Text = UV.DiaChi;
+            //tbx_mangXaHoi.Text = UV.MangXaHoi;
+            //tbx_sdtUV.Text = UV.Sdt;
+            //tbx_emaiUV.Text = UV.Email;
+            //rtbx_mucTIeuNgheNghiep.Text = UV.MucTieuNgheNghiep;
+            //rtbx_hocVan.Text = UV.HocVan;
+            //rtbx_kinhNghiem.Text = UV.KinhNghiem;
+            //pbx_avatar.Image = Image.FromFile(this.linkAnh);
+
+            //this.Id = UV.Id;
+            //this.userType = "Candidate";
+
+            tbx_tenUV.Text = UV.Ten;
+            dtpr_ngaySinhUV.Value = Convert.ToDateTime(UV.NgaySinh);
+            if (UV.GioiTinh == "Male")
                 rbn_nam.Checked = true;
             else
                 rbn_nu.Checked = true;
             cbx_diaChiUV.Text = UV.DiaChi;
             tbx_mangXaHoi.Text = UV.MangXaHoi;
-            tbx_sdtUV.Text = UV.SdtUV;
-            tbx_emaiUV.Text = UV.EmailUV;
-            rtbx_mucTIeuNgheNghiep.Text = UV.MucTieuNgheNghiep;
-            rtbx_hocVan.Text = UV.HocVan;
-            rtbx_kinhNghiem.Text = UV.KinhNghiem;
+            tbx_sdtUV.Text = UV.Sdt;
+            tbx_emaiUV.Text = UV.Email;
+
+            if (this.linkAnh != null)
+            {
+                pbx_avatar.Image = Image.FromFile(this.linkAnh);
+            }
 
             this.Id = UV.Id;
             this.userType = "Candidate";
@@ -63,19 +84,7 @@ namespace Project_Windows_04
                 // Thiết lập hình ảnh cho PictureBox và điều chỉnh SizeMode
                 pbx_avatar.Image = image;
                 pbx_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-        }
-
-        public byte[] chuyenAnhSangByte(Image image)
-        {
-            // Tạo một MemoryStream để lưu trữ dữ liệu hình ảnh
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                // Lưu trữ hình ảnh vào MemoryStream
-                image.Save(memoryStream, image.RawFormat);
-
-                // Trả về mảng byte của dữ liệu hình ảnh
-                return memoryStream.ToArray();
+                this.linkAnh = ofd.FileName;
             }
         }
 
@@ -83,9 +92,6 @@ namespace Project_Windows_04
         {
             try
             {
-                // Chuyển image sang byte để lưu vào csdl
-                byte[] anh_byte = chuyenAnhSangByte(pbx_avatar.Image);
-
                 string gioiTinh;
                 if (rbn_nam.Checked)
                     gioiTinh = "Male";
@@ -94,7 +100,7 @@ namespace Project_Windows_04
 
                 DateTime dt = DateTime.Now;
 
-                UngVien_Tin u = new UngVien_Tin(Id, anh_byte, tbx_tenUV.Text, dtpr_ngaySinhUV.Value.ToShortDateString(), gioiTinh,
+                UngVien_Tin u = new UngVien_Tin(Id, this.linkAnh, tbx_tenUV.Text, dtpr_ngaySinhUV.Value.ToShortDateString(), gioiTinh,
                     cbx_diaChiUV.Text, tbx_mangXaHoi.Text, tbx_sdtUV.Text, tbx_emaiUV.Text, cbx_viTriUngTuyen.Text,
                     dt.ToString("dd/MM/yyyy"), rtbx_mucTIeuNgheNghiep.Text, rtbx_hocVan.Text, rtbx_kinhNghiem.Text);
 

@@ -34,7 +34,7 @@ GO
 CREATE TABLE [dbo].[JobPostings] (
     [IdCompany]      VARCHAR (50)    NOT NULL,
     [IdJobPostings]  VARCHAR (50)    NOT NULL,
-    [IconCompany]    IMAGE           NULL,
+    [IconCompany]    VARCHAR(100)           NULL,
     [Job]            NVARCHAR (30)   DEFAULT ('null') NOT NULL,
     [JobName]        NVARCHAR (62)   DEFAULT ('null') NOT NULL,
     [Salary]         DECIMAL (10, 2) DEFAULT ((0.0)) NOT NULL,

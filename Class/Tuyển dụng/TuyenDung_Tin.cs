@@ -12,7 +12,7 @@ namespace Project_Windows_04
         private string idCompany;
         private string idJobPostings;
         private string userType;
-        private byte[] logoCongTy;
+        private string logoCongTy;
         private string tenCongTy;
         private string mangXaHoi;
         private string diaChi;
@@ -32,7 +32,7 @@ namespace Project_Windows_04
         private string loiIch;
 
         public TuyenDung_Tin() { }
-        public TuyenDung_Tin(string idCompany, string idJobPosting, string userType, byte[] logoCongTy, string tenCongTy, string mangXaHoi, string diaChi, string nganhNghe, string tenCongViec, double luong, string kinhNghiem, 
+        public TuyenDung_Tin(string idCompany, string idJobPosting, string userType, string logoCongTy, string tenCongTy, string mangXaHoi, string diaChi, string nganhNghe, string tenCongViec, double luong, string kinhNghiem, 
             string hinhThucLamViec, string tenHR, string emailHR, string sdtHR, string viTriCongTacHR, string ngayDang, string hanChot, string moTaCongViec, string yeuCau, string loiIch)
         {
             IdCompany = idCompany;
@@ -77,7 +77,7 @@ namespace Project_Windows_04
         public string LoiIch { get => loiIch; set => loiIch = value; }
         public string IdCompany { get => idCompany; set => idCompany = value; }
         public string IdJobPostings { get => idJobPostings; set => idJobPostings = value; }
-        public byte[] LogoCongTy { get => logoCongTy; set => logoCongTy = value; }
         public string TenCongViec { get => tenCongViec; set => tenCongViec = value; }
+        public string LogoCongTy { get => logoCongTy; set => logoCongTy = value; }
     }
 }
